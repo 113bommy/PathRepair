@@ -1,1 +1,0 @@
-for _ in range(int(input())):l,r=sorted(map(int,input().split()));print(*([-1],[l,l*2])[l*2<=r])

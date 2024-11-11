@@ -1,5 +1,0 @@
-n= int(input())
-s = input()
-a = s.count("z")
-b = s.count("n")
-print(a*"0 "+ b*"1 ")

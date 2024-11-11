@@ -1,5 +1,0 @@
-N,M = map(int,input().split())
-X = sorted(map(int,input().split()))
-L = sorted([X[i+1]-X[i] for i in range(M-1)])
-if M < L:print(0)
-else:print(sum(L[:(M-N)]))

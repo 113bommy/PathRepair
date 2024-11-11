@@ -1,1 +1,0 @@
-s,t = map(str,input());print(t+s)

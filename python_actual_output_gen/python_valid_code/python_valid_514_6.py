@@ -1,1 +1,0 @@
-for _ in [0]*int(input()): print((int(input())+1)/10)

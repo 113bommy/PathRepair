@@ -1,1 +1,0 @@
-a,b,c,d=map(int,input().split());print(["Balanced","Right","Left"][(a+b>c+d)-(a+b<c+d)])

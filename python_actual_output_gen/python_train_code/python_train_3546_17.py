@@ -1,5 +1,0 @@
-n=int(input())
-l=''.join(input())
-x=l.rindex('1')
-y=l.rindex('0')
-print(min(x,y)+1)

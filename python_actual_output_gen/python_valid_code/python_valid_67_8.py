@@ -1,5 +1,0 @@
-n=int(input())
-t=list(map(int,input().split()))
-t=sorted(t)
-if t[n//2]==t[n//2-1]:print('NO')
-else:print('YES')

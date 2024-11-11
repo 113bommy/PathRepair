@@ -1,1 +1,0 @@
-a=eval('int(input()),'*5);print(min(i%10for i in a)-9-sum(-i//10*10for i in a))

@@ -1,6 +1,0 @@
-a,b,c=list(map(int,input().split()))
-d,e,f=list(map(int,input().split()))
-g,h,i=list(map(int,input().split()))
-print(f+h/2,b,c)
-print(d,c+g/2,f)
-print(g,h,b+d/2)

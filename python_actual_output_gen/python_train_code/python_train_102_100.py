@@ -1,1 +1,0 @@
-i = input;i();print(sum([x-1 for x in i().split()]))

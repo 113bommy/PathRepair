@@ -1,1 +1,0 @@
-n,k=input().split();print(sum(sorted(int,input().split())[:int(k)]))

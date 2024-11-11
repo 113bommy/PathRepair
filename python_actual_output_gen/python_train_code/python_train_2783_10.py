@@ -1,1 +1,0 @@
-a=b=c=d=e=f=0;g=1;exec('a,b,c,d,e,f,g=b,e,e-d,f,g,g-c,g*4-b-c-d-a*3;'*int(input()));print(g%(1e9+7))

@@ -1,1 +1,0 @@
-print("sfeicrosntd"[(sum([int(input())for i in range(int(input()))])-2)%2::2])

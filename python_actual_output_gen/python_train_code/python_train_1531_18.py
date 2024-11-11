@@ -1,2 +1,0 @@
-n = int(input());d = list(map(int,input().split()));s,t = sorted(list(map(int,input().split())))
-print(min(sum([d[i] for i in range(abs(s-t))]),sum([d[i] for i in range(t-1,n)]+[d[i] for i in range(0,s-1)])))

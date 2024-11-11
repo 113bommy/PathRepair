@@ -1,2 +1,0 @@
-s=input()
-eval(s)

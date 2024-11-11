@@ -1,1 +1,0 @@
-s=set;print("YNeos"[s(input())in map(s,"NS","EW","NSEW")::2])

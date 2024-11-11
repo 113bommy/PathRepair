@@ -1,5 +1,0 @@
-n=int(input())
-l=list(map(int,input().split()))
-n_o=len([i for i in l if i>=3200])
-n_c=len(set([i//400 for i in l if i<3200]))
-print(max(n_o,n_c),n_o+n_c)

@@ -1,1 +1,0 @@
-p=input;n,s=p(),p();print(max(len(set(s[:i])&set(s[i:]))for i in range(n)))

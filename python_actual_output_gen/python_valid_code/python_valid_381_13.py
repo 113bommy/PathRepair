@@ -1,1 +1,0 @@
-_,*p=map(int,open(0).read().split());print(('Yes','No')[sum(1 for t,x,y in zip(*[iter(p)]*3)if t<x+y|t%2!=(x+y)%2)>0])

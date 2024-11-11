@@ -1,1 +1,0 @@
-print(["No","Yes"][int("7" in input())])

@@ -1,1 +1,0 @@
-print("YES") if int(input().gsub(" ", "")) % 4 == 0 else print("NO")

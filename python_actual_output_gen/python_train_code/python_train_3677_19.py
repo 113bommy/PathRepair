@@ -1,1 +1,0 @@
-s=input();print("NYoes"[int(s)%sum(map(int,s))==0::2])

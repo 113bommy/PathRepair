@@ -1,1 +1,0 @@
-print(["No","Yes"]["".join(input())=="abc"])

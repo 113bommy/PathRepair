@@ -1,1 +1,0 @@
-print("ACGT"["CATG".find(input())])

@@ -1,1 +1,0 @@
-a,b=map(int,input().split());l=max(a*25+1>>1,b*10);print(l*(~a*12<-l>~b*10)or-1)

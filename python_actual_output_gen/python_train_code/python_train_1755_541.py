@@ -1,1 +1,0 @@
-a,b,t=map(int,input().split());print(b*(c//a))

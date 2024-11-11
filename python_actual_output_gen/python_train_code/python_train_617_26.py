@@ -1,1 +1,0 @@
-(lambda x: [x // 2 - 1, x // 2][x % 2])(int(input()))

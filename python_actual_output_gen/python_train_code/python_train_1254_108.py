@@ -1,1 +1,0 @@
-print(['Yes','No']['9'in input()])

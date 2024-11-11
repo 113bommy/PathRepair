@@ -1,5 +1,0 @@
-n = int(input())
-num = list(map(int,input().split()))
-sum1 = sum(num)
-ans = sum1//len(num)
-print(ans)

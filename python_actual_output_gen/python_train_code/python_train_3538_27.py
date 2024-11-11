@@ -1,1 +1,0 @@
-print(round(int(input())**0.5)**2)

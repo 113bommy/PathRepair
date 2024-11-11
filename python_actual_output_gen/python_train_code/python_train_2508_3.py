@@ -1,9 +1,0 @@
-a=list(input())
-m1=a.count('B')
-m2=a.count('u')/2
-m3=a.count('l')
-m4=a.count('b')
-m5=a.count('a')//2
-m6=a.count('s')
-m7=a.count('r')
-print(min(m1,m2,m3,m4,m5,m6,m7))

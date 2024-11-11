@@ -1,1 +1,0 @@
-print(1or input()[:int(input())].replace('1','')[:1])

@@ -1,1 +1,0 @@
-print(['YES','NO'][int(input().replace(' ',''))%4])

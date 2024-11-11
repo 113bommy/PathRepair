@@ -1,1 +1,0 @@
-z=lambda:int(input());a,b,a1,b1,c=z(),z(),z(),z(),z();print(min(a1+b1,max(0,c-((a1-1)*a+(b1-1)*b))),max(min((c-a1*min(c//a1,a))//b1,b)+min(c//a1,a),min((c-b1*min(c//b1,b))//a1,a)+min(c//b1,b)))

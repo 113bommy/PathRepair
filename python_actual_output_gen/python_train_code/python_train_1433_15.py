@@ -1,1 +1,0 @@
-print(~-1<<len(bin(int(input()))-3))

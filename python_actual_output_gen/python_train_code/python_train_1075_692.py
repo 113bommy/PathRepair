@@ -1,1 +1,0 @@
-print(abs(int(input())%1000-1000))

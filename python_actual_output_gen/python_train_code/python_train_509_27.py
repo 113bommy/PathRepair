@@ -1,1 +1,0 @@
-print("YNEOS"[int("".join(list(input().split())))%4::2])

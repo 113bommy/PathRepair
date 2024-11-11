@@ -1,1 +1,0 @@
-print("acl"*int(input()))

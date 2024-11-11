@@ -1,1 +1,0 @@
-n,k,x,y=map(int,open(0));print([n*k,(n-k)*y][n<k])

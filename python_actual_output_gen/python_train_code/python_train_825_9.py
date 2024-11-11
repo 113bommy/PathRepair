@@ -1,1 +1,0 @@
-print(int(input())*8//35)

@@ -1,7 +1,0 @@
-n = int(input())
-d = list(map(int, input().split()))
-a,b = map(int, input().split())
-a,b = min(a,b), max(a,b)
-x = sum(d[a:b])
-y = sum(d[:a]) + sum(d[b:])
-print(min(x,y))

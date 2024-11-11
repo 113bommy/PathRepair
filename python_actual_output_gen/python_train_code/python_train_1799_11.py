@@ -1,1 +1,0 @@
-N=int(input());print("Three" if len(set(map(input().split())))==3 else "Four")

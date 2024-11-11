@@ -1,1 +1,0 @@
-S=input();print('TBD'if int(S[5])*4+int(S[6])>=4else'Heisei')

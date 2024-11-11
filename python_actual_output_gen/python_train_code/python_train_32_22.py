@@ -1,1 +1,0 @@
-print("Even" if eval(input().replace(" ","*"))==0 else "Odd")

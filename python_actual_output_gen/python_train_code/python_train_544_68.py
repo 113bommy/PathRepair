@@ -1,1 +1,0 @@
-print('win' if sum(map(int,input())) == 21 else 'bust')

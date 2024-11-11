@@ -1,1 +1,0 @@
-print("Christmas"+3*" Eve"[:75-3*int(input())])

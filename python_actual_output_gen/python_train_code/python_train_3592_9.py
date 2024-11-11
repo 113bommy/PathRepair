@@ -1,5 +1,0 @@
-l=list(map(int,input().split()))
-s=sorted([l.count(x) for x in set(l)])
-if len(s)==1 or len(s)==s[0]: print('Elephant')
-elif len(s)==2 or len(s)==s[-1]-s[0]: print('Bear')
-else: print('Alien')

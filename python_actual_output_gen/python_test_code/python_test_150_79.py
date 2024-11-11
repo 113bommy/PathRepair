@@ -1,1 +1,0 @@
-print('ABD'if input()>'999'else'ABC')

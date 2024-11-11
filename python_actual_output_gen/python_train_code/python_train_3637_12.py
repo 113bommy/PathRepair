@@ -1,9 +1,0 @@
-n, m = [int(i) for i in input().split()]
-a, b = [int(i) for i in input().split()]
-minimum = n/m
-for j in range(n-1):
-    a, b = [int(i) for i in input().split()]
-    if a / b < minimum:
-        minimum = a/b
-print(minimum * m)
-sss=1

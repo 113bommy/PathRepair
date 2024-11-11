@@ -1,1 +1,0 @@
-print(len(set([i for i in input()])))

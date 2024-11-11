@@ -1,1 +1,0 @@
-print(int(not(bool(input()))))

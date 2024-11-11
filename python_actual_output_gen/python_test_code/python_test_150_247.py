@@ -1,1 +1,0 @@
-print("ABC" if int(input())<999 else "ABD")

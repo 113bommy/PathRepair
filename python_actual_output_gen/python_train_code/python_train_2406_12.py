@@ -1,1 +1,0 @@
-print(float(input().replace(' ', '')).is_integer() and 'Yes' or 'No')

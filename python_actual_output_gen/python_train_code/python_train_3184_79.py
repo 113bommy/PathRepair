@@ -1,1 +1,0 @@
-N,K,X,Y=map(int,open(0));print(min(N,K)*X+min(K,N-K)*Y)

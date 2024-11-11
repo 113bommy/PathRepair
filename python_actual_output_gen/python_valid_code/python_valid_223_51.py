@@ -1,1 +1,0 @@
-print("No") if int(input()) in [1,2,3,5,6,9,13,17] else print("Yes")

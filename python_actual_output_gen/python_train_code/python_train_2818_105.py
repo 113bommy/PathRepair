@@ -1,9 +1,0 @@
-x=int(input())
-c=0
-c+=x//11*2
-rest=x%11
-if(0<rest<6):
-    c+=1
-elif(6<=rest<11):
-    c+=2
-print(c)

@@ -1,1 +1,0 @@
-i=input();'YNeos'[i=='AAA' or i=='BBB'::2]

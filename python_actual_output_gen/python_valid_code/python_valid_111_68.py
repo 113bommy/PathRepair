@@ -1,1 +1,0 @@
-print(eval('min('+input().replace(' ','-2*')+',0)'))

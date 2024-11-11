@@ -1,1 +1,0 @@
-print('YNeos'[input()<'30'::2])

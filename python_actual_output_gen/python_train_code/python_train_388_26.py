@@ -1,5 +1,0 @@
-n = int(input())
-a = list(map(int, input().split()))
-a1 = a.index(1)
-a2 = a.index(n)
-print(max(abs(a1 - a2), a2-1, n - a2 - 1, a1 - 1, n-a1-1))

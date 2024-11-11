@@ -1,1 +1,0 @@
-n,a,b=map(int,input().split());m=n//(a+b);print(m*a+max(0,n%(a+b)-b))

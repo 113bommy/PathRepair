@@ -1,1 +1,0 @@
-print(['NO','YES'][input().count('7')==2])

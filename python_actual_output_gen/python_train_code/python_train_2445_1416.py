@@ -1,3 +1,0 @@
-s = int(input())
-
-print(2018 + s[5:])

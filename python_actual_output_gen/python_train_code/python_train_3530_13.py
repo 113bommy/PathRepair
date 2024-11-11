@@ -1,9 +1,0 @@
-n=int(input())
-l=list(map(int,input().split()))
-x=l.count(max(l))
-y=l.count(min(l))
-s=n-x-y
-if(n<=0):
-    print(0)
-else:
-    print(s)

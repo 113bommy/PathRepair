@@ -1,1 +1,0 @@
-eval(input().strip().replace(' ','*'))

@@ -1,1 +1,0 @@
-print("No" if input() == "AAA" or "BBB" else "Yes")

@@ -1,1 +1,0 @@
-print(len(set(int(i) for i in range(int(input())))))

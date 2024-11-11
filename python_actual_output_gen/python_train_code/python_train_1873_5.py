@@ -1,1 +1,0 @@
-print([[i%j==0 for j in range(1,i)].count(0) for i in range(1,int(input())+1,2)].count(7))

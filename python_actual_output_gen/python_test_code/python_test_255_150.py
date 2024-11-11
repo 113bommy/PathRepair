@@ -1,1 +1,0 @@
-print('A'+str(input())[9]+'C')

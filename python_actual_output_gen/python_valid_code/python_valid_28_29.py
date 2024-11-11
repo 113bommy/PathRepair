@@ -1,5 +1,0 @@
-n, a, b = map(int, input().split())
-
-result = (a + b) % n
-
-print (result)

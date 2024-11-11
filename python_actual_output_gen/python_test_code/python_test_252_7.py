@@ -1,1 +1,0 @@
-print('YNeos'[sorted(input())!='abc'::2])

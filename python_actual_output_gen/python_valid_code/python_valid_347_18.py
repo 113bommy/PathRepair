@@ -1,5 +1,0 @@
-x = input()
-print(x)
-initial = list(map(int, input().split(' ')))
-final = list(map(int, input().split(' ')))
-print("Yes" if sum(initial) >= sum(final) else "No")

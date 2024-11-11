@@ -1,1 +1,0 @@
-print(['Yes','No'][int(input())%100>int(input())])

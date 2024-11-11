@@ -1,1 +1,0 @@
-print(ord(input()) in "aiueo" and "vowel" or "consonant")

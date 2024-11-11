@@ -1,1 +1,0 @@
-print("ABC"*(int(input()<1200))or"ARC")

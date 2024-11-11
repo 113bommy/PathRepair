@@ -1,1 +1,0 @@
-print(input().conut("2"))

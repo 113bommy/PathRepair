@@ -1,1 +1,0 @@
-n,a=map(int,open(0));print('NYoe s'[n//500<=a::2])

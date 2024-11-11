@@ -1,1 +1,0 @@
-print(0 if eval(input().replace(" ","/"))<1 else 10)

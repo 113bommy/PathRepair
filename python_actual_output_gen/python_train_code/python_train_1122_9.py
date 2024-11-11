@@ -1,5 +1,0 @@
-N, Z, W = map(int,input().split())
-p = list(map(int,input().split()))
-a = abs(p[1] - p[2])
-b = abs(p[2] - W)
-print(max(a, b))

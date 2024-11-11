@@ -1,1 +1,0 @@
-a,*_,e,k=[int(input())for x in' '*6];print([':(','Yey!'][e-a<=k])

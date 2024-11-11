@@ -1,1 +1,0 @@
-S=input();print("YNeos"[S==S[::-1]and S.endswith(S[:len(S)//2])::2])

@@ -1,1 +1,0 @@
-print("A{'RB'[int(input())<1200]}C")

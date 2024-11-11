@@ -1,1 +1,0 @@
-print("YES" if eval(input().replace(" ","+"))%4==0 else "NO")

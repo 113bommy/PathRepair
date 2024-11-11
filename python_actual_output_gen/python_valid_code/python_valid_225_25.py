@@ -1,1 +1,0 @@
-O=input();E=input()+O;print(*[a+b for a,b in zip(O,E)],sep='')

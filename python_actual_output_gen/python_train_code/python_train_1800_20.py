@@ -1,1 +1,0 @@
-a,b=map(int,open(0));print(("GREATER","EQUAL","LESS")[(a==b)+(a<b)])

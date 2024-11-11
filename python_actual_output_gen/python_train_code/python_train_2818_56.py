@@ -1,1 +1,0 @@
-d,m=divmod(int(input()),11);print(d*2+1+(m>5))

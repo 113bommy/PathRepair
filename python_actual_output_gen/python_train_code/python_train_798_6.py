@@ -1,1 +1,0 @@
-print(['NO', 'YES'][sum([1 if i % 2 == 1 else 0 for i in [int(input()) % 1] + list(map(int, input().split(' ')))]) % 2])

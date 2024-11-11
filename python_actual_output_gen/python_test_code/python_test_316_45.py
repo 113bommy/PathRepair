@@ -1,1 +1,0 @@
-print(sum(el in 'aeiou02468'for el in input()))

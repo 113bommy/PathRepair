@@ -1,1 +1,0 @@
-print('Yes' if set(input()) == 2 else 'No')

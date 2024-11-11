@@ -1,1 +1,0 @@
-i=input;print(['YES','NO'][int(i())==len(set(i().split()))])

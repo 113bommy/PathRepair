@@ -1,1 +1,0 @@
-print("YES"if 0xbe880002fabeafabe800be800>>101-int(input())&1else"NO")

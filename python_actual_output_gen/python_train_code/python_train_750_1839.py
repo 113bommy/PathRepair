@@ -1,1 +1,0 @@
-print(3*pow(2,int(input())))

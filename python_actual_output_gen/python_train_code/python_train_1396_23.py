@@ -1,1 +1,0 @@
-s=input();print("yneos"[len(set(s))>len(s)::2])

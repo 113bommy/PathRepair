@@ -1,1 +1,0 @@
-print("yey!" if max(list(map(int, input().split())))<9 else ":(")

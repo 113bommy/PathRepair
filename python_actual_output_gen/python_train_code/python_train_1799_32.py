@@ -1,1 +1,0 @@
-input();"TFhoruere"[len(set(input().split()))>3::2]

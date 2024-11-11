@@ -1,9 +1,0 @@
-n=int(input())
-temp=0
-i=1
-while(temp<n):
-    temp+=i
-    if(temp==n):
-        print("YES")
-if(temp>n):
-    print("NO")

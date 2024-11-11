@@ -1,1 +1,0 @@
-print(input().replace(s[3],'8'))

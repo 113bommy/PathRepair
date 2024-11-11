@@ -1,1 +1,0 @@
-print(-(-(int(input())) // min([int(input() for i in range(5))])) + 4)

@@ -1,1 +1,0 @@
-print("Yes" if sorted(int(input())) < sorted(int(input()))[::-1] else "No")

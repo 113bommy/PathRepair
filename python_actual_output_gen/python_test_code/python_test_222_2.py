@@ -1,1 +1,0 @@
-[[print(str(x // 7 + max(1, x % 7))) for x in [int(input())]] for i in range(int(input()))]

@@ -1,1 +1,0 @@
-print("YES" if int("".join(sorted(input().split()))) % 4 == 0 else "NO")

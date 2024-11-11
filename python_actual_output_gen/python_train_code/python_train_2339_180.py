@@ -1,1 +1,0 @@
-print('Heisei' if int(input().split('/')[1]) > 4 else 'TBD')

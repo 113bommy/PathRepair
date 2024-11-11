@@ -1,1 +1,0 @@
-print(['onsonant','vowelc'][input() in ['a','i','u','e','o']])

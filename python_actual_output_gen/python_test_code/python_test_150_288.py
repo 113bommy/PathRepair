@@ -1,1 +1,0 @@
-print("AB"+"DC"[not (len(input())-3)])

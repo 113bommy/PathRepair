@@ -1,5 +1,0 @@
-a,b,c=map(int,input().split())
-if b<a and c<a:print(-1)
-elif b<a and c%a:print(-1)
-elif c<b and  b%a:print(-1)
-else:print(b//a+c//a)

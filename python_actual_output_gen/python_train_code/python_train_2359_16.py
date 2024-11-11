@@ -1,5 +1,0 @@
-n = input()
-n = n.replace("-.", "1")
-n = n.replace("--", "2")
-n = n.replace(".", "0")
-print(n)

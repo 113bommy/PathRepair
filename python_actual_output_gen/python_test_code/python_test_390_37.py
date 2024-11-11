@@ -1,1 +1,0 @@
-print(sum(i for i in range(int(input())) if i%3 and i%5))

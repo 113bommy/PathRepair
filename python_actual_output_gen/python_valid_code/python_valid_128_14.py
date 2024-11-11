@@ -1,1 +1,0 @@
-print("YES" if any(c in "HQ0" for c in input()) else "NO")

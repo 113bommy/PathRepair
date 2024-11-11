@@ -1,1 +1,0 @@
-n,m = map(int,input().split());print(min(n-m,m) if n > m else 1)

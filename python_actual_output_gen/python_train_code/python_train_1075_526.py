@@ -1,1 +1,0 @@
-print(n := (int(input()) % 1000))

@@ -1,1 +1,0 @@
-print(''.join(sum(map(list,zip(input(),input())),[])))

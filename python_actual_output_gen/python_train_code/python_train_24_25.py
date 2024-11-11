@@ -1,9 +1,0 @@
-n,d=map(int,input().split())
-ar=list(map(int,input().split()))    
-ar=sorted(ar)
-i=n-1
-while(i>0):
-    if(d%ar[i]==0):
-        print(d//ar[i])
-        break
-    i-=1

@@ -1,5 +1,0 @@
-a,b,c,d=map(int,input().split())
-a,b=max(int(3*a/10),int(a-((a)/250)*c)),max(int(3*b/10),int(b-((b)/250)*d))
-if a>b:print('Misha')
-elif a<b:print('Vasya')
-else:print(print('Tie'))

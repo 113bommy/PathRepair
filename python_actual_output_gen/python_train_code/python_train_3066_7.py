@@ -1,5 +1,0 @@
-n = int(input())
-print(3)
-for i in range(2, n + 1):
-    print(((i * (i + 1)) * (i * (i + 1)) - (i * (i - 1))) // i)
-    

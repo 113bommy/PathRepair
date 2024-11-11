@@ -1,7 +1,0 @@
-s=input()
-s=s.replace(' ','')
-s=s.replace('?','')
-s=s.lower()
-a=set(['a','i','e','o','u'])
-if s[-1] in a:print('YES')
-else:print('NO')

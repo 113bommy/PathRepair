@@ -1,1 +1,0 @@
-print(0--2*int(input())//11)

@@ -1,1 +1,0 @@
-a,b,c=int(input().split());print(("No","Yes")[a<=c<=b])

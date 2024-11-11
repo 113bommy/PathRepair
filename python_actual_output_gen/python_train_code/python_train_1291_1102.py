@@ -1,1 +1,0 @@
-print(700 + input().count("○") * 100)

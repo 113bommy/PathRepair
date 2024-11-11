@@ -1,1 +1,0 @@
-for _ in[0]*int(input()):a,b,c=map(int,input().split());x=min(c//2,b);print(x+min((b-x)//2,a))

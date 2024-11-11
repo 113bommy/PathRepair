@@ -1,1 +1,0 @@
-[print((n+1)//2-1) for n in [int(input()) for _ in range(int(input()))]]

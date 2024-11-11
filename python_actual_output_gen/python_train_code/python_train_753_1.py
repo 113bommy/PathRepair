@@ -1,1 +1,0 @@
-print(3**int(input())-2**sum(int(s)%2 for s in input().split()))

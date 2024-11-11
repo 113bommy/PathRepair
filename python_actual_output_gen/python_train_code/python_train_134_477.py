@@ -1,1 +1,0 @@
-print(3.1415*int(input()))

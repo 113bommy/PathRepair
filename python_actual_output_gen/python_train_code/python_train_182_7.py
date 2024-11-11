@@ -1,1 +1,0 @@
-print('YNeos'[int(input())/2<input().count('R')::2])
