@@ -143,6 +143,7 @@ To support automated program repair, actual output data is added. This data is g
 - The final output is saved in the `./python_actual_output_gen` directory as `final_data_test.jsonl`.
 
 ```bash
+bash make_folder.sh
 python translate.py
 
 python save_actual_output_test.py
