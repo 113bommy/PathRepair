@@ -1,1 +1,0 @@
-a,b=input().split();print(a if a=>b else int(a)-1)

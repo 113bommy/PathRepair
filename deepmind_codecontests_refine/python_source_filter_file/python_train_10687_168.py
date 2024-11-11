@@ -1,9 +1,0 @@
-n,k=map(int,input().split())
-while(k>0):
-    x=n%10
-    if(x==0):
-        n=n/10
-    else:
-        n=n-1
-    k-=1
-print(n)

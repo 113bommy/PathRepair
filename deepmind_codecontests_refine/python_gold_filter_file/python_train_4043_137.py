@@ -1,1 +1,0 @@
-A,B,X=map(int,input().split());print('YNEOS'[A>X or A+B<X::2])

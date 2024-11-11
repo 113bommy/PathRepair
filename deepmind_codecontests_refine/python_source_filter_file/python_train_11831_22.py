@@ -1,1 +1,0 @@
-print((lambda y: sum(map(lambda x: y.count(x), 'aeio02468u')))(input()))

@@ -1,1 +1,0 @@
-print(len(set(map(str,input().split()))))

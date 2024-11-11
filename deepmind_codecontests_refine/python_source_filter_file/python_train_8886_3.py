@@ -1,1 +1,0 @@
-input();c=input();print(list((p==n for p,n in zip(c[1:],c))))

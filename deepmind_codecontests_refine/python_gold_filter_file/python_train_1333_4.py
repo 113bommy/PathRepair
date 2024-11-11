@@ -1,1 +1,0 @@
-*a,=map(int,open(0));print(min(~-i%10for i in a)-sum(-i//10*10for i in a)-9)

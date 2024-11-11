@@ -1,1 +1,0 @@
-print(str(pow(5,int(input())))[:2])

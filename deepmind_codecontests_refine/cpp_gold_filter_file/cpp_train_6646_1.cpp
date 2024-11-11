@@ -1,5 +1,0 @@
-#include<bits/stdc++.h>
-#define ff(x,a,b) for(int x=a;x<=b;x++)
-using namespace std;
-int n,m,a[505][505],mark[505],ans,sum,s[505],t[505],tt[505];
-int main(){    cin>>n>>m;    ff(i,1,n) ff(j,1,m) cin>>a[i][j];    ans=n;ff(i,1,n) t[i]=a[i][1];ff(i,1,n) tt[i]=1;sum=m;    while(sum>0)    {        ff(i,1,m) s[i]=0;        ff(i,1,n) s[t[i]]++;        int k=1;        ff(i,2,m) if(s[k]<s[i]) k=i;        ans=min(ans,s[k]);        mark[k]=1;sum--;        ff(i,1,n) while(mark[t[i]]==1) t[i]=a[i][++tt[i]];    }    cout<<ans;}

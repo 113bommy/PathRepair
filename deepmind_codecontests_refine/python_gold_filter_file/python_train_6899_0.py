@@ -1,7 +1,0 @@
-s=input()
-n= len(s)
-print(4)
-print("L",2)
-print("R",n)
-print("R",2)
-print("R",2*n+1)

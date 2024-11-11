@@ -1,1 +1,0 @@
-print(int(3*input())**2)

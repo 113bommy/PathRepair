@@ -1,1 +1,0 @@
-print(int(input())*22/7)

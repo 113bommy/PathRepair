@@ -1,1 +1,0 @@
-print('ABC'if x=int(input())<1200else'ARC')

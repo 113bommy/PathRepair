@@ -1,1 +1,0 @@
-print('A%sC'%'RB'['121'>input()])

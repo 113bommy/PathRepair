@@ -1,1 +1,0 @@
-n,a,b,c,d=map(int,input().split());s=input();print('YNeos'['##'in s[a:c]or'##'in s[b:d]or c>d and'...'not in s[b:d+1]::2])

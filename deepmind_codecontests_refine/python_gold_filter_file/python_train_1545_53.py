@@ -1,1 +1,0 @@
-n,*s=open(0).readlines();print(max(0,*[s.count(i)-s[int(n):].count(i)*2for i in s]))

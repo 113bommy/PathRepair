@@ -1,2 +1,0 @@
-#84a
-print(24+(24-int(input())))

@@ -1,1 +1,0 @@
-print(abs(1000-int(input())))

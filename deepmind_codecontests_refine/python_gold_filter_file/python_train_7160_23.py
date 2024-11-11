@@ -1,1 +1,0 @@
-s=input();print(' YNeos'[s[:len(s)//2]in s[2:]::2])

@@ -1,1 +1,0 @@
-print("Heisei" if int(input().replace("/", ""))<=2019430 else "TBD")

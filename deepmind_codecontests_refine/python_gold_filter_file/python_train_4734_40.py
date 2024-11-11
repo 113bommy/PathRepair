@@ -1,1 +1,0 @@
-print('YES' if input().lower().replace(' ', '')[-2] in 'aeiouy' else 'NO')

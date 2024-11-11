@@ -1,1 +1,0 @@
-print("vowel" if "aiueo".find(input())>=0 else "consonant")

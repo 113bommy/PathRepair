@@ -1,9 +1,0 @@
-n,k=map(int,input().split())
-res=0
-cur=n*2
-res+=(cur+k-1)//k
-cur=n*5
-res+=(cur+k-1)//k
-cur=n*8
-res+=(cur+k-1)//k
-print(res)

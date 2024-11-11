@@ -1,1 +1,0 @@
-(lambda n:__import__("functools").reduce(lambda a,b:a*b,range(1,n+1)))(int(input()))

@@ -1,1 +1,0 @@
-print('NYoes'['9'in input()::2])

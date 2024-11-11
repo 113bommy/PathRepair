@@ -1,7 +1,0 @@
-h,l=map(int,input().split())
-a=(l*l)
-b=(h*h)
-#print(a-b)
-c=((a-b)/2*h)
-print(c)
-#print((l*l-h*h)/2*h)

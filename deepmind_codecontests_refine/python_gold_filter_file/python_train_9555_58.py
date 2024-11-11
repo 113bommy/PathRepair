@@ -1,1 +1,0 @@
-print('Yes' if any([i == '7' for i in input()]) else 'No')

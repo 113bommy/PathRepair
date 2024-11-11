@@ -1,1 +1,0 @@
-print('A'if str.isupper(input()) else 'a')

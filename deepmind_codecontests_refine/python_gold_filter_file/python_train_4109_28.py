@@ -1,9 +1,0 @@
-a=int(input())
-b=int(input())
-c=int(input())
-q=[]
-q.append((a+b)*c)
-q.append(a*(b+c))
-q.append(a*b*c)
-q.append(a+b+c)
-print(max(q))

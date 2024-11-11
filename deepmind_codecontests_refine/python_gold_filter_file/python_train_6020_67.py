@@ -1,1 +1,0 @@
-print(input().replace('9','Q').replace('1','9').replace('Q','1'))

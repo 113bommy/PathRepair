@@ -1,1 +1,0 @@
-print((lambda p:sum(p) - max(p) // 2)([int(input()) for _ in range(int(input()))]))

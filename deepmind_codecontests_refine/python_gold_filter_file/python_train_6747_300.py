@@ -1,1 +1,0 @@
-S=input();print('TBD'if int(S[5])*5+int(S[6])>=5else'Heisei')

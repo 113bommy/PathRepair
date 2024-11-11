@@ -1,1 +1,0 @@
-print(180*(Nint(input())))

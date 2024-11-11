@@ -1,1 +1,0 @@
-n,m=input().split();print("YNeos"[n>m::2])

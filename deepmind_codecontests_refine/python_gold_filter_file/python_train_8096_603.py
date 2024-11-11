@@ -1,1 +1,0 @@
-print("ABC" if str(input())=="ARC" else "ARC")

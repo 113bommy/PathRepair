@@ -1,1 +1,0 @@
-print(input().replace("1","l").replace("9","1").replace("l","9"))

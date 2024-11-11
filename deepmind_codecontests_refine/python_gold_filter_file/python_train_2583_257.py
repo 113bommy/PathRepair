@@ -1,1 +1,0 @@
-print("YNEOS"[input()in'124689'::2])

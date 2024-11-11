@@ -1,1 +1,0 @@
-print("YNEOS"[sorted(input())!=list("   1479")::2])

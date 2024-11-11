@@ -1,1 +1,0 @@
-print(max([len(t) for t in input().split('S')]))

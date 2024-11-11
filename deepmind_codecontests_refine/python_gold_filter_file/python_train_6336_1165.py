@@ -1,1 +1,0 @@
-a,b,h=[int(input())for _ in[0]*3];print((a+b)*h//2)

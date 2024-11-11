@@ -1,1 +1,0 @@
-print("Yes" if int("".join(input().split()))%4==0 else "No")

@@ -1,1 +1,0 @@
-for s in[*open(0)][1:]:print(int(s)+1)

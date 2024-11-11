@@ -1,1 +1,0 @@
-print("A"%s"C"%input()[8])

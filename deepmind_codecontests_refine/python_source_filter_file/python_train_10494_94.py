@@ -1,1 +1,0 @@
-n,s=open(0);n,a,b,c,d=map(int,n.split());print('YNeos'['##'*('...'*(d<c)in s[b-2:d+1])in s[a:]::2])

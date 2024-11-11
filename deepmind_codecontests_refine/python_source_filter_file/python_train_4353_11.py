@@ -1,1 +1,0 @@
-for i in sorted(range(int(input())),key=lambda:[(s,-int(p))for s,p in[input().split()]]):print(i+1)

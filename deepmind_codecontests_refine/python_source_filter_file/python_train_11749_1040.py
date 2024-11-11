@@ -1,1 +1,0 @@
-print(" ".jpin(input().split(",")))

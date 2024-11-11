@@ -1,1 +1,0 @@
-for _ in[0]*int(input()):x,n,m=map(int,input().split());print("YNEOS"[min(x,(x-20>>n)+20)>10*m::2])

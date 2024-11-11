@@ -1,5 +1,0 @@
-l = eval(input())
-a = eval(input())
-p = eval(input())
-x = min(l//1,a//2,p//4)
-print(x + x*2 + x*4)

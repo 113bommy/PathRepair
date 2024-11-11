@@ -1,1 +1,0 @@
-n,*l=map(int,open(0).read().split());print((n-1)//min(l)+5)

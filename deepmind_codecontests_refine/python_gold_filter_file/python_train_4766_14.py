@@ -1,1 +1,0 @@
-x,y=map(int,input().split());print('NYoe s'[x*2<=~y%2*y<=x*4::2])

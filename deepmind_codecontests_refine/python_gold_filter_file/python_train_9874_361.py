@@ -1,1 +1,0 @@
-print('ABC%03d' % int(input()))

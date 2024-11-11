@@ -1,1 +1,0 @@
-_,a,b=sorted(input());print(a*int(b))

@@ -1,1 +1,0 @@
-prunt(input[:-8])

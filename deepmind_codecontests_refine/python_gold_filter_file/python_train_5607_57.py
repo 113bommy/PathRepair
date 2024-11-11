@@ -1,1 +1,0 @@
-x,y=map(int, input().split());a=abs;z=a(x)-a(y);print((z==0)+(z*x>0)+a(z)+(z*y>0))

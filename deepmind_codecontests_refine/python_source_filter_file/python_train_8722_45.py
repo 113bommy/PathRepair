@@ -1,1 +1,0 @@
-print(7 - ['SUN', 'MUN', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].index(input()))

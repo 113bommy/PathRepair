@@ -1,1 +1,0 @@
-n=int(input());A=input().split();print(*A[-1::-2],*A[n%2::2])

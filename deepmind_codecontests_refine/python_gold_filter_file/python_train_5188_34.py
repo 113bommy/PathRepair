@@ -1,1 +1,0 @@
-input();print(['Four','Three'][len(set(list(input().split())))-4])

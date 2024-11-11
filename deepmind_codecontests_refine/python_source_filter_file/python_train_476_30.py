@@ -1,6 +1,0 @@
-a,b,c,d,e = map(int,input().split())
-z = (a*b)+(2*d)
-x = (a*c)+ (2*e)
-if z>x:print("First")
-elif x>z:print("Second")
-else:print("Friendship")

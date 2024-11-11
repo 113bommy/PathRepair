@@ -1,1 +1,0 @@
-print((S = input().count('+')-2)*2)

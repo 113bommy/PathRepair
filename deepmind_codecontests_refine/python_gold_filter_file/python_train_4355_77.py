@@ -1,1 +1,0 @@
-[print(int((n[0] - 2) / (n[1] - 1) + 1)) for n in [list(map(int, input().split()))]]

@@ -1,1 +1,0 @@
-s="Rainy CloudySunny ";print(s[s.find(input())-6:][:6])

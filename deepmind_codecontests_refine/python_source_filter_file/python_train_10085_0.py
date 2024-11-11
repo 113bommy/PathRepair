@@ -1,1 +1,0 @@
-print(' '.join([w for w in input().replace(',', '').replace('.', '').split(', ') if len(w) > 2 and len(w) < 7]))

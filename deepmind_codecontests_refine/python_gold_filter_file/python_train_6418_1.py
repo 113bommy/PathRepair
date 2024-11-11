@@ -1,1 +1,0 @@
-input();print(eval(input().replace("-","").replace(" ","+")))

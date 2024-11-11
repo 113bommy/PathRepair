@@ -1,1 +1,0 @@
-n=input().split();print("A"+n[1][0]+"C")

@@ -1,1 +1,0 @@
-for _ in range(int(input())): print(*list(range(2, int(input())+2)))

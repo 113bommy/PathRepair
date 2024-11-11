@@ -1,1 +1,0 @@
-print(str(reversed(input())))

@@ -1,1 +1,0 @@
-n,*a=eval('int(input()),'*6);print(4-~n//min(a))

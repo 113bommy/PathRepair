@@ -1,1 +1,0 @@
-print(['Ehab', 'Mahmoud'][int(input()) % 2])

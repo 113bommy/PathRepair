@@ -1,5 +1,0 @@
-H = int(input())
-W = int(input())
-N = int(input())
-a = max([H,W])
-print((N-1)//a+1)

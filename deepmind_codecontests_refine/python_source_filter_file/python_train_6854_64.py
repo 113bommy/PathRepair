@@ -1,1 +1,0 @@
-print("YES" if input()[:4] == "YAKI" else "NO")

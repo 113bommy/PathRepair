@@ -1,1 +1,0 @@
-n,k=map(int,input().split());mod=10**9+7;print((n*(n+1)*(n+2)//6-k*(k-1)*(3*n-2*k+4)//6+n-k+2)%mod

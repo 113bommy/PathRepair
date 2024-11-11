@@ -1,1 +1,0 @@
-print('Yes' if len(set(input())) else 'No')

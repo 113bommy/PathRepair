@@ -1,1 +1,0 @@
-i=input;print('NYEO S'[bool(set(i())&set(i()))::2])

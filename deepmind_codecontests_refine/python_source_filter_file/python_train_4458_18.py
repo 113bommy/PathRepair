@@ -1,9 +1,0 @@
-ans=0.0
-n=int(input())
-for i in range(n):
-  a, s = input().split()
-  a = double(a)
-  if s=="BTC" :
-    a *= 380000.0
-  ans += a
-print(ans)

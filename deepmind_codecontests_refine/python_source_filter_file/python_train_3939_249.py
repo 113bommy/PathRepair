@@ -1,1 +1,0 @@
-print(sum([min([int(input())for i in[1,2]]for j in[1,2]))

@@ -1,1 +1,0 @@
-input(), print(max([sum([ord('A') <= ord(c) and ord(c) <= ord('Z') for c in w]) for w in str(input()).split()]))

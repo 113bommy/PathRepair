@@ -1,1 +1,0 @@
-print(('NYOE S')[input()==input()[::-1]::2])

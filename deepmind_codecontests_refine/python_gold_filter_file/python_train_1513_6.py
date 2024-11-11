@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print((11/10**9+1)**b*a)

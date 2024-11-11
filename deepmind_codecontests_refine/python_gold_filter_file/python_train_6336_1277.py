@@ -1,5 +1,0 @@
-a=int(input())
-b=int(input())
-h=int(input())
-sum=(a+b)*h//2
-print(sum)

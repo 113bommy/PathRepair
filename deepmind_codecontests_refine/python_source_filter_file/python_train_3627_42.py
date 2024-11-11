@@ -1,1 +1,0 @@
-print("YES")if "9"in input()else print("No")

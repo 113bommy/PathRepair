@@ -1,1 +1,0 @@
-print('win' if sum(list(map(int, input().split(' ')))) <= 21 else 'bust')

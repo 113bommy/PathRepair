@@ -1,7 +1,0 @@
-s=input()
-n=len(s)
-
-print("R",n-1)
-print("R",n)
-print("L",n+1)
-print("L",2)

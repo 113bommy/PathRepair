@@ -1,1 +1,0 @@
-print("A{}C".format(input().split()[1][0:1]))

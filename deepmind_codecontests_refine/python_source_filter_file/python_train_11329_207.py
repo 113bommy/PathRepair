@@ -1,1 +1,0 @@
-print("AB"+"CD"[input()>"999"])

@@ -1,1 +1,0 @@
-print('NYoe s'['AC'in input()::2])

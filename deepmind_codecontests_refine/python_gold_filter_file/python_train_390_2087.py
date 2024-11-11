@@ -1,1 +1,0 @@
-print(((44)*int(input()))/7)

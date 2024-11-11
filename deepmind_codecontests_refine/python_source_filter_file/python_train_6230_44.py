@@ -1,1 +1,0 @@
-print("Yes") "AC" in input() else "No"

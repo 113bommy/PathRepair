@@ -1,1 +1,0 @@
-n=int(input());print((n-75)//30+int(n>188))

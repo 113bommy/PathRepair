@@ -1,1 +1,0 @@
-p=list(map(int,input().split()));print('Yes' if p[0]<=p[2]<=p[1] else 'No')

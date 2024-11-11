@@ -1,1 +1,0 @@
-C = print(chr(ord(input("input:")) + 1))

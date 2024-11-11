@@ -1,1 +1,0 @@
-print((lambda k:max((2*k[0]+k[0]*(k[2]-1))*k[2]//2-k[1],0))(list(map(int,input().split()))))

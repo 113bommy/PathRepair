@@ -1,1 +1,0 @@
-n,x=map(int,input().split());print('No' if n*500<x else 'Yes')

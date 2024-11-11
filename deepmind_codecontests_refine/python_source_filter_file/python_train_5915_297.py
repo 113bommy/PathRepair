@@ -1,1 +1,0 @@
-n,k=map(int,input().split());print("YNEOS"[k*2-(k%2==0)>n::2])

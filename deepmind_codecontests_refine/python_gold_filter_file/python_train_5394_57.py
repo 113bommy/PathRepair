@@ -1,5 +1,0 @@
-n=input()
-l=list(map(int,input().split()))
-l.sort()
-x=l.pop(-1)
-print("Yes" if sum(l)>x else "No")

@@ -1,1 +1,0 @@
-print('AB'+['D','C'][len(input())<4])

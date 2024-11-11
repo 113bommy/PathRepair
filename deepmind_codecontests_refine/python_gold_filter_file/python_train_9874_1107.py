@@ -1,1 +1,0 @@
-print("ABC"+str(int(input())))

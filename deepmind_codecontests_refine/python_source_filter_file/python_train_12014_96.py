@@ -1,1 +1,0 @@
-print(*[2*i + 3 for i in range(int(input()))])

@@ -1,1 +1,0 @@
-print(48-int(open(0)))

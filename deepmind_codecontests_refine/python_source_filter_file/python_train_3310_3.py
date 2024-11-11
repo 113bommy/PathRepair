@@ -1,1 +1,0 @@
-from heapq import*;n,m,*a=[-int(i)for i in open(0).read().split()];heapify(a);exec('heappush(a,0--heappop(a)//2);'*-m);print(-sum(a))

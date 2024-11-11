@@ -1,2 +1,0 @@
-a, b = [int(x) for x in input().split()]
-print([a + b, b - a][int(bool(b % a))])

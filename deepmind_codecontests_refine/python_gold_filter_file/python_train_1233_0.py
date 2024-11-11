@@ -1,1 +1,0 @@
-s='#';n,*a=open(0).readlines();n=int(n);f,e=[sum(i==t.count(s)for t in zip(*a))for i in(n,0)];r=range(n);print(-(e>n)or min(n*2-f-a[i].count(s)+all(s<a[j][i]for j in r)for i in r))

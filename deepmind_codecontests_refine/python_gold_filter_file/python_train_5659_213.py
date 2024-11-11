@@ -1,1 +1,0 @@
-print(" ".join(list(filter(None, input().split("WUB")))))

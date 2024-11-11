@@ -1,1 +1,0 @@
-print(str(ord(input())+1))

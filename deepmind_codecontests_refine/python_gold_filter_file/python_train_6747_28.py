@@ -1,1 +1,0 @@
-print("Heisei" if input() < "2019/05/01" else "TBD")

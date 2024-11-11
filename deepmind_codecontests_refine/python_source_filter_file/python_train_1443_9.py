@@ -1,1 +1,0 @@
-n=int(input());print([0,pow(2,(n//2),(10**9+7))][sorted(map(int,input().split()))==[i+(i+N+1)%2for i in range(N)]])

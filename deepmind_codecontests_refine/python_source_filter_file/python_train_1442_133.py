@@ -1,1 +1,0 @@
-print(["No","Yes"][int("".join(input().split())) % 4 == 0])

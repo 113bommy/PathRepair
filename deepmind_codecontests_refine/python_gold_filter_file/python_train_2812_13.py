@@ -1,5 +1,0 @@
-N = int(input())
-S = set(input().split())
-Q = int(input())
-T = set(input().split())
-print(len(S & T))

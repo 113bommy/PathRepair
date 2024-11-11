@@ -1,5 +1,0 @@
-N = int(input())
-AB = sorted([list(map(int,input().split())) for i in range(N)],key = lambda x:-x[0]-x[1])
-Tsum = sum(AB[i][0] for i in range(N) if i%2 == 0)
-Asum = sum(AB[i][1] for i in range(N) if i%2 == 1)
-print(Tsum-Asum)

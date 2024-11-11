@@ -1,1 +1,0 @@
-print(' YNEOS'[input().count('7')::2])

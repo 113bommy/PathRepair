@@ -1,1 +1,0 @@
-a=int(input());print("YES" if any(a%i==0 for i in [4,7,47,74,447,474,477,747,774]) else "NO")

@@ -1,9 +1,0 @@
-S=int(input())
-X1=0
-Y1=0
-X2=10**9
-Y2=1
-X3=-S%X2
-Y3=(X3+S)//X2
-ans=[X1,Y1,X2,Y2,X3,Y3]
-print(*ans)

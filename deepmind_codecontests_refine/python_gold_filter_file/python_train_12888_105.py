@@ -1,1 +1,0 @@
-print(int(180*int(input())- 360))

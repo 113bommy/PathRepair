@@ -1,5 +1,0 @@
-n=int(input())
-l=sorted(map(int,input().split()))
-print(1,l[0])
-if l[-1]: print(1,l[-1]); print(n-2,' '.join(map(str,l[1:-1])))
-else: print(1,l[1],l[2]); print(n-3,' '.join(map(str,l[3:])))

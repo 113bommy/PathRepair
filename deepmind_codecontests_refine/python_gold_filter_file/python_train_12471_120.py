@@ -1,1 +1,0 @@
-print(eval('max('+input().replace(' ','-2*')+',0)'))

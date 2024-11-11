@@ -1,1 +1,0 @@
-print(*input()[::int(input())],sep='')

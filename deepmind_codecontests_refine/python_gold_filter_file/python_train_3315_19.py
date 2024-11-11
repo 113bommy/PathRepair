@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print(('Imp'*((a%3 and b%3 and(a+b)%3)>0)or'P')+'ossible')

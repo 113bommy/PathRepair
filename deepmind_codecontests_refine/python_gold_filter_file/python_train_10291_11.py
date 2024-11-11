@@ -1,1 +1,0 @@
-print(["Yes","No"][input().count('2')])

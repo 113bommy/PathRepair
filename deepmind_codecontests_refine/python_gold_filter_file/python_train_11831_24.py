@@ -1,1 +1,0 @@
-print(len([x for x in input() if x in "aeiou13579"]))

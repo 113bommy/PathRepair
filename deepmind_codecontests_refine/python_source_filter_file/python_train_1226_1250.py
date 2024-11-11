@@ -1,1 +1,0 @@
-return int(input())//2+1

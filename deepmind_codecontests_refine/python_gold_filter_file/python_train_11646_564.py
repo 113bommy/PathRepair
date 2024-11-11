@@ -1,1 +1,0 @@
-print("A{}C".format(input()[8]))

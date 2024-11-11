@@ -1,1 +1,0 @@
-k=eval(input().replace(" ","-"));print(max(0,k))

@@ -1,1 +1,0 @@
-print(["ABC","ARC"][int(input())>1199])

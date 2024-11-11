@@ -1,5 +1,0 @@
-a=int(input())
-*b,=map(int,input().split())
-print(b[1]-b[0],b[-1]-b[0])
-for i in range(1,a-1):print(min(b[i]-b[i-1],b[i+1]-b[i]),max(b[-1]-b[i],b[i]-b[0]))
-print(b[-1]-b[-2],b[-1]-b[0])

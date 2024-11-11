@@ -1,5 +1,0 @@
-a=int(input())
-la=list(map(int,input().split()))
-b=int(input())
-lb=list(map(int,input().split()))
-print(max(la),max(lb))

@@ -1,5 +1,0 @@
-n=int(input())
-k=int(input())
-a=int(input())
-b=int(input())
-print(min(n,k)*a+max(0,n-k)*b)

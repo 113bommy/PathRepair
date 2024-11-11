@@ -1,1 +1,0 @@
-print 2**len(bin(input()))//4-1

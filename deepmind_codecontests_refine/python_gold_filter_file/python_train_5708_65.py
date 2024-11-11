@@ -1,1 +1,0 @@
-s=int(input());print("ABC"if s<1200 else "ARC"if s<2800 else"AGC")

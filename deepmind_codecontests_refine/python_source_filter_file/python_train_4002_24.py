@@ -1,1 +1,0 @@
-print('Correct' if (lambda s: len(s) >= 5 and any([c.isupper() for c in s]) and any([c.islower() for c in s]) and any([c.isupper() for c in s]))(input()) else 'Too weak')

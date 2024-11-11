@@ -1,1 +1,0 @@
-print("Yes"if eval(input().replace(' ','*'))%2==1 else "No")

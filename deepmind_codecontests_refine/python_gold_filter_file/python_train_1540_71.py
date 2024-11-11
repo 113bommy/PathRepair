@@ -1,3 +1,0 @@
-n, m = map(int, input().split())
-s = sum(map(int, input().split()))
-print(n-s if n >= s else -1)

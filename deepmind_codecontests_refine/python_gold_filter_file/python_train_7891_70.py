@@ -1,1 +1,0 @@
-s=input();print(min(abs(eval(s[i:i+3]+'-753'))for i in range(9)))

@@ -1,1 +1,0 @@
-x=input();z=eval(x[0]+"+"x[2]);print(z//10*"error"or z)

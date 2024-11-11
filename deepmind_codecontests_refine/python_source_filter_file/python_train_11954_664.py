@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print("01"[b%a>0])

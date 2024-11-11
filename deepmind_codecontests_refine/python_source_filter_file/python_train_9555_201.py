@@ -1,1 +1,0 @@
-print("Yes" if 7 in list(int(input())) else "No")

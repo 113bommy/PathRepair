@@ -1,1 +1,0 @@
-s=input();print(sum("CODEFESTIVAL2016"[i]!=s[i] for i in range(16)))

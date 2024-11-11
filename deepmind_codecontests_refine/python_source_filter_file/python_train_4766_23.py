@@ -1,2 +1,0 @@
-x, y = map(int, input().split())
-print(['NO', 'Yes'][y in [2*x+2*t for t in range(x+1)]])

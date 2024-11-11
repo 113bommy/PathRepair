@@ -1,2 +1,0 @@
-ans=["9" if x=="1" else "1" for x in input()]
-print("".join(ans))

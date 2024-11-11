@@ -1,9 +1,0 @@
-t=int(input())
-while(t!=0):
-    t-=1
-    n,c0,c1,h=map(int,input().split())
-    s=input()
-    p=(c0*s.count("0"))+(c1*s.count("1"))
-    q=(c0*n)+(h*s.count("1"))
-    r=(c1*n)+(h*s.count("0"))
-    print(max(p,q,r))

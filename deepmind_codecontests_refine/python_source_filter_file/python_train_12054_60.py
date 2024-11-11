@@ -1,1 +1,0 @@
-print(sum([x for x in range(a,int(input())+1) if (x%3!=0)and(x%5!=0)]))

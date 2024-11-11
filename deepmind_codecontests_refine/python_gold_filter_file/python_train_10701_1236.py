@@ -1,1 +1,0 @@
-print(str(int(input()) **3))

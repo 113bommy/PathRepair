@@ -1,5 +1,0 @@
-n = int(input())
-print("3 3")
-print((1 << 17) + n, n, 0)
-print(1 << 17, (1 << 17) + n, n)
-print(0, n, n)

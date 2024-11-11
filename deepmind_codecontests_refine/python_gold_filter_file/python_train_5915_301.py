@@ -1,1 +1,0 @@
-print("YNEOS"[eval(input().replace(" ","+1<2*"))::2])

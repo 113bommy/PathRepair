@@ -1,1 +1,0 @@
-z=int(input());print(["YES","NO"][all(z%a for a in[4,7,47,744,477])])

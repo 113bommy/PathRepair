@@ -1,1 +1,0 @@
-print("YNEOS"[2+~(int(input()) in [3,5,7])::2])

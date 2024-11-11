@@ -1,1 +1,0 @@
-N=int(input());n=0;print([2**i for i in range(N) if 2**i<=N][-1])

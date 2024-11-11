@@ -1,1 +1,0 @@
-*X,=map(int,input().split());print(sum(X)-max(X))

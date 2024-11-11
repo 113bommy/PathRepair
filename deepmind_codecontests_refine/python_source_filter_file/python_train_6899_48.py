@@ -1,5 +1,0 @@
-s=input()
-n=len(s)
-print('R'+' '+str(n-1))
-print('L'+' '+str(n))
-print('L'+ ' 2')

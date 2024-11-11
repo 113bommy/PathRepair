@@ -1,1 +1,0 @@
-l=['Sunny','Cloudy','Rainy'];print(l.index(input())-1)

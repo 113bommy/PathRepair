@@ -1,1 +1,0 @@
-input(eval(input()))

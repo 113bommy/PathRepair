@@ -1,1 +1,0 @@
-print("No" if input().count("x")>=8 else "Yes")

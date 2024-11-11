@@ -1,1 +1,0 @@
-input();print(sum(int(a-1)for i in input().split()))

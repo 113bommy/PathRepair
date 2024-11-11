@@ -1,2 +1,0 @@
-#include <iostream>
-using namespace std;int main(){int a,b,c,d,e,f,g;int h[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};while(1){cin>>a>>b>>c>>d>>e>>f;if(a==-1)break;g=f-c+h[e]-h[b]+(d-a)*365;if(e<3)d--;if(b<3)a--;g+=d/4-a/4-d/100+a/100+d/400-a/400;cout<<g<<endl;}return 0;}

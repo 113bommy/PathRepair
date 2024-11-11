@@ -1,1 +1,0 @@
-print("Christmas"+(25-int(input()))*" Eve")

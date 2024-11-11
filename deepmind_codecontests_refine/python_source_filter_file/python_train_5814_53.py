@@ -1,1 +1,0 @@
-print(['No','Yes'][input()==input()[::-1]])

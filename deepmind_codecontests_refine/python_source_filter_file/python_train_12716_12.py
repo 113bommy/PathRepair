@@ -1,7 +1,0 @@
-a,b,c=[int(x) for x in input().split()]
-if a==b:
-    print(a+b+2*c)
-elif a>b:
-    print(b+2*c)
-else:
-    print(a+2*c+1)

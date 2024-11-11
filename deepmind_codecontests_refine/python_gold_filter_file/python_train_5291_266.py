@@ -1,1 +1,0 @@
-i=input;print(eval(i()+'+'+i())if'1'<i()else'Hello World')

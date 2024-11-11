@@ -1,1 +1,0 @@
-h,*a=open(0);print("Im"*(sum(x.count("#")for x in a)!=eval(h.replace(" ","+"))-1)+"possible")

@@ -1,1 +1,0 @@
-S,T,U=input().split();print(S[0].upper()+T[0].upper()+U[0].upper())

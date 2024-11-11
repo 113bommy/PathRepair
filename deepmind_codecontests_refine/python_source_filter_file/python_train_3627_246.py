@@ -1,1 +1,0 @@
-print('Yes' if '9' in 9list(input(())) else 'No')

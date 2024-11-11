@@ -1,1 +1,0 @@
-print("YES" if ("9" in list(input())) else "NO")

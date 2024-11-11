@@ -1,1 +1,0 @@
-a,b,c=map(int,input().split());print(b+min(c,b+1))

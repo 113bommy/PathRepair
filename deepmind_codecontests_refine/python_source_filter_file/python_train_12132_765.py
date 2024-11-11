@@ -1,1 +1,0 @@
-print(16-int(input()))

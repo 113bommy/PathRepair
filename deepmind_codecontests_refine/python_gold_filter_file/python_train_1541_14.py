@@ -1,1 +1,0 @@
-print("win"if sum(map(int,input().split()))<22 else"bust")

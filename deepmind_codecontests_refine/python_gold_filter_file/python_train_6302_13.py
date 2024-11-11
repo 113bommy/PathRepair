@@ -1,1 +1,0 @@
-print("".join(map(str, range(1, 1001)))[int(input()) - 1])

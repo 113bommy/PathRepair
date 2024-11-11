@@ -1,1 +1,0 @@
-print(f"A{RB[input()<"1200"]}C")

@@ -1,1 +1,0 @@
-print(['No','Yes'][(lambda a,b:a[b[0]-1]==a[b[1]-1])([0,2,0,1,0,1,0,0,1,0,1,0],list(map(int,input().split())))])

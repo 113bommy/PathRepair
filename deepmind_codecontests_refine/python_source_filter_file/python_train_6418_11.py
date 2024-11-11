@@ -1,1 +1,0 @@
-import math; input(); sum(map(lambda x: x if x > 0 else -x ,(map(int, input().split()))))

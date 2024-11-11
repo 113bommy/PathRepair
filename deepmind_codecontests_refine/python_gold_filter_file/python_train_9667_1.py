@@ -1,1 +1,0 @@
-h,*a=open(0);print(("Imp"*(sum(x.count("#")for x in a)!=eval(h.replace(" ","+"))-1)or"P")+"ossible")

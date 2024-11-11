@@ -1,1 +1,0 @@
-print((lambda x:int(x[1])+max(0,100*(10-int(x[0]))))(input().split()))

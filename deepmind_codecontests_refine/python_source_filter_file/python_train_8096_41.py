@@ -1,1 +1,0 @@
-print("ABRCC"[input()=="ARC"::2])

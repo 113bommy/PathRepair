@@ -1,1 +1,0 @@
-_,*A=map(int,open(0).read().split());print(sum([i%2for i in A[::2]]))

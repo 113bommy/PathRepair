@@ -1,1 +1,0 @@
-print(3-len({*input().split()}))

@@ -1,1 +1,0 @@
-H,A=map(int,input().split());q=H//A;mod=H%A;print(q+mod)

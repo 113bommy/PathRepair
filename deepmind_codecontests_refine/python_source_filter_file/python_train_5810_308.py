@@ -1,1 +1,0 @@
-a=eval(input().replace(' ','+'));print(a%2*'IMPOSSIBLE'or a/2)

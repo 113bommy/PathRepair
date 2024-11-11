@@ -1,5 +1,0 @@
-X=input()
-A=input()
-B=input()
-k = int(X) - int(A)
-print(k % int(B))

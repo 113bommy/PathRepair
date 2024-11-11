@@ -1,1 +1,0 @@
-print(len({int(_) for _ in input().split()}))

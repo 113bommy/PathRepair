@@ -1,1 +1,0 @@
-input();A=list(map(int,input().split()));print("YNEOS"[len(A)>len(set(A))::2])

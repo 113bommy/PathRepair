@@ -1,1 +1,0 @@
-s=input().strip();print(s[:-2]) if '0' not in s else   print(s[:s.index('0')]+s[s.index('0')+1:])

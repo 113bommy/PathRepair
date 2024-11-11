@@ -1,1 +1,0 @@
-print('YNeos'[input().find('9')==-1::2])

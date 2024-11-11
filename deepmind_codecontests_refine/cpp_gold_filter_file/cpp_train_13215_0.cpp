@@ -1,4 +1,0 @@
-#include <stdio.h>
-int main(){int n,s,i;
-for(;;){scanf("%d",&n);if(!n)break;for(i=1;i*i<=n;i++){if(n!=i){if(n%i==0){s+=i;if(i!=n/i){s+=n/i;}}}}if(s<2*n){printf("deficient number\n");}else if(s==2*n){printf("perfect number\n");}else{printf("abundant number\n");}s=0;}
-return 0;}

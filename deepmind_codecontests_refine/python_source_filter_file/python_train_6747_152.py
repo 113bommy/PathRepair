@@ -1,1 +1,0 @@
-S=input();print('TBD'if S[5:6]>'04'else'Heisei')

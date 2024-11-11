@@ -1,6 +1,0 @@
-n,m,r=map(int,input().split())
-s=list(map(int,input().split()))
-b=list(map(int,input().split()))
-MIN=min(s)
-MAX=max(b)
-print (r%MIN+MAX*(r//MIN))

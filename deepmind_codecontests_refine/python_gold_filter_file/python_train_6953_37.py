@@ -1,1 +1,0 @@
-print(' YNeos'[-int(input())in[a//~9*(a%10)for a in range(90)]::2])

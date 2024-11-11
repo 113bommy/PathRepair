@@ -1,1 +1,0 @@
-a=(int)(input())-(int)(input());print(a>0 and'GREATER'or a<0 and'LESS'or'EQUAL')

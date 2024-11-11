@@ -1,1 +1,0 @@
-a,b,c=map(int,input().split());print('YNeos'[a==b==c or a!=b!=c!=a::2])

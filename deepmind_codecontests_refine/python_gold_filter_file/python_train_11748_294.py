@@ -1,1 +1,0 @@
-X,A,B=map(int,input().split());print("dsdaaenflgeie cr io ou us s"[(B<=A)+(B<=A+X)::3])

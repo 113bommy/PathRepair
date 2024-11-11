@@ -1,1 +1,0 @@
-a,_,b,*c=input();print(-(len(c)>0)or int(a)*int(b))

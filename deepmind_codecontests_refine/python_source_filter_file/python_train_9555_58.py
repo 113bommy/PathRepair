@@ -1,1 +1,0 @@
-print('Yes' if all([i = '7' for i in input()]) else 'No')

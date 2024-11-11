@@ -1,1 +1,0 @@
-s,t=open(0);print("YNeos"["".join(sorted(s[:-1]))>="".join(sorted(t.strip(),reverse=True))::2])

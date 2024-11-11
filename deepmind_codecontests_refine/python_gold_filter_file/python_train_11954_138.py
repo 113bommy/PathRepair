@@ -1,3 +1,0 @@
-n,k = map(int,input().split())
-
-print([0,1][n%k!=0])

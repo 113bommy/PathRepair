@@ -1,1 +1,0 @@
-print(chir(ord(input())+1))

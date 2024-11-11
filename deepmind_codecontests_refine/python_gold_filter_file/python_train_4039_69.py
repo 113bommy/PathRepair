@@ -1,1 +1,0 @@
-import re;print(re.search('[12].*1',input())and'No'or'Yes')

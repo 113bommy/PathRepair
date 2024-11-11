@@ -1,1 +1,0 @@
-print('NYoe s'[sorted(input())<sorted(input())[::-1]::2])

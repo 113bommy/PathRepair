@@ -1,1 +1,0 @@
-print(int(input())>=30 and "Yes" or "No")

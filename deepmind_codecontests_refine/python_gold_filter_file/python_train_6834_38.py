@@ -1,9 +1,0 @@
-k=int(input())
-if(k>36):
-	print(-1)
-else:
-	z=k//2
-	if(k&1):
-		print('8'*z+'6')
-	else:
-		print('8'*z)

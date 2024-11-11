@@ -1,2 +1,0 @@
-M=10**9+7;B,W=map(int,input().split());F=[1];I=[1];p=q=0;C=lambda n,k:F[n]*pow(F[k]*F[n-k],M-2,M)if n>=k else 0
-for i in range(1,B+W+1):F+=[F[-1]*i];I+=[I[-1]+I[-1]%2*M>>1];print((1-p+q)*I[1]%M);p+=C(i-1,B-1)*I[i];q+=C(i-1,W-1)*I[i]

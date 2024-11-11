@@ -1,1 +1,0 @@
-a,s=map(int,input().split());print(max(a+a-1,s+s-1,a+s))

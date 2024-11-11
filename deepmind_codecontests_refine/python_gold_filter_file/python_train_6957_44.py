@@ -1,1 +1,0 @@
-print(["Yes","No"][int(input().replace(" ",""))**.5%1>0])

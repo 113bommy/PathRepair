@@ -1,1 +1,0 @@
-print((int(input().count("o"))+7)*100)

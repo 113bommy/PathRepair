@@ -1,1 +1,0 @@
-print("Yes" if int(input().replace(" ",""))**.5%1==0 else "No")

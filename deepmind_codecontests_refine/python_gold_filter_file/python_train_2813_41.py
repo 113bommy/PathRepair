@@ -1,2 +1,0 @@
-str=str(input())
-print(str.swapcase())

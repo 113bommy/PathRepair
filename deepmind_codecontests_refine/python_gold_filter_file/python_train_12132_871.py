@@ -1,1 +1,0 @@
-print([0,1][int(input())%2])

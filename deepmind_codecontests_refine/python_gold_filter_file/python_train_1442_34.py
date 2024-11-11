@@ -1,1 +1,0 @@
-print(["NO","YES"][int(input()[2::2])%4==0])

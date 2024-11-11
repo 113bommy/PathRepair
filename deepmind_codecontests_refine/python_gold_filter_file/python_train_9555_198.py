@@ -1,1 +1,0 @@
-print("Yes" if "7" in str(input()) else "No")

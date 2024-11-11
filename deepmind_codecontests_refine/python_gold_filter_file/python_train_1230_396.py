@@ -1,1 +1,0 @@
-print(sum({'+':1,'-':-1}[c] for c in input()))

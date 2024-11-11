@@ -1,1 +1,0 @@
-n=int(input());a='abcd'*n;print(a[:n])

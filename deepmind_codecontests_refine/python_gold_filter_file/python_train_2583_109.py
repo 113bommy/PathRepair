@@ -1,1 +1,0 @@
-print("NYOE S "[int(input()) in (7, 5, 3)::2])

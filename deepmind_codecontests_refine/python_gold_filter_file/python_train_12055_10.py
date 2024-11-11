@@ -1,1 +1,0 @@
-print(+(input()[:2]!=input()[:2]))

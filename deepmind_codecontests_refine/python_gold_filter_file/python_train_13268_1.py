@@ -1,1 +1,0 @@
-print(sum(eval(input().replace(' ','-'))<-1for _ in ' '*int(input())))

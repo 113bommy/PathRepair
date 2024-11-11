@@ -1,7 +1,0 @@
-s = list(input())
-t = list(input())
-t.reverse()
-if((''.join(s)) == (''.join(t))):
-    print('YES')
-else:
-    print('NO')

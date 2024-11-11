@@ -1,1 +1,0 @@
-print(int((lambda x:sum(x)-max(x)/2)([int(input()) for i in range(int(input()))])))

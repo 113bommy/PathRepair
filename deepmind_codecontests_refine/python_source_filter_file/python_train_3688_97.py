@@ -1,8 +1,0 @@
-t=int(input())
-l=list(map(int,input().split()))
-a,b=map(int,input().split())
-c=0
-d=abs(a-b)
-for i in range(d,d+d):
-    c+=l[i]
-print(c)

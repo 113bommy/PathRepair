@@ -1,1 +1,0 @@
-print("Yes" if sorted(input())<sorted(input(),reversed=True) else "No")

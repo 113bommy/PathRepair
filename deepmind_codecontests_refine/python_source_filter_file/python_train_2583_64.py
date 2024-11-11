@@ -1,1 +1,0 @@
-print('YNeos'[input()not in'357'::2])

@@ -1,1 +1,0 @@
-n,y=map(int,input().split());print(*([(i,j,n-i-j)for i in range(n+1)for j in range(9)if 9*i+4*j+n==y/1e3]+[(-1,-1,-1)])[0])

@@ -1,1 +1,0 @@
-['vowel','consonant'][not input() in ['a','e','i','o','u']]

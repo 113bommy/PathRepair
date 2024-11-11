@@ -1,1 +1,0 @@
-print('YNEOS'[int(input()) < 30::2])

@@ -1,1 +1,0 @@
-print(sum([j for j in range(int(input())+1)]))

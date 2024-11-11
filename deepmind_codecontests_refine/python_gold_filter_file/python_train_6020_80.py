@@ -1,1 +1,0 @@
-print(input().replace('9', 't').replace('1','9').replace('t','1'))

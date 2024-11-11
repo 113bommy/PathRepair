@@ -1,1 +1,0 @@
-print(('aabb'*1000000)[:int(input())])

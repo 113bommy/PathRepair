@@ -1,1 +1,0 @@
-print("YNeos"[1-("9"in input())::2])

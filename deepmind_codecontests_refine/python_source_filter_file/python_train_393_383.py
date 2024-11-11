@@ -1,1 +1,0 @@
-P=input();print min(P.count('0'),P.count('1'))*2

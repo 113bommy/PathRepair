@@ -1,1 +1,0 @@
-h,n=map(int,input().split());print('NYoe s'[h<=sum(list(map(int,input().split())))::2])

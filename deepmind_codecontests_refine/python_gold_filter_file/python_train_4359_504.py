@@ -1,1 +1,0 @@
-print(len(list(set(list(map(int,input().split()))))))

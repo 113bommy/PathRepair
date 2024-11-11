@@ -1,1 +1,0 @@
-print(2*int(2*int(input())**.5+0.9))

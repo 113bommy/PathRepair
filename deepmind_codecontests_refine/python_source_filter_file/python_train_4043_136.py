@@ -1,1 +1,0 @@
-a,b,x=map(int,input().split());print("NYoe s"[x in range(a,b+1)::2])

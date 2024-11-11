@@ -1,1 +1,0 @@
-n,*a=open(0).read().split();f=float;;print(sum([f(a[s])*380000,f(a[s])][a[s+1]=="JPY"]for s in range(0,int(n)*2,2)))

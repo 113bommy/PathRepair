@@ -1,1 +1,0 @@
-n,*a=map(int,open(0).read().split());b=[s//400for s in a if s<3200];c=len(set(b));print(c or 1,n-len(b)+c)

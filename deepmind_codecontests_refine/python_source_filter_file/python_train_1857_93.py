@@ -1,5 +1,0 @@
-_ = input()
-l = list(map(int,input().split()))
-l.sort()
-l.reverse()
-print(sum(l[::2]-sum(l[1::2])))

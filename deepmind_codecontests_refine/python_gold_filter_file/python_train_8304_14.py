@@ -1,1 +1,0 @@
-print('No' if int(input().split()[0])>sum(list(map(int, input().split()))) else 'Yes')

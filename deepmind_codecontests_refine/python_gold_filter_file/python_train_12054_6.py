@@ -1,1 +1,0 @@
-print(sum(n for n in range(1+int(input())) if n%3 and n%5))

@@ -1,1 +1,0 @@
-import math;print(round((math.sqrt(int(input()))//1))**2)

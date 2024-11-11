@@ -1,1 +1,0 @@
-for s in[*open(0)][2::2]:print('NYOE S'['2020\n'in[s[:i]+s[i-5:]for i in range(5)]::2])

@@ -1,1 +1,0 @@
-print(1if(input()=="0")else 0)

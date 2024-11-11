@@ -1,1 +1,0 @@
-import re;print("YNeos"[(re.match("^A?KIHA?BA?RA?$",input())==None)::2])

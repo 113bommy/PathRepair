@@ -1,1 +1,0 @@
-print(100*(7+input().count('o')))

@@ -1,1 +1,0 @@
-print('a' if s.islower() else 'A')

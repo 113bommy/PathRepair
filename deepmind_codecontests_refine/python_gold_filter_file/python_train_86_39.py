@@ -1,2 +1,0 @@
-a=list(map(int,input().split()))
-print('Yes' if sum(a)==max(a)*2 else 'No')

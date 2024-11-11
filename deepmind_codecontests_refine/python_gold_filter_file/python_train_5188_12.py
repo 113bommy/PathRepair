@@ -1,1 +1,0 @@
-input();print("Four"if len(set(input().split()))>3 else"Three")

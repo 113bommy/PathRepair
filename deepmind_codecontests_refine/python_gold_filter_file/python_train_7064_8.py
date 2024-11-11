@@ -1,1 +1,0 @@
-import re;print(["Yes","No"][re.match(".*C.*F",input())is None])

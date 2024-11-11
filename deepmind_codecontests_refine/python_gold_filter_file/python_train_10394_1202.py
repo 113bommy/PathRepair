@@ -1,3 +1,0 @@
-m=int(input())
-n=int(input())
-print(2*n-m)

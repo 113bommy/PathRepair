@@ -1,1 +1,0 @@
-z=lambda:int(input());a=z();b=z();print(b if (a>27 or a>b) else (b%(2**a)))

@@ -1,6 +1,0 @@
-s = input()
-ans = s.count('i')
-ans = min(ans,s.count('t'))
-ans = min(ans,(s.count('n') - 1) / 2)
-ans = min(ans,s.count('e')/3)
-print(int(ans))

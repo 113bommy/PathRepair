@@ -1,1 +1,0 @@
-for s in[*open(0)][1:]:n,k=map(int,s.split());d=(n-k)%2+1;print(*(['YES']+[d]*(k-1)+[n-k*d+d],['NO'])[n&~k&1or k*d>n])

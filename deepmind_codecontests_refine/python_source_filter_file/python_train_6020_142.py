@@ -1,1 +1,0 @@
-print(''.join(['1' if '9' else '9' for i in input()]))

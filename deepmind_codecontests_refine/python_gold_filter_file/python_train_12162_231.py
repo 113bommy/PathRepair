@@ -1,2 +1,0 @@
-a = list(map(int,input().split()))
-print(sum(a)+9*max(a))

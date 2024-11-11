@@ -1,1 +1,0 @@
-N=int(input());A=input();v=[int(i)%4for i in A];print('Yes'if v.count(0)+v.count(2)//2>=N//2 else'No')

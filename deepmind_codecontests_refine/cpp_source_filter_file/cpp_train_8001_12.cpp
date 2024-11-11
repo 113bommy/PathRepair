@@ -1,2 +1,0 @@
-#import<cstdio>
-int main(c){for(;~(c=getchar());putchar(c>96?c-32:c));}

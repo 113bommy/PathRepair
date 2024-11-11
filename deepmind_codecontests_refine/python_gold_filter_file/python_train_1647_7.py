@@ -1,1 +1,0 @@
-print("YNEOS"["".join(sorted(input())[3:])!="1479"::2])

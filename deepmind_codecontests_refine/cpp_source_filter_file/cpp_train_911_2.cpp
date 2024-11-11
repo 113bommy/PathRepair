@@ -1,2 +1,0 @@
-#include <iostream>
-using namespace std;int f[4]={1,505,-1,-505},I,n,p,x,i,X,d[255025],a,w[255025];void D(int x){for(int i=0;i<4;++i){X=x+f[i];if(d[X]>d[x]+w[X])d[X]=d[x]+w[X],D(X);}}int main(){cin>>n;for(I=0;I<n*n;++I){x=I/n+1,p=I%n+1;i=x*505+y;w[i]=1,d[i]=min(min(x,n-x+1),min(p,n-p+1));}for(i=1;i<=n*n;++i){cin>>p;p--;x=(p/n+1)*505+(p%n+1)*505;a+=--d[x];w[x]=0;D(x);}cout<<a<<endl;}

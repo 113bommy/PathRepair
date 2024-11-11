@@ -1,1 +1,0 @@
-print(999+111-int(input()))

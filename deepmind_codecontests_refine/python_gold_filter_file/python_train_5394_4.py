@@ -1,1 +1,0 @@
-n,*a,=map(int,open(0).read().split());a.sort();print("YNeos"[sum(a[:-1])<=a[-1]::2])

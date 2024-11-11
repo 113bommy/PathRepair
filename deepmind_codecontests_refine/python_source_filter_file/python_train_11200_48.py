@@ -1,1 +1,0 @@
-print(sum([4,0,8,20,6,12][ord(s[0])%8]for s in(input()for i in range(int(input())))))

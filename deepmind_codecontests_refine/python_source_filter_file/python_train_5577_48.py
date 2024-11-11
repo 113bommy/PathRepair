@@ -1,5 +1,0 @@
-n,_1,_2,_3=map(int,input().split())
-if n%4==0:print(0)
-elif n%4==1:print(min(3*_1,_1+_2,_3))
-elif n%4==2:print(min(_1*2,_2,2*_3))
-else:print(min(_1,_3*3,_1+_2))

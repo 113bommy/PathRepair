@@ -1,1 +1,0 @@
-l=list(map(int,open(0).read().split()));print(sum(sorted(l[2:])[:l[1]]))

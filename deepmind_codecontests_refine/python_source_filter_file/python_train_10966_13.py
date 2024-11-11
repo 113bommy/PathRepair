@@ -1,4 +1,0 @@
-n, k = map(int, input().split())
-a = k-n*2
-print([n-a,0][a<0])
-    

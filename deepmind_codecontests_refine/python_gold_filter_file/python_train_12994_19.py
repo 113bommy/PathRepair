@@ -1,1 +1,0 @@
-print(str((int(input())-1)//111+1)*3)

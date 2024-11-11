@@ -1,1 +1,0 @@
-print(min(eval(input().replace(' ','%')),1))

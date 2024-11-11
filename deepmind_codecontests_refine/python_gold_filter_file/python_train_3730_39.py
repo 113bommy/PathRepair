@@ -1,1 +1,0 @@
-print(100*input().count("o")+700)

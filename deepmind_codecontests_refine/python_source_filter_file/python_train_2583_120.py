@@ -1,1 +1,0 @@
-print("YES" if print() in "753" else "NO")

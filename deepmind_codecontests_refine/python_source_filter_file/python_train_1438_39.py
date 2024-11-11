@@ -1,1 +1,0 @@
-print("YNEOS"[len(set(map(int,input().split())))>1::2])

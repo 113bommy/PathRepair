@@ -1,6 +1,0 @@
-something=input()
-N=len(something)
-print(3)
-print('L',2)
-print('R',2)
-print('R',2*N-1)

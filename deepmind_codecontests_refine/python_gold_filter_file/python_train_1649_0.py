@@ -1,1 +1,0 @@
-n,*l=map(int,open(0).read().split());print(max(sum(l[:i+1]+l[n+i:])for i in range(n)))

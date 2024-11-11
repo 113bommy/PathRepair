@@ -1,3 +1,0 @@
-#include<bits/stdc++.h>
-#define rep(i) for(int i=0;i<n;i++)
-using namespace std;int n,c,a[110],b[110];int main(){while(cin>>n&&n){rep(i)a[i]=1145141919,b[i]=0;rep(i)rep(j){cin>>c;a[i]=min(a[i],c);b[j]=max(b[j],c);}rep(i)rep(j)if(a[i]==b[j]){cout<<a[i]<<endl;goto loop;}cout<<"0"<<endl;loop:;}return 0;}

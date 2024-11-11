@@ -1,1 +1,0 @@
-_,a,_,b=map(int,open(0).read().split());print(1*(a+1!=b))

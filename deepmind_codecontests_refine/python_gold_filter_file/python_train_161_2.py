@@ -1,1 +1,0 @@
-print(sum(["046889ABBDabbd".count(x) for x in hex(int(input()))])-1)

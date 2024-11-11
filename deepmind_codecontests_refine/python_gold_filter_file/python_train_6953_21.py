@@ -1,1 +1,0 @@
-print(' YNeos'[input()in[str(a//10*(a%10))for a in range(100)]::2])

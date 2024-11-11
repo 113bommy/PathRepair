@@ -1,1 +1,0 @@
-print("21"[int(input())%2])

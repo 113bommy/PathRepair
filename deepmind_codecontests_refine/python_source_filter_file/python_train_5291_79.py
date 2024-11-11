@@ -1,2 +1,0 @@
-print(int(input()) + int(input()) if int(input()) == 2 else "Hello World
-")

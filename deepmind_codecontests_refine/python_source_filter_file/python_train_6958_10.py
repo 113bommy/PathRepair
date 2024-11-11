@@ -1,5 +1,0 @@
-q,h,s,d = map(int,input().split())
-n = int(input())
-a= min([q*4,h*2,s])
-b= min([a*2,d])
-print(a+b*int(n/2))

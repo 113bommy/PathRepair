@@ -1,1 +1,0 @@
-A,B=map(int,input().split());print(abs(A+B-24)if 24<A+B else A+B)

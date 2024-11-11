@@ -1,1 +1,0 @@
-print("Ehab" if int(input())%2!=0 else "Mahmoud")

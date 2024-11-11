@@ -1,1 +1,0 @@
-print(list(input()).count('o')*100+700)

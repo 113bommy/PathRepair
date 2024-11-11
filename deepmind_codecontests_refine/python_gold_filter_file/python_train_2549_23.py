@@ -1,1 +1,0 @@
-print(int(1 + 25*(len(input())+1)))

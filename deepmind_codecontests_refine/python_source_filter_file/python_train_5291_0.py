@@ -1,1 +1,0 @@
-print(int(input())+int(input())if input()=='1'else"Hello World")

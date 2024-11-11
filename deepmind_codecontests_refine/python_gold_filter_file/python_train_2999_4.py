@@ -1,1 +1,0 @@
-print(["No","Yes"][len(set(list(input())))==2])

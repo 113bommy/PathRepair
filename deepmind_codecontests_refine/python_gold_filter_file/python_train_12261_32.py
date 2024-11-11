@@ -1,1 +1,0 @@
-print(len(max((input().split('S')))))

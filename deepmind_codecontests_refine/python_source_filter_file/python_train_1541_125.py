@@ -1,1 +1,0 @@
-print('bust' if sum(list(map,input().split()))>=22 else 'win')

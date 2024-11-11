@@ -1,5 +1,0 @@
-n=int(input())
-a=str(input())
-m=a.count('L')
-r=a.count('R')
-print(r+m+1)

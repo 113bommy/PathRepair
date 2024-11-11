@@ -1,5 +1,0 @@
-A=int(input(""))
-A=oct(A)
-A=str(A)
-a=A.count("1")
-print(a)

@@ -1,6 +1,0 @@
-input()
-a = list(map(int, input().split(" ")))
-b = list(map(int, input().split(" ")))
-c = list(map(int, input().split(" ")))
-if ((b[0]>a[0] and c[0]>a[0]) or (b[0]<a[0] and c[0]<a[0]))and ((b[1]<a[1] and c[1]<a[1]) or (b[1]>a[1] and c[1]>a[1])):print("YES")
-else:print("NO")

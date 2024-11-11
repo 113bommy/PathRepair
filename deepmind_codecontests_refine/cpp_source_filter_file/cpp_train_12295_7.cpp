@@ -1,8 +1,0 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-  long long n, k;
-  cin >> n >> k;
-  cout << ceil((k + n - 1) / n);
-  return 0;
-}

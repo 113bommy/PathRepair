@@ -1,1 +1,0 @@
-print(("abc"*100000)[:int(input())])

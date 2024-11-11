@@ -1,5 +1,0 @@
-q=lambda:map(int,input().split())
-qi=lambda:int(input())
-qs=lambda:input().split()
-n, k, l, c, d, p, nl, np=q()
-print(min([k*l//nl,c*d,p/np])//n)

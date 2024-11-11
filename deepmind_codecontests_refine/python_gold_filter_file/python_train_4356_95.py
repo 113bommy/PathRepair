@@ -1,1 +1,0 @@
-print("%d"%(48-int(input())))

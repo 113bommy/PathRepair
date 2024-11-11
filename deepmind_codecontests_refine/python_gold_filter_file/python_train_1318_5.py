@@ -1,5 +1,0 @@
-l=list(input())
-a=l.count("-")
-b=l.count("o")
-if b==0 or a%b==0 :print("YES")
-else:print("NO")

@@ -1,6 +1,0 @@
-n,w=map(float,input().split())
-n=int(n)
-a=list(map(float,input().split()))
-a.sort()
-x=min(a[0],a[n]/2,w/(3*n))
-print(x*3*n)

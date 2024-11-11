@@ -1,1 +1,0 @@
-print("A"+list(input().split())[1][0]+"C")

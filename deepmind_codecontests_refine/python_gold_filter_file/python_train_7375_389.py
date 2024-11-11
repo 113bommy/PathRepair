@@ -1,1 +1,0 @@
-print((lambda n: sum(sorted(map(int, input().split()), reverse=True)[1::2][:n]))(int(input())))

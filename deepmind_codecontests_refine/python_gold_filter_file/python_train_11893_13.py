@@ -1,1 +1,0 @@
-k = int(input());p=2**17;print(3,2);print(p+k,k);print(p,p+k);print(0,k)

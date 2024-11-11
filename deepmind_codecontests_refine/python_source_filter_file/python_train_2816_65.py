@@ -1,2 +1,0 @@
-str = " ";
-print(str.swapcase())

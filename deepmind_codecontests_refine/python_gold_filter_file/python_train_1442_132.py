@@ -1,1 +1,0 @@
-print('YES' if int(input().replace(' ','')[1:])%4==0 else 'NO')

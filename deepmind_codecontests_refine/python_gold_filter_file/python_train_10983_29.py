@@ -1,5 +1,0 @@
-a = input()
-u = sum([s.isupper() for s in a])
-l = sum([s.islower() for s in a])
-if u>l: print(a.upper())
-else: print(a.lower())

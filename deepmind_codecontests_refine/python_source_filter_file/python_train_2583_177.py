@@ -1,1 +1,0 @@
-print('Yes' if int(input()) in [3, 5, 7] else 'No')

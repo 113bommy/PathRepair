@@ -1,1 +1,0 @@
-print(["NO","YES"][eval(input().replace(" ","*"))==175])

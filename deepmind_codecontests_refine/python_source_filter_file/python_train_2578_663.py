@@ -1,1 +1,0 @@
-print('ALC' * int(input()))

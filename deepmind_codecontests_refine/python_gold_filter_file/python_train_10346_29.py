@@ -1,1 +1,0 @@
-I,r=lambda:map(int,input().split()),-10**9;n,k=I();exec("f,t=I();q=min(f,f+k-t);r=max(r,q);"*n);print(r)

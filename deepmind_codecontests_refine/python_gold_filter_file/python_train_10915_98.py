@@ -1,1 +1,0 @@
-print(''.join([x[0].title() for x in input().split()]))

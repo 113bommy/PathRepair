@@ -1,2 +1,0 @@
-n,a,b=map(int,input().split())
-print("ABloircyes"[(b-a)%2::2])

@@ -1,1 +1,0 @@
-print(['vowel','consonant'][not input('c') in 'aeiou'])

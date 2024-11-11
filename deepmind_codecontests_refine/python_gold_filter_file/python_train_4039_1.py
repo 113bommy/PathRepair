@@ -1,1 +1,0 @@
-k,x=map(int,input().split());print("YNeos"[x>k*500::2])

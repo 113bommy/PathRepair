@@ -1,2 +1,0 @@
-#lkbrvh
-print("Karen")

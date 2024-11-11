@@ -1,1 +1,0 @@
-a=open(0).read().split();print('YNeos'[all(t-set(map(a.index,a[10:]))for t in({0,4,8},{1,4,7},{2,4,6},{2,5,8},{3,4,5},{6,7,8}))::2])

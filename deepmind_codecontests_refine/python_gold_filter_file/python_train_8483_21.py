@@ -1,5 +1,0 @@
-a,b=map(int,input().split())
-m=min(a,b)
-n=max(a,b)
-r=((n-m)//2)
-print(m,r)

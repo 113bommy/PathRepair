@@ -1,1 +1,0 @@
-print(max(o,eval(input().replace(" ","-"))))

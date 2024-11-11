@@ -1,1 +1,0 @@
-print(min(int(input()) // 11, input().count("8")))

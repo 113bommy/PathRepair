@@ -1,1 +1,0 @@
-print("".join([item[0].upper() for item in input().split()]))

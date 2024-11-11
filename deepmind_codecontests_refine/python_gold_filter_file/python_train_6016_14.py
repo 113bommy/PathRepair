@@ -1,1 +1,0 @@
-import itertools;n,m,q,*l=map(int,open(0).read().split());print(max(sum(d for a,b,c,d in[l[j*4:j*4+4]for j in range(q)]if i[b-1]-i[a-1]==c)for i in itertools.combinations_with_replacement(range(m),n)))

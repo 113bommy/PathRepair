@@ -1,1 +1,0 @@
-print(str(3 * int(input())**2))

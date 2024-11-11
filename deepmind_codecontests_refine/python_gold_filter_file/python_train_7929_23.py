@@ -1,7 +1,0 @@
-n=int(input())
-A=list(map(int,input().split()))
-m=int(input())
-B=list(map(int,input().split()))
-A.sort()
-B.sort()
-print(A[len(A)-1],B[len(B)-1])

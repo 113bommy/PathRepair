@@ -1,1 +1,0 @@
-import math;print(math.factorial(int(input()))%int(7+1e9))

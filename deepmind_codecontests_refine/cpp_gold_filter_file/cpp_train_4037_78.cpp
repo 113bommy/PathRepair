@@ -1,9 +1,0 @@
-#include<bits/stdc++.h>
-using namespace std;
-int x; 
-int main()
-{
-	cin>>x;
-	cout<<1-x;
-	return 0;
-}

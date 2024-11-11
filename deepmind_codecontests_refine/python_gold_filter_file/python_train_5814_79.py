@@ -1,1 +1,0 @@
-print("YNEOS"[input()[::-1]!=input()::2])

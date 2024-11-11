@@ -1,5 +1,0 @@
-s = input()
-print(3)
-print('R', len(s) - 1)
-print('L', len(s))
-print('L', 2)

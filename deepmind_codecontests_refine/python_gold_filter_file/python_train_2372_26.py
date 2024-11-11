@@ -1,1 +1,0 @@
-n=int(input());s=input();c=s.count;print(c('R')*c('G')*c('B')-sum(sorted(s[i:j+1:(j-i)//2])==list('BGR')for i in range(n-2)for j in range(i+2,n,2)))

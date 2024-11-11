@@ -1,4 +1,0 @@
-n=int(input())
-p=str(n)
-a=10**(len(p)-1)
-print(a-(n%a))

@@ -1,5 +1,0 @@
-N, M = map(int, input().split())
-A = list(map(int, input().split()))
-m = sum(A)/(4*M)
-n = sum([1 for i in A if i >= m])
-print(["No", "Yes"][n >= M])

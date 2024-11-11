@@ -1,1 +1,0 @@
-a=sorted([[int(input()),i]for i in range(int(input()))]);print(sum([(a[i][1]-i)%2for i in range(len(a))])//2)

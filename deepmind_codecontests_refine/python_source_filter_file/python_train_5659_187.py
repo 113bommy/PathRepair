@@ -1,1 +1,0 @@
-print(' '.join(input().replace('WUB', '')))

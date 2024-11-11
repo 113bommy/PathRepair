@@ -1,1 +1,0 @@
-print(['NO','YES'][int(''.join(list(input().split()))[1:])%4==0])

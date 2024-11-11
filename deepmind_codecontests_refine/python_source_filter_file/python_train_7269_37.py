@@ -1,1 +1,0 @@
-n,y=map(int,input().split());l=[(i,j,n-i-j)for i in range(n+1)for j in range(n-i)if y//1000==n+i*9+j*4];l+=[(-1,-1,-1)];print(*l[0])

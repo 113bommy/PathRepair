@@ -1,1 +1,0 @@
-s=input();f=lambda c:c in s;print(['Yes','No'][f('N')^f('S') or f('E')^f('W')])

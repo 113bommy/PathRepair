@@ -1,1 +1,0 @@
-print('Yes' if input() in '753' else 'No')

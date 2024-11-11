@@ -1,1 +1,0 @@
-s=list(input());"yneos"[len(s)>len(set(s))::2]

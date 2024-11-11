@@ -1,9 +1,0 @@
-#include <bits/stdc++.h>
-using namespace std;
-double a, b, c;
-int main() {
-  cin >> a >> b;
-  c = a * b;
-  c = c / 2;
-  cout << c;
-}

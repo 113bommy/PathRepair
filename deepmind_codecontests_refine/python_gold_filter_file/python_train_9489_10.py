@@ -1,1 +1,0 @@
-(lambda N,n,t:(lambda f:print(f(n,f)))(lambda n,f:len(n)if t(n)else max(f(n[:len(n)>>1],f),f(n[len(n)>>1:],f))))(int(input()),list(map(int,input().split())),lambda n:all(n[i-1]<=n[i]for i in range(1,len(n))))

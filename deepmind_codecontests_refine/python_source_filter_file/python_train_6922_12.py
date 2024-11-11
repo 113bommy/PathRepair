@@ -1,6 +1,0 @@
-na,nb=map(int,input().split())
-k,m=map(int,input().split())
-a=sorted(map(int,input().split()))
-b=sorted(map(int,input().split()))
-if a[k-1]<b[m-1]: print('YES')
-else: print('NO')

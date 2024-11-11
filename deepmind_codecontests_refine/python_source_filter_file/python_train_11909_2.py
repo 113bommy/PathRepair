@@ -1,5 +1,0 @@
-n=int(input())
-if n%2==0 : print(-1)
-print(*[i for i in range(n)])
-print(*[i for i in range(n)])
-print(*[2*i%n for i in range(n)])

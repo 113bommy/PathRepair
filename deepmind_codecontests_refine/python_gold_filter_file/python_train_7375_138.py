@@ -1,5 +1,0 @@
-n = int (input())
-a = list(map(int, input().split()))
-a.sort()
-res = sum(a[n::2])
-print(res)

@@ -1,3 +1,0 @@
-s = input()
-n = len(s)
-print(s[0] + str(n) + s[-1])

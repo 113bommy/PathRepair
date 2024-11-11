@@ -1,1 +1,0 @@
-a=int(input());print(0 if a%2 else 2**(a//2))

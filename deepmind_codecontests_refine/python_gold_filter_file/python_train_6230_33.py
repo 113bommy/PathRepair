@@ -1,1 +1,0 @@
-print('YNeos'[not'AC'in input()::2])

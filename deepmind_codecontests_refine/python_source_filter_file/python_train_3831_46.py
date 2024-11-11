@@ -1,1 +1,0 @@
-print({"Sunny":"Clowdy","Cloudy":"Rainy","Rainy":"Sunny"}[input()])

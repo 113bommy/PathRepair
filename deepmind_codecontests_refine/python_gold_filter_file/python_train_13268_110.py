@@ -1,1 +1,0 @@
-print(sum(eval(input().replace(' ', '-')) < -1 for i in range(int(input()))))

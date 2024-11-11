@@ -1,1 +1,0 @@
-print(min(int(input())+2,999))

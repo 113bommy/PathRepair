@@ -1,1 +1,0 @@
-import re;print(len(max(re.findall(r"[ACGT]+",input()),"",key=len)))

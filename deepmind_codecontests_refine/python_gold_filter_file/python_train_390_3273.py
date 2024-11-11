@@ -1,1 +1,0 @@
-print(3.142857*2.0*float(input()))

@@ -1,1 +1,0 @@
-print(int(input(n**3)))

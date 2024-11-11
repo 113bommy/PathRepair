@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print("x*+"[(a*b==15)+(a+b==15)*2])

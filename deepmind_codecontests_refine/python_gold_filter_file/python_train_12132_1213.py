@@ -1,1 +1,0 @@
-print('01'[int(input()) % 2])

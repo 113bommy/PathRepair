@@ -1,6 +1,0 @@
-n,m,x,y=map(int,input().split())
-X=list(map(int,input().split()))
-Y=list(map(int,input().split()))
-X.append(x)
-Y.append(y)
-print("No War" if max(X)<min(Y) else "War")

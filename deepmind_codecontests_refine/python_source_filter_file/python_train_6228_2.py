@@ -1,1 +1,0 @@
-print("No War" if (lambda a:max(a[0][2],max(a[1]))<min(a[0][3],min(a[2])))([int(j) for j in input().split()] for i in range(3)]) else "War")

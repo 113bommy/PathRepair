@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print((max(a-b+2*(a!=b),b-a),1-(b>0==a or b==0>a)+abs(a+b))[a*b<=0])

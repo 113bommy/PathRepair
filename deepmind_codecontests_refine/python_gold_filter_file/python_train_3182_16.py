@@ -1,1 +1,0 @@
-print(input()*0+'YNEOS'[not all(p==sum(map(input().count,'aeiouy')) for p in map(int,input().split()))::2])

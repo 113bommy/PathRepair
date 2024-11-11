@@ -1,1 +1,0 @@
-print(4 - len(set([int(m) for m in input().split()])))

@@ -1,2 +1,0 @@
-#include<bits/stdc++.h>
-using namespace std;priority_queue<pair<int,int> >p;int n,q,a,b,d[1<<20];int main(){cin>>n>>q;a=n;while(a--)p.push(make_pair(0,a)),d[a]=0;while(q--){cin>>a>>b;a=n-a,d[a]+=b;p.push(make_pair(d[a],a));while(1){a=p.top().first,b=p.top().second;if(d[b]==a){cout<<n-b<<" "<<a<<endl;break;}p.pop();}}return 0;}

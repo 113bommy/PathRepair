@@ -1,1 +1,0 @@
-print("NYoe s"[input()in"753"::2])

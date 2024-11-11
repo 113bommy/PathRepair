@@ -1,5 +1,0 @@
-n, m = map(int, input().split())
-a =list(map(int, input().split()))
-t = max(a[0] - 1, n - a[-1])
-for i in range(1, m):t = max(t, (a[i] - a[i - 1]) // 2)
-print(t)

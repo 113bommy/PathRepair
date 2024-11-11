@@ -1,1 +1,0 @@
-k,x=map(int,input().split());print('NYoe s'[500*k>=x::2])

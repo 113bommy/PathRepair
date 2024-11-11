@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print(a) if 1<=b/a else print(a-1)

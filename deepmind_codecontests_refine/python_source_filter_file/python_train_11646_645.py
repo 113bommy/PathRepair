@@ -1,1 +1,0 @@
-orint("A"+input()[8]+"C")

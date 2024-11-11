@@ -1,1 +1,0 @@
-print("YNEOS"[input().count("x")>=8::2])

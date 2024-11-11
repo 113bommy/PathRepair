@@ -1,1 +1,0 @@
-print(len(input())*25+1)

@@ -1,1 +1,0 @@
-s=input();print([s,s.swapcase()][(s[1:]+"Z").isupper()])

@@ -1,1 +1,0 @@
-N,A,B=list(map(int,input().split()));print(A*(N//(A+B))+min([N%(A+B),A]))

@@ -1,1 +1,0 @@
-a,b,c=map(int,input().split());print('YNeos'[c<=a+b or(a-b)**2<=(2*(a+b)-c)*c::2])

@@ -1,1 +1,0 @@
-print(int(int(input())/5+0.9))

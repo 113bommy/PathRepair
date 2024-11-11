@@ -1,1 +1,0 @@
-s = input();print(sum(s[x]!=s[-x-1]for x in range(len(s)//2+1)))

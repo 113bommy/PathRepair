@@ -1,5 +1,0 @@
-n=int(input())
-a=list(map(int, input().split()))
-cost = lambda med: sum(max(0, abs(x-med)-1) for x in a)
-best = min(range(2,100), key=cost)
-print(best, cost(best))

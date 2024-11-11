@@ -1,5 +1,0 @@
-s=input()
-g=s.count('g')
-p=s.count('p')
-a=(-p+(g+p)//2)
-print(a)

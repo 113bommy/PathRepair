@@ -1,5 +1,0 @@
-s = set(input())
-if len(s) == 3:
-    print("Yes")
-else:
-    print("NO")

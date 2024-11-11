@@ -1,1 +1,0 @@
-print('YNeos'[set(input())!=set('abc')::2])

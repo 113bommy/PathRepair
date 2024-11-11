@@ -1,1 +1,0 @@
-n,s=map(input,[""]*2);print(max(s[:i].count("I")*2-i for i in range(int(n)+1)))

@@ -1,1 +1,0 @@
-l=list(map(int,input().split()));print(str(min(l))*max(l))

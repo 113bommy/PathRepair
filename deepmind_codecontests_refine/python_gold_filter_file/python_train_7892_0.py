@@ -1,1 +1,0 @@
-a,x=list(map(int,input().split())),int(input());print(sum(a)+max(a)*((2**x)-1))

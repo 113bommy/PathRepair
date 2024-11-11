@@ -1,1 +1,0 @@
-from math import factorial as fact;n = int(input());print(2*fact(n-1)//n)

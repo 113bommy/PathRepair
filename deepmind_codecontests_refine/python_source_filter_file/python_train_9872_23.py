@@ -1,1 +1,0 @@
-d,n=map(int,input().split());print(d**100*(n+n//100))

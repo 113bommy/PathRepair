@@ -1,1 +1,0 @@
-x,y=map(int,input().split());print(len(str(bin(y//x)))-2)

@@ -1,3 +1,0 @@
-n,x=map(int,input().split())
-m=list(int(input()) for i in range(n))
-print(n+(x-sum(m))//min(m))

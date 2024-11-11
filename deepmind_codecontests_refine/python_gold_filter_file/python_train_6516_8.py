@@ -1,1 +1,0 @@
-a=int(input());z="abba";print(z*(a//4)+z[:a%4])

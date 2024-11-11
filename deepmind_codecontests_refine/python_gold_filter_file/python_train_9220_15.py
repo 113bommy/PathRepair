@@ -1,1 +1,0 @@
-print('home' if int(input()) % 2 is 0 else 'contest')

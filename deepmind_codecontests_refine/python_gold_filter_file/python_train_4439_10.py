@@ -1,1 +1,0 @@
-print(['no','yes'][input().lstrip('0').count('0')>=6])

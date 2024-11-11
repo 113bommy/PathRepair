@@ -1,1 +1,0 @@
-print("10"[eval(input().replace(" ","%"))==0])

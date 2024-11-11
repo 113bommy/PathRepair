@@ -1,1 +1,0 @@
-I=input;s=I()+I()+I();print("YNEOS"[any(s.count(x)>2for x in"1234")::2])

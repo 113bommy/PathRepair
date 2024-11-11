@@ -1,1 +1,0 @@
-print(''.join(map(lambda x:{'1':'9','9':'1'}[x],input().split())))

@@ -1,1 +1,0 @@
-print(abs(int(input())-2199)//200)

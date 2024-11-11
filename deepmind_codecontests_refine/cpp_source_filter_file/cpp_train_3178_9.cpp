@@ -1,9 +1,0 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-  int n, b, p;
-  cin >> n >> b >> p;
-  cout << (n - 1) * 2 * b + (n - 1) << " ";
-  cout << (n - 1) * p;
-  return 0;
-}

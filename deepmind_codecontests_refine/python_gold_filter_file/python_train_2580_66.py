@@ -1,5 +1,0 @@
-h = int(input())
-w = int(input())
-n = int(input())
-p = max(h, w)
-print((n+p-1)//p)

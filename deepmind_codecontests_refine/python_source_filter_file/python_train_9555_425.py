@@ -1,1 +1,0 @@
-print("YES" if "7" in input() else "NO")

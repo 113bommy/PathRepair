@@ -1,1 +1,0 @@
-s=list(set(input()));print("YES") if len(s)==2 else print("NO")

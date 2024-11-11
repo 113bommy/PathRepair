@@ -1,1 +1,0 @@
-a=list(map(int,open(0).read().split()));print(sum(a)-2 if a[0]==2 else 'Hello Workd')

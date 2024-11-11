@@ -1,4 +1,0 @@
-a = [tuple(map(int, input().split())) for i in range(4)]
-a = [(x1, y1, x2, y2) if (x1, y1) < (x2, y2) else (x2, y2, x1, y1) for (x1, y1, x2, y2) in a]
-x0, x1, y0, y1 = min(a[0][0], a[0][2], a[1][0], a[1][2], a[2][0], a[2][2], a[3][0], a[3][2]), max(a[0][0], a[0][2], a[1][0], a[1][2], a[2][0], a[2][2], a[3][0], a[3][2]), min(a[0][1], a[0][3], a[1][1], a[1][3], a[2][1], a[2][3], a[3][1], a[3][3]), max(a[0][1], a[0][3], a[1][1], a[1][3], a[2][1], a[2][3], a[3][1], a[3][3])
-print("YES" if (x1 - x0) * (y1 - y0) > 0 and (x0, y0, x1, y0) in a and (x0, y1, x1, y1) in a and (x0, y0, x0, y1) in a and (x1, y0, x1, y1) else "NO")

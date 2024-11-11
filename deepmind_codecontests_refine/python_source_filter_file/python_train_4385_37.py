@@ -1,1 +1,0 @@
-x,y,z,a,b,c=map(int,input().split());print("YES" if (abs(x-z)*b+abs(x-y)*b+2*c<=abs(x-y)*a) else "NO")

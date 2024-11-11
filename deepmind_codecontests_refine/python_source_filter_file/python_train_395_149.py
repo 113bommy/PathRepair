@@ -1,2 +1,0 @@
-a,b,c = map(int, input().split())
-print('Yes' if 2*a+2*b>=c else 'No')

@@ -1,1 +1,0 @@
-print("A%cC" % input().split()[1][0])

@@ -1,1 +1,0 @@
-rint('vowel') if input() in 'aeiouAEIOU' else print('consonant')

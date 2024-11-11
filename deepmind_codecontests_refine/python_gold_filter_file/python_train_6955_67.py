@@ -1,2 +1,0 @@
-n,h,w=map(int,open(0).read().split())
-print((n-h+1)*(n-w+1))

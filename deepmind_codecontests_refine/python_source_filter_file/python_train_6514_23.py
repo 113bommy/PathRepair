@@ -1,2 +1,0 @@
-a,b=map(int,input().split())
-print('YES' if (a>0 and b>0) and (a==b or a+1==b or a==b+1) else 'NO')

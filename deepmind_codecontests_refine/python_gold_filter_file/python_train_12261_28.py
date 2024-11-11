@@ -1,1 +1,0 @@
-s=input();print(s.count('R')-(s=="RSR"))

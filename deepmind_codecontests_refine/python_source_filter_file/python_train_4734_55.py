@@ -1,1 +1,0 @@
-print(('YES', 'NO')[input().lower().strip('? ')[-1] in 'aeiouy'])

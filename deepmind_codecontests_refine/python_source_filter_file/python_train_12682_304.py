@@ -1,1 +1,0 @@
-print((lambda x:x+x*(x%2)))(int(input()))

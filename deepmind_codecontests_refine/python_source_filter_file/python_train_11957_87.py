@@ -1,1 +1,0 @@
-a,b,c=map(int,input().split());print('YNEOS'[b-a!=c-a::2])

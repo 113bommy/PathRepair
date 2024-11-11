@@ -1,1 +1,0 @@
-x,y=map(int,input().split());print(min(abs(x+y),abs(~x+y))+1)

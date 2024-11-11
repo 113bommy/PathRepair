@@ -1,1 +1,0 @@
-a,b,c=map(int,input());print(min(b//a,c))

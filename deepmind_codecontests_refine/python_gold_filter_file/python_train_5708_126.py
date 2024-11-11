@@ -1,1 +1,0 @@
-a=int(input());print(["AGC","ARC","ABC"][(a<1200)+(a<2800)])

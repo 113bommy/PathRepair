@@ -1,1 +1,0 @@
-print(['Yes','No'][sum(list(map(int,input().split()))) != 17])

@@ -1,9 +1,0 @@
-a=input()
-b=input()
-if((int(a[0:2])+int(b[0:2]))%2):
-    if((30+(int(a[3:5])+int(b[3:5]))//2)>=60):
-        print("{:02d}:{:02d}".format(((int(a[0:2])+int(b[0:2]))//2+1),((int(a[3:5])+int(b[3:5]))//2-30)))
-    else:
-        print("{:02d}:{:02d}".format((int(a[0:2])+int(b[0:2]))//2,(int(a[3:5])+int(b[3:5]))//2+30))
-else:
-    print("{:02d}:{:02d}".format((int(a[0:2])+int(b[0:2]))//2,(int(a[3:5])+int(b[3:5]))//2))

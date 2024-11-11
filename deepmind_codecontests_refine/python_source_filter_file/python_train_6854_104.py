@@ -1,1 +1,0 @@
-print('YNEOS'[if input()[:4]!='YAKI'::2])

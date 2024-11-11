@@ -1,1 +1,0 @@
-print(s[3-'AGCT'.index(input())])

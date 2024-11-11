@@ -1,2 +1,0 @@
-#include<iostream>
-int main(){int64_t n,k,a=0;std::cin>>n>>k;for(int i=k;i<n+2;i++)a=(a+i*(n-i+1)+1)%1000000007;std::cout<<a<<std::endl;}

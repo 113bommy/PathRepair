@@ -1,2 +1,0 @@
-a, b = map(int, input().split())
-print(a*1.0*b/3.305785)

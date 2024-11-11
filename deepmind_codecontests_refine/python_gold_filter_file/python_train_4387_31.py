@@ -1,1 +1,0 @@
-i=input;print('NYOE S'[bool(set(i())&set(i()))::2])

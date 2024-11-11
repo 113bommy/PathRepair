@@ -1,2 +1,0 @@
-s=input()
-print(s[0].capitalize()+s[1:len(s)+1])

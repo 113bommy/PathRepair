@@ -1,1 +1,0 @@
-print(21+27-int(input()))

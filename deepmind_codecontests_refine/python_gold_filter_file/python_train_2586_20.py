@@ -1,6 +1,0 @@
-n = int(input())
-an = [int(input()) for i in range(n)]
-c, s = 1, an[0]
-while s != 2 and c < n:
-    c, s = c + 1, an[s - 1]
-print(c if c < n else -1)

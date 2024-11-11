@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print([a+b,a+b-24][a+b>24])

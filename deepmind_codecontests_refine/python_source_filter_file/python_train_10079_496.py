@@ -1,1 +1,0 @@
-print("Chistmas"+" Eve"+(25-input()))

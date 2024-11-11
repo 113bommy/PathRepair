@@ -1,6 +1,0 @@
-t=int(input())
-for i in range(t):
-    n=int(input())
-    for j in range(1,n):
-        print(j,end=" ")
-    print(n)

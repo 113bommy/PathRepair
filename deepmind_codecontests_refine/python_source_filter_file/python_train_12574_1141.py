@@ -1,1 +1,0 @@
-print(''.join(['x']*len(input()))

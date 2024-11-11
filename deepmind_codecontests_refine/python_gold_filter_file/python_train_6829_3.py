@@ -1,5 +1,0 @@
-n,k=map(int,input().split())
-p=((n//2)//(k+1))*(k+1)
-a=(p/(k+1))
-b=(k*p/(k+1))
-print (int(a),int(b),int(n-a-b))     

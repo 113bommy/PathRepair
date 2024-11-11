@@ -1,1 +1,0 @@
-print("bust" if sum([int(i) for i in input().split()])>21 else "win")

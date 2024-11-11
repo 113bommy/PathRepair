@@ -1,5 +1,0 @@
-a=int(input())
-if a<=2:print('1\n1')
-elif a==3:print('2\n1 3')
-elif a==4:print('4\n2 4 1 3')
-else:print(a,' '.join(map(str,list(range(1,a+1,2))+list(range(2,a+1,2)))),sep='\n')

@@ -1,3 +1,0 @@
-x = int(input())
-
-print((x+5-1)//5)

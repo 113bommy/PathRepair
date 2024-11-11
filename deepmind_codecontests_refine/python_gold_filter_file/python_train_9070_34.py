@@ -1,7 +1,0 @@
-w1, h1, w2, h2 = input().split()
-w1 = int(w1)
-h1 = int(h1)
-w2 = int(w2)
-h2 = int(h2)
-a = (h1 * 2) + (h2 * 2) +(w1 + 2) + (w2 + 2) + (w1 - w2)
-print(a)

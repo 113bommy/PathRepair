@@ -1,1 +1,0 @@
-print('YES' if input().strip() in '753' else 'NO')

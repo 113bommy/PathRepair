@@ -1,1 +1,0 @@
-print('OEdvde n'[any(s in'04'for s in input())::2])

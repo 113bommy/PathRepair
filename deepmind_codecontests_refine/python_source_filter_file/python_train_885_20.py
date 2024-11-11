@@ -1,9 +1,0 @@
-n=int(input())
-a=int(input())
-b=int(input())
-c=int(input())
-d=b-c
-if(d<a):
-    print(max((n-c)//d+(c+(n-c)%d)//a,0)) 
-else:
-    print(n//a)

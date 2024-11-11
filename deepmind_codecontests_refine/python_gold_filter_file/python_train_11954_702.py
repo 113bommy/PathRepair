@@ -1,1 +1,0 @@
-print("01"[eval(input().replace(" ","%"))!=0])

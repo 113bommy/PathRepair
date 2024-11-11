@@ -1,1 +1,0 @@
-print('+'.join(sorted(input()[0::2])))

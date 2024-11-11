@@ -1,1 +1,0 @@
-print(*inpur().split(","))

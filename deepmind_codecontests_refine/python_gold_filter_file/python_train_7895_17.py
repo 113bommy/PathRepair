@@ -1,1 +1,0 @@
-U,D,R,L='UDRL';x,y,a,b=map(int,input().split());x,y=a-x,b-y;a,b=x+1,y+1;print(U*y+R*x+D*y+L*a+U*b+R*a+D+R+D*b+L*a+U)

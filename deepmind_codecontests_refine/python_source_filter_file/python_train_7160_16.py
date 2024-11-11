@@ -1,1 +1,0 @@
-s=input();print('YNeos'[s.count(s[:3])<2::2])

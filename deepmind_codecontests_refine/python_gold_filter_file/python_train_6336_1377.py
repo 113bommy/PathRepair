@@ -1,1 +1,0 @@
-print(eval('(i+i)*i//2'.replace('i','int(input())')))

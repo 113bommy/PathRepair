@@ -1,1 +1,0 @@
-print(int(1.5*int(input())))

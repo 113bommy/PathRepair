@@ -1,1 +1,0 @@
-h,w,a,b=map(int,input().split());w-=a;print(('0'*a+'1'*w)*b+('1'*a+'0'*w)*(h-b))

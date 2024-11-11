@@ -1,1 +1,0 @@
-print('Yes' if int(input()) in {i*j for i in range(9) for j in range(9)} else 'No')

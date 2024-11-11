@@ -1,1 +1,0 @@
-I=input;n,m=map(int,I().split());a=[I()for _ in[0]*n];b=[I()for _ in[0]*m];r=n-m+1;print('YNeos'[sum(sum(b==[t[j:j+m]for t in a[i:i+m]]for j in range(r))for i in range(r))<1::2])

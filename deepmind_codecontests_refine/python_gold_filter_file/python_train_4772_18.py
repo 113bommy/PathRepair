@@ -1,1 +1,0 @@
-F=sorted;print('NYoe s'[F(input())<F(input())[::-1]::2])

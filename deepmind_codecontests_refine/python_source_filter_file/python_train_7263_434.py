@@ -1,1 +1,0 @@
-print("B"if input().islower() else "A")

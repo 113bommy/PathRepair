@@ -1,1 +1,0 @@
-n,d=map(int,input().split());print(0--n//(d-~d))

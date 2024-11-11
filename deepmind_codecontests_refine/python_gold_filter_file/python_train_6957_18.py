@@ -1,1 +1,0 @@
-import math;print(['Yes','No'][math.sqrt(int(input().replace(' ','')))%1>0])

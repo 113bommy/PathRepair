@@ -1,1 +1,0 @@
-s=input();print('NYOE S'['d'<s[-1]and'ke'in s::2])

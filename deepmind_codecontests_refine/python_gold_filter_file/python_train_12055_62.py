@@ -1,1 +1,0 @@
-print(0-input().find(input()[:2]))

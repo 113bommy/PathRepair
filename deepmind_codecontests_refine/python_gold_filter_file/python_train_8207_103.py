@@ -1,1 +1,0 @@
-print((9+2*int(input()))//11)

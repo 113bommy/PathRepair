@@ -1,1 +1,0 @@
-x=input();print(min([abs(int(x[i:i+3])-753)for i in range(len(x)-2)]))

@@ -1,1 +1,0 @@
-print(sum(sorted([int(s) for s in input().split()])[:2]))

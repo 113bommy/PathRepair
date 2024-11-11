@@ -1,3 +1,0 @@
-n, k, l, c, d, p, nl, np = map(int, input().split())
-
-print(int(min((l*k)/nl, c*d, p/np)//n))

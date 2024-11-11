@@ -1,7 +1,0 @@
-#include <bits/stdc++.h>
-int main() {
-  int d, L, v1, v2;
-  scanf("%d %d %d %d", &d, &L, &v1, &v2);
-  printf("%.20lf", (double)(L - d) / (v1 + v2));
-  return 0;
-}

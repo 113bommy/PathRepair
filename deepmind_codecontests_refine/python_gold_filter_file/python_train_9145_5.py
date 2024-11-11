@@ -1,1 +1,0 @@
-K,T,*A=map(int,open(0).read().split());print(max(0,(max(A)+-K//2)*2-(K+1)%2))

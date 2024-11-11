@@ -1,1 +1,0 @@
-print(int(input().count("+")*2-4))

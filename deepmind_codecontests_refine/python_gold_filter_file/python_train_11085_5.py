@@ -1,7 +1,0 @@
-a,b = int(input()), input()
-c1 = b.count('1')
-c2 = b.count('2')
-c3 = b.count('3')
-if c1>=c2 and c1>=c3: print(c2+c3)
-elif c2>=c1 and c2>=c3: print(c1+c3)
-else: print(c1+c2)

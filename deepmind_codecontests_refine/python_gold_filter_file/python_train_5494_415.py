@@ -1,1 +1,0 @@
-print('NYoe s'[int(input())>=30::2])

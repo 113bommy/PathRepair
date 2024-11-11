@@ -1,1 +1,0 @@
-a,b=map(int(input()));print([a-1,a][b>=a])

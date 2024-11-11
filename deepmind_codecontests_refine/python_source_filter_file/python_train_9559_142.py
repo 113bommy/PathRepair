@@ -1,1 +1,0 @@
-print('No'*'2'in input()or'Yes')

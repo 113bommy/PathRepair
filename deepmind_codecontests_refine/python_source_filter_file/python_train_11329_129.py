@@ -1,1 +1,0 @@
-print ('AB'+'C' if int (input ())<1000 else 'D')

@@ -1,1 +1,0 @@
-_,*a=map(int,open(0).read().split());print(sum(a)-max(a)//2)

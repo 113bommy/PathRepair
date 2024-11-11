@@ -1,1 +1,0 @@
-print(*sorted(range(1,int(input())+1),key=lambda _:[(s,-int(p))for s,p in[input().split()]]))

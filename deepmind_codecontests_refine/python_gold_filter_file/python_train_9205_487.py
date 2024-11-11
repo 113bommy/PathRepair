@@ -1,1 +1,0 @@
-print(str(sum(list(map(int, input().split())))))

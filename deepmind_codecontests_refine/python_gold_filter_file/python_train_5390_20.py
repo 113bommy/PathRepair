@@ -1,5 +1,0 @@
-n=int(input())
-c=list(input())
-s=c.count("W")
-d=c[:n-s].count("W")
-print(d)

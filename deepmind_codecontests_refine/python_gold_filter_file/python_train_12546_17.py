@@ -1,5 +1,0 @@
-n = int(input())
-l = list(map(int,input().split()))
-k = list(filter(lambda x:x%2, l))
-if len(k)==0 :print(sum(l)) 
-else: print([sum(l),sum(l)-min(k)][sum(l)%2])

@@ -1,1 +1,0 @@
-print(str(chr(ord(input())+1)))

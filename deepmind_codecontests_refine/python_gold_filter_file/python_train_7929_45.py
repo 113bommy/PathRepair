@@ -1,5 +1,0 @@
-t=int(input())
-A=list(map(int,input().split()))
-v=int(input())
-B=list(map(int,input().split()))
-print(max(A),max(B))

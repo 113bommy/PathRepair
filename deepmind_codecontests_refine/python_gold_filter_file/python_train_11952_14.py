@@ -1,1 +1,0 @@
-a,b=map(int,input().split());print([0,10][a>=b])

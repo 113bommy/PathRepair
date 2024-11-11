@@ -1,5 +1,0 @@
-n,m=map(int,input().split())
-a,b=min(n,m),max(n,m)
-if a==b==1:print(0)
-elif a==1:print(m-2)
-else:print((n-2)*(m-2))

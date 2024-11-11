@@ -1,1 +1,0 @@
-a,b,h=eval('int(input()),'*3);print(h*(a+b)//2)

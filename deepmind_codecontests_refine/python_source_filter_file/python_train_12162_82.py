@@ -1,1 +1,0 @@
-pritn(eval("+".join(sorted(input()))+"*10"))

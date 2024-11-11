@@ -1,1 +1,0 @@
-print(eval((input()+"*0.5").replace(" ","+")))

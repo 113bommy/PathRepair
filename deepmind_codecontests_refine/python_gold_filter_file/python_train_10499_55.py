@@ -1,1 +1,0 @@
-a,_,b=input();print('HD'[a!=b])

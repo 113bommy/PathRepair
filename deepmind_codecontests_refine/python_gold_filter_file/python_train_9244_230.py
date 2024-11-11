@@ -1,1 +1,0 @@
-n,*a=map(int,open(0));print(4--n//min(a))

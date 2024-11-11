@@ -1,4 +1,0 @@
-t=int(input())
-for x in range(t):
-    n=int(input())
-    print(("%i "%1)*n)

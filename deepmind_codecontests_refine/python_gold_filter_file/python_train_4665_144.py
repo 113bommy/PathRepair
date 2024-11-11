@@ -1,5 +1,0 @@
-n=int(input())
-d=list(map(int,input().split()))
-m=int(n/2)
-d=sorted(d)
-print(d[m]-d[m-1])

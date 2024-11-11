@@ -1,1 +1,0 @@
-print(len(''.join(set(input()[1:-1].split(', ')))))

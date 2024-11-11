@@ -1,1 +1,0 @@
-print("TAGC"["ATCG".find(input())])

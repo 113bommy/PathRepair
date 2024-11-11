@@ -1,1 +1,0 @@
-print(len([i for i in range(i,int(input())+1) if len(str(i))%2]))

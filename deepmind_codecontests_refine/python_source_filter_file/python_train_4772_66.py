@@ -1,5 +1,0 @@
-s=list(input())
-t=list(input())
-s.sort()
-t.sort()
-print("YNeos"[s<t[::-1]::2])

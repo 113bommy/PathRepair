@@ -1,1 +1,0 @@
-print(1000-100*input().count('x'))

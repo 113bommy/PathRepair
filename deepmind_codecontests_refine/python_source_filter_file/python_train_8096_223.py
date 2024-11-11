@@ -1,1 +1,0 @@
-print('A%sC'%'BR'[id(id)%7%2])

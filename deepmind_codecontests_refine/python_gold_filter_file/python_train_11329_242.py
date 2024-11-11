@@ -1,1 +1,0 @@
-print("AB"+["D","C"][int(input())<1000])

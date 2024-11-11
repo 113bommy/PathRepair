@@ -1,6 +1,0 @@
-number = input()
-if len(number) < 3 or (len(number) == 3 and number < "129"): print("byte")
-elif len(number) < 5 or (len(number) == 5 and number < "32768"): print("short")
-elif len(number) < 10 or (len(number) == 10 and number < "2147483648"): print("int")
-elif len(number) < 19 or (len(number) == 19 and number < "9223372036854775808"): print("long")
-else: print("BigInteger")

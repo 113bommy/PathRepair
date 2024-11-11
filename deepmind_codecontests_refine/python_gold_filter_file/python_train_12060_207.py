@@ -1,1 +1,0 @@
-print(input().strip()[:-8])

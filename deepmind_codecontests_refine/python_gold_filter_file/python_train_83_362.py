@@ -1,1 +1,0 @@
-print(["Odd","Even"][eval(input().replace(" ","*"))%2==0])

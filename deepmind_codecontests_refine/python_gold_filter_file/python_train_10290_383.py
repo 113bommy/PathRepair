@@ -1,1 +1,0 @@
-print(int((pow(int(input()), 1/2)//1)**2))

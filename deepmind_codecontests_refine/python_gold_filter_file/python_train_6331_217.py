@@ -1,1 +1,0 @@
-N,*P=map(int,open(0));print(sum(P)-max(P)//2)

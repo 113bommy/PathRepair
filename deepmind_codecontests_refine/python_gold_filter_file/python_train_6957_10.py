@@ -1,1 +1,0 @@
-print('No' if int(input().replace(' ',''))**0.5%1 else 'Yes')

@@ -1,8 +1,0 @@
-n=int(input())
-a=list(range(1,n+1))
-s=list(map(int,input().split()))
-a=set(a)
-s=set(s)
-p=a.difference()
-p=list(p)
-print(p[0])

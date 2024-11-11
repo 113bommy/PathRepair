@@ -1,9 +1,0 @@
-A,V=map(int,(input().split()))
-B,W=map(int,(input().split()))
-T=int(input())
-dist=abs(A-B)
-sp=abs(V-W)
-if(sp*T>=dist):
-  print("YES")
-else:
-  print("NO")

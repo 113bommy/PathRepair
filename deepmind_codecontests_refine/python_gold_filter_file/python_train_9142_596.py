@@ -1,1 +1,0 @@
-print(len({int(input()) for x in range(int(input()))}))

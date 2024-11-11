@@ -1,2 +1,0 @@
-n = int(input().replace(' ',''))
-print('Yes' if (n*(1/2))**2 == n else 'No')

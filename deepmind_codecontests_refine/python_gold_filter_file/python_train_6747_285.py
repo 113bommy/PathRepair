@@ -1,1 +1,0 @@
-print("Heisei" if int(input().replace("/", "")) < 20190501 else "TBD")

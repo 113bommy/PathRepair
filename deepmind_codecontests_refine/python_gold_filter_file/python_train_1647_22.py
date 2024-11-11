@@ -1,1 +1,0 @@
-print('YNEOS'[''.join(sorted(input().split()))!='1479'::2])

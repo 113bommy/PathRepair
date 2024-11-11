@@ -1,1 +1,0 @@
-print('CHAT WITH HER!' if not len(set(input())) % 2 else 'IGNORE HIM!')

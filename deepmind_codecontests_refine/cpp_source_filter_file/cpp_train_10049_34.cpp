@@ -1,8 +1,0 @@
-#include <bits/stdc++.h>
-int main() {
-  int N, K;
-  std::cin >> N >> K;
-  K = std::min(K, N / 2);
-  std::cout << K * (N * 2 - K * 2 - 1) << std::endl;
-  return 0;
-}

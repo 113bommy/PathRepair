@@ -1,1 +1,0 @@
-print("Yes" if sorted(list(input()))[1]=="9" else "No")

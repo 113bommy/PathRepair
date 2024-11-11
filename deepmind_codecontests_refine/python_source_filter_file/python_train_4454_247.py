@@ -1,1 +1,0 @@
-print('YES' if int(input())%9==0 else 'NO')

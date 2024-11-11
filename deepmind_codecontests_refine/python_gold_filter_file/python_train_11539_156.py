@@ -1,1 +1,0 @@
-print(open(0).read()[0::5])

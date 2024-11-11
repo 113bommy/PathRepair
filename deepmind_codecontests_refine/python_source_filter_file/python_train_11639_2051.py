@@ -1,1 +1,0 @@
-return "".join(input().split()[::-1])

@@ -1,1 +1,0 @@
-n,m,*L=map(int,open(0).read().split());l=-1,1,;print(max(sum(sorted(x*i+y*j+z*k for x,y,z in zip(*[iter(L)]*3))[-m:])*(m>0)for i in l for j in l for k in l))

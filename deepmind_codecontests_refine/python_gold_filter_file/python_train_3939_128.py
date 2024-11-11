@@ -1,1 +1,0 @@
-X=[int(input()) for i in range(4)];print(min(X[0:2])+min(X[2:4]))

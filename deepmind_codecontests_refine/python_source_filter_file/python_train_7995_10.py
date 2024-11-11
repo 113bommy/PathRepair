@@ -1,1 +1,0 @@
-I=lambda:map(int,input().split());N,M=I();X=sorted(I());print(sum(sorted(X[i+1]-X[i]for i in range(M-1))[:M-N]))

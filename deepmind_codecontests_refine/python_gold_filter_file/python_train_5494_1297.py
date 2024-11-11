@@ -1,1 +1,0 @@
-print('No' if int(input())<30 else 'Yes')

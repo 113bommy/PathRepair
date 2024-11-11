@@ -1,6 +1,0 @@
-m=10**9+7
-i=s=r=0
-f=1
-a=open(0).read().split()
-for x in a[1:]:i+=1;s+=pow(i,m-2,m);r+=int(x)*~-s+int(a[-i])*s;f=f*i%m
-print(r*f%m)

@@ -1,1 +1,0 @@
-print("Yes" if list("abc")==sorted(input()) else "No")

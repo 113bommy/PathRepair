@@ -1,1 +1,0 @@
-print(0) if (int(input()[1::]) % 2 == 0) else print(1)

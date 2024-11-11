@@ -1,1 +1,0 @@
-print(date = input().replace('2017', '2018'))

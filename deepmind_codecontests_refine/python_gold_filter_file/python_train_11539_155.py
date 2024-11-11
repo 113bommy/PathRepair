@@ -1,1 +1,0 @@
-print(input()[0:1]+ input()[1:2]+ input()[2:3])

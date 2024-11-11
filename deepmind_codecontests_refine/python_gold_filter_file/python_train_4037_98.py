@@ -1,2 +1,0 @@
-i = int(input())
-print(0 if i == 1 else 1)

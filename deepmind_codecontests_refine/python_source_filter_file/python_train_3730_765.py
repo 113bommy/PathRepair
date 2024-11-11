@@ -1,1 +1,0 @@
-print((input().count("o"))*3+700)

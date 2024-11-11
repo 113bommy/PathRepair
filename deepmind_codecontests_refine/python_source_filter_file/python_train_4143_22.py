@@ -1,1 +1,0 @@
-print(2**(len(bin(int(nput()))) - 2) - 1)

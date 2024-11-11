@@ -1,1 +1,0 @@
-[print(x*(y-1) if y%=x else -1) for x,y in [[int(i) for i in input().split()]]]

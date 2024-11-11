@@ -1,1 +1,0 @@
-print(sum(abs(x-2)+abs(y-2)for x in range(5) for y,v in enumerate(input().split()) if int(v)))

@@ -1,1 +1,0 @@
-print('DH'[len(set(input().split()))&1])

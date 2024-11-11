@@ -1,1 +1,0 @@
-print("A%sC"%input()[8][0])

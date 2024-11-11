@@ -1,1 +1,0 @@
-print("YENOS"[max(int(input().replace(" ",""))%4,1)::2])

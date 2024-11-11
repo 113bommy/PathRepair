@@ -1,1 +1,0 @@
-n=int(input());x=sum(int(v)%2 for v in input().split());print(min(x,n-x))

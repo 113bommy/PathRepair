@@ -1,5 +1,0 @@
-R = lambda:map(int, input().split())
-a, b = R()
-c, d = R()
-s = set(range(b, 100**2, a)) and set(range(d, 100*2, c))
-print(min(s) if s else -1)

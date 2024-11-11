@@ -1,2 +1,0 @@
-a,b=map(int,input().split())
-print((b+b//100)*100**a)

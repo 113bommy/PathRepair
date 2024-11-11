@@ -1,1 +1,0 @@
-print('Yes' if sorted(input().split()) == ['5', '5', '7'] else 'No')

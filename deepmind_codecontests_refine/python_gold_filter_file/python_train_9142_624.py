@@ -1,1 +1,0 @@
-print(len(set(open(0).readlines()[1:])))

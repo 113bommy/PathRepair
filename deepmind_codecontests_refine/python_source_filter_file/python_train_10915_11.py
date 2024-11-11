@@ -1,1 +1,0 @@
-print("".join(x[0].upper()for x input().split()))

@@ -1,1 +1,0 @@
-print("AB"+"DC"[len(input())<4])

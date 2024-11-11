@@ -1,1 +1,0 @@
-print((int(input())-1)//min(int(input())for _ in range(5))+5)

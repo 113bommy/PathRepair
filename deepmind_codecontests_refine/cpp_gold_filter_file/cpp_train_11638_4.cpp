@@ -1,2 +1,0 @@
-#include<bits/stdc++.h> 
-using namespace std;typedef long long ll;int main(){ll n,k;cin>>n>>k;unordered_set<ll> done;for(int i=0;i<k;i++){ll d;cin>>d;for(int i=0;i<d;i++){ll u;cin>>u;done.insert(u);}}ll ds=done.size();cout<<n-ds<<endl;}

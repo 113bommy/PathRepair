@@ -1,1 +1,0 @@
-print(1 if eval(input().replace(" ","%"))>0 else 0)

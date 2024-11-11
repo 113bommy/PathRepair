@@ -1,1 +1,0 @@
-print(chr(ord(int(input())) + 1))

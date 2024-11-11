@@ -1,1 +1,0 @@
-s,t=open(0);print(" YNeos"[t[:-1]in[s[i:-1]+s[:i]for i in range(99)]::2])

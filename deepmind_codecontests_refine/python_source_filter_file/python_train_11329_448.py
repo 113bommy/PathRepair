@@ -1,1 +1,0 @@
-print(["ABD","ABC"][int(input())>999])

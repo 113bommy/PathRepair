@@ -1,1 +1,0 @@
-A,B=map(int,input().split());print(['error',A+B][A+B<10])

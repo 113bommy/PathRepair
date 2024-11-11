@@ -1,1 +1,0 @@
-print('Odd' if eval(input().replace(' ','*') else 'Even')

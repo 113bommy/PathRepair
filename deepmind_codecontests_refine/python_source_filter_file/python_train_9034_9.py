@@ -1,1 +1,0 @@
-print(sum([s == t fot s, t in zip(input(), input())]))

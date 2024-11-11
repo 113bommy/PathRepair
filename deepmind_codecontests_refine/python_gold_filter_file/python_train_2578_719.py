@@ -1,2 +1,0 @@
-print(int(input()) * 'ACL')
-

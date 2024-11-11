@@ -1,5 +1,0 @@
-a = int(input())
-b = int(input())
-c = int(input())
-x = int(input())
-print(len([1 for i in range(b+1) for j in range(c+1) if (x-100*i-50*j)%500==0 and 0<=(x-100*i-50*j)/500<=a]))

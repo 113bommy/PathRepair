@@ -1,1 +1,0 @@
-print('AB'+'CD'[int(input())//1000])

@@ -1,1 +1,0 @@
-N,*As = map(int, open(0).read().split());As.sort();print(As[0]+sum(As[1+i//2]for i in range(N-1)))

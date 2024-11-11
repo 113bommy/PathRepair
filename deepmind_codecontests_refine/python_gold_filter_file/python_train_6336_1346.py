@@ -1,1 +1,0 @@
-f=lambda:int(input());print((f()+f())*f()//2)

@@ -1,1 +1,0 @@
-print("ABC" if 1000>int(input()) else "ABD")

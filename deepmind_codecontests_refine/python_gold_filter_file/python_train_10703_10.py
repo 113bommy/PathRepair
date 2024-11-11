@@ -1,1 +1,0 @@
-print(list(input()).count("2"))

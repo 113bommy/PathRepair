@@ -1,1 +1,0 @@
-for s in[*open(0)][2::2]:s=s[:-1];print(sum(x!=y for x,y in zip(s,sorted(s))))

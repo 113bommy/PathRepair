@@ -1,1 +1,0 @@
-print(sum(sorted(list(map(int, intput().split())))[0:2]))

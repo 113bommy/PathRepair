@@ -1,1 +1,0 @@
-input();l=list(map(int,input().split()).sort();print(l[-1]-l[0])

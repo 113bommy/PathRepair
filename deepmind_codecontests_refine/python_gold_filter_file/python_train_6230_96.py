@@ -1,1 +1,0 @@
-print(" YNeos"["AC"in input()::2])

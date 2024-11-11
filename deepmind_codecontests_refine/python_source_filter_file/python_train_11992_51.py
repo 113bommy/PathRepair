@@ -1,8 +1,0 @@
-n = int(input())
-a = list(map(str,input()))
-n = a.count('n')
-z = a.count('z')
-r = a.count('r')
-e = a.count('e')
-o = a.count('o')
-print('1 '*n+'0'*z)

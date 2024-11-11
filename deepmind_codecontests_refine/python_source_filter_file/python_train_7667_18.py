@@ -1,1 +1,0 @@
-input(); print(len(set(''.join(set(x)) for x in input().split())))

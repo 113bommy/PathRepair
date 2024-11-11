@@ -1,6 +1,0 @@
-a,b=input().split()
-a=int(a)
-b=str(b)
-b.replace(".","")
-b=int(b)
-print(a*b//100)

@@ -1,1 +1,0 @@
-m=10**9;s=int(input());print(0,0,1,m,s//m+1,m-s%m)

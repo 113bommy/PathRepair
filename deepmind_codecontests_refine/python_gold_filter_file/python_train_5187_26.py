@@ -1,1 +1,0 @@
-a,b,c,d=map(int,input().split());print(b+c-d,d+c-a,a+b-d,c+b-a)

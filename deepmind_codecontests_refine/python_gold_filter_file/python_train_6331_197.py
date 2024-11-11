@@ -1,1 +1,0 @@
-N,*p=map(int,open(0).read().split());print(sum(sorted(p)[:-1])+max(p)//2)

@@ -1,1 +1,0 @@
-print(["TBD","Heisei"][input()<="2019/04/30"])

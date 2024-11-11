@@ -1,2 +1,0 @@
-s=list(input())
-print(700+100*(s.count("○")))

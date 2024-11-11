@@ -1,1 +1,0 @@
-n,a,b=map(int,input().split());t=min(a,b);print(t,max(max(a,b)-n+t,0))

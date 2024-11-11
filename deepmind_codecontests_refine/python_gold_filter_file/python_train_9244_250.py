@@ -1,1 +1,0 @@
-a,*b=eval('int(input()),'*6);print(~-a//min(b)+5)

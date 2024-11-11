@@ -1,1 +1,0 @@
-print('red' if int(int(input())<3200 else input())
