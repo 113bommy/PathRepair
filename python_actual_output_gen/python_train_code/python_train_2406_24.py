@@ -1,0 +1,1 @@
+print("NYoe s"[int(input().replace(" ",""))**0.5%1<1::2])

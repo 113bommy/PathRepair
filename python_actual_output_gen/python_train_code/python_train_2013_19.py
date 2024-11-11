@@ -1,0 +1,1 @@
+a=input();b=input();print("YNEOS"[a[::-1]==b::2])

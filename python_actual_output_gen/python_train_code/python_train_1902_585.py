@@ -1,0 +1,1 @@
+print( 'Yes' if input() == '30' else 'No')

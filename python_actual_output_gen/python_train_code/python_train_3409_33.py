@@ -1,0 +1,1 @@
+z=lambda :map(int,input().split());a,b=z();c=b//2;d=b-c;print(max(0,min(a-c,c)-(c==d)))

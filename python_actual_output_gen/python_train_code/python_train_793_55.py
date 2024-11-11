@@ -1,0 +1,5 @@
+n,k=map(int,input().split())
+s=list(input())
+s[k]=s[k].lower()
+s="".join(s)
+print(s)

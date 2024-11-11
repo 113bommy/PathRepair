@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print('AB'[abs(a-b)>abs(b-c)])

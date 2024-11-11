@@ -1,0 +1,1 @@
+a,b,c=(int,input().split());print('YNEOS'[b*10+c%4>0::2])

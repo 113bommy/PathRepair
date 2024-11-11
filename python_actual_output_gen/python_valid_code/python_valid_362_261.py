@@ -1,0 +1,1 @@
+print("IGNORE HIM") if len({i for i in input()}) % 2 else print("CHAT WITH HER!")

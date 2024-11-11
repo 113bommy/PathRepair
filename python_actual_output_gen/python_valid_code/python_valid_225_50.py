@@ -1,0 +1,1 @@
+print("".join(map("".join,zip(input(),input()))))

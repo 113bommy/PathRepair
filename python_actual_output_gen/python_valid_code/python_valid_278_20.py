@@ -1,0 +1,9 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=l[:]
+x.sort()
+del(x[-1])
+ans1=max(x)-min(x)
+del(l[0])
+ans2=max(l)-min(l)
+print(min(ans1,ans2))

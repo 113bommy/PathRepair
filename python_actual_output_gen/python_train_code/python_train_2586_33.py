@@ -1,0 +1,1 @@
+a,b=input();print('>' if a>b else '<' if a<b else '=')

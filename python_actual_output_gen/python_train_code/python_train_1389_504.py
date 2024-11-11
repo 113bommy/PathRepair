@@ -1,0 +1,1 @@
+print( 0 if int(input()) < 0 else 1)

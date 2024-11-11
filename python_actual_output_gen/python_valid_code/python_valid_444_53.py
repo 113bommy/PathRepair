@@ -1,0 +1,1 @@
+for n in[*map(int,open(0))][1:]:print(n>>1,n+1>>1)

@@ -1,0 +1,1 @@
+a,b,c,k=map(int,input().split());print(~0**k*(a-b))

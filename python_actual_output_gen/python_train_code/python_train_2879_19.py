@@ -1,0 +1,4 @@
+import sys
+
+n, k = map(int, input().split())
+print((n + k - 1) // k * k)

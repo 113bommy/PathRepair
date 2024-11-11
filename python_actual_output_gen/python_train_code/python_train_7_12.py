@@ -1,0 +1,12 @@
+t=int(input())
+while(t>0):
+    t=t-1
+    n=int(input())
+    a=input().split()
+    x=int(a[0])
+    y=int(a[1])
+    z=int(a[2])
+    if(x+y<=z):
+        print(0,1,n-1)
+    else:
+        print(-1)

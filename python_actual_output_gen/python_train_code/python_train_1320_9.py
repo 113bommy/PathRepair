@@ -1,0 +1,13 @@
+n=int(input())
+s=str(input())
+if(len(s)==1):
+    print(s)
+else:
+    b=s.count('1')
+    if(b==0):
+        print(0)
+    else:
+        if(s.count('0')==0):
+            print(s)
+        else:
+            print('1'+str('0'*s.count('0')))

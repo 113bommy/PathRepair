@@ -1,0 +1,1 @@
+for s in[*open(0)][1:]:print(-abs(eval(s.replace(' ','-')))//-10)

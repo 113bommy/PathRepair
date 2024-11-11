@@ -1,0 +1,1 @@
+n=int(input())-10;print(0if n<1 else 4 if n!=10 else 15)

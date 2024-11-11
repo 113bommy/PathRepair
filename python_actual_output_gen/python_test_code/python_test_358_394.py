@@ -1,0 +1,1 @@
+x,a=input().split();print((x>a)*10)

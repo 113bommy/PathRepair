@@ -1,0 +1,5 @@
+n = int(input())
+c = input()
+d = c.count('w')
+e = c[:d].count('w')
+print(d-e)

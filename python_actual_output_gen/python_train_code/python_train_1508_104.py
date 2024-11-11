@@ -1,0 +1,1 @@
+n,k=int(input().split());print(0--~-n//~-k)

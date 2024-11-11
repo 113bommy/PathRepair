@@ -1,0 +1,10 @@
+n=int(input())
+d='abcdefghijklmnopqrstuvwxyz'
+x=n
+s=''
+n-=1
+while(n>0):
+    s+=d[n%26]
+    n=n//26
+    n-=1
+print(s[::-1])

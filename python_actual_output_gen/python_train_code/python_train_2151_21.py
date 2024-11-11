@@ -1,0 +1,1 @@
+print("YNEOS"[eval(input().replace(' ','+'))-17::2])

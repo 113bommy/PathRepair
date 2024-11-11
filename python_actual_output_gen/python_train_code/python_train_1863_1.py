@@ -1,0 +1,10 @@
+s=list(input())
+h=len(s)
+s=set(s)
+k=int(input())
+if(k>h):
+    print("impossible")
+elif(k==h):
+    print(h-len(s))
+else:
+    print(0)

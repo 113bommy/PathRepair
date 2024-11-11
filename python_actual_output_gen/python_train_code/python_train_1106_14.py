@@ -1,0 +1,1 @@
+print(input()*0+'YNEOS'[all(p==sum(map(input().count,'aeiouy')) for p in map(int,input().split()))::2])

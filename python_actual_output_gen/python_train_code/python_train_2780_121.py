@@ -1,0 +1,1 @@
+print('ABC'if input()=='ABC'else'ARC')

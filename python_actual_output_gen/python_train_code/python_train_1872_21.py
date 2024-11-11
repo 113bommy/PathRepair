@@ -1,0 +1,1 @@
+i=input;i();l=map(int,i().split());print(["No","Yes"][max(l)*2<sum(l)])

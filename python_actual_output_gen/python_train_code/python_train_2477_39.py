@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print(max(b,c),max(0,b+c-a))

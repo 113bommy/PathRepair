@@ -1,0 +1,7 @@
+n,m=map(int,input().split())
+c=0
+while(n*3>m*2):
+    n=n*3
+    m=m*2
+    c=c+1
+print(c)

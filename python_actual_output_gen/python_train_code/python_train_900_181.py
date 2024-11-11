@@ -1,0 +1,1 @@
+print('ALC' * int(input()))

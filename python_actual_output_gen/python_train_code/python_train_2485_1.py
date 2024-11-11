@@ -1,0 +1,33 @@
+n=int(input())
+arr=list(map(int,input().split()))
+ans=0
+i=10**6
+count=0
+tempans=0
+flag=0
+for j in range(n):
+    if(arr[j]==j+1):
+        tempans+=1
+    else:
+        i=j+1
+        flag=1
+        break
+if(tempans>0):
+    ans=max(tempans-1,tempans)
+if(i==10**6 and ans==0):
+    i=1
+while(i<n):
+    if(arr[i]==arr[i-1]+1):
+        count+=1
+    else:
+        if(count>0):
+            ans=max(ans,count-1)
+        count=0
+    i+=1
+    #print(count,ans)
+if(count!=0):
+    if(arr[-1]==1000):
+        ans=max(count,ans)
+    else:
+        ans+=max(count-1,ans)
+print(ans)

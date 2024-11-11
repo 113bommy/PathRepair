@@ -1,0 +1,1 @@
+k,s=map(int,input().split());k+=1;print(sum(k>=s-I//k-I%k>=0for I in range(k**2)))

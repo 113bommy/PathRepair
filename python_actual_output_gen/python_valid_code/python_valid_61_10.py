@@ -1,0 +1,25 @@
+a1,a2,a3=map(int,input().split())
+b1,b2,b3=map(int,input().split())
+n=int(input())
+x=a1+a2+a3
+y=b1+b2+b3
+c=0
+if((x<=5 and y<=10) and n>=2):
+	print('YES')
+else:
+	if(x%5==0):
+		m=x//5
+		c=c+m
+	if(x%5!=0):
+		m=x//5
+		c=c+m+1
+	if(y%10==0):
+		m=y//10
+		c=c+m
+	if(y%10!=0):
+		z=y//10
+		c=c+m+1
+	if(c>n):
+		print('NO')
+	if(c<=n):
+		print('YES')

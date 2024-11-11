@@ -1,0 +1,1 @@
+print("A" + input().upper()[0]+"C")

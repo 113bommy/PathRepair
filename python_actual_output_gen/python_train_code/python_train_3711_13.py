@@ -1,0 +1,1 @@
+a,b,c,d=map(int,input().split());A=abs;print("YNeos"[min(A(a-c),max(A(a-b),A(b-c)))<=d::2])

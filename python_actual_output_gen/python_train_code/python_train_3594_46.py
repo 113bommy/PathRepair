@@ -1,0 +1,1 @@
+print((lambda k:(2*k[0]+k[0]*(k[2]-1))*k[2]//2-k[1])(list(map(int,input().split()))))

@@ -1,0 +1,1 @@
+a,s=open(0);print((s,"red")[int(a)>3199])

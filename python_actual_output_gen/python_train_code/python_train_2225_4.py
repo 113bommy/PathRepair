@@ -1,0 +1,1 @@
+s=input();n=len(s);print(min([max(i,n-i)for i in range(1,n)if s[i-1]!=s[i]]or[0]))

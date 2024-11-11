@@ -1,0 +1,1 @@
+input(); s = input(); print('NYOE S'[s[-1] != s[0] == 'S'::])

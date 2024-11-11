@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print(b+a*(2*(1-b%a)-1))

@@ -1,0 +1,11 @@
+n,m=map(int,input().split())
+p1=0
+p2=0
+if(n==m):
+    p1=n+m-1
+    p2=0
+    print(p2,p1)
+else:
+    p1=max(n,m)-1
+    p2=min(n,m)
+    print(p1,p2)

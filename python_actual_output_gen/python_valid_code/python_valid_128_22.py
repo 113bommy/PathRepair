@@ -1,0 +1,1 @@
+print(set("AB6")&set(input())and"YES"or"NO")

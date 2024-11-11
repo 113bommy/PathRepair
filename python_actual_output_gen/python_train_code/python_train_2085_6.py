@@ -1,0 +1,5 @@
+c1=int(input())
+c2=int(input())
+c3=int(input())
+c4=int(input())
+print(0 if c1!=c4 else 1 if (c3>0 and (c1>0 or c2>0)) else 0)

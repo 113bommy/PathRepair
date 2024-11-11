@@ -1,0 +1,12 @@
+
+n,a,b,c=map(int,input().split())
+x=n%4
+x=4-x
+if(x==4):
+    print(0)
+elif(x==1):
+    print(min(a,c*3))
+elif(x==2):
+    print(min(a*2,b,c*2))
+elif(x==3):
+    print(min(3*a,a+b,c))

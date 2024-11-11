@@ -1,0 +1,1 @@
+print(round(input()/2)-1)

@@ -1,0 +1,1 @@
+print ("Yes" if input() in ("AAA", "BBB") else "No")

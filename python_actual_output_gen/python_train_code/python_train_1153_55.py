@@ -1,0 +1,1 @@
+print(['P','Imp'][eval(input().replace(' ','+'))%3>0]+'ossible')

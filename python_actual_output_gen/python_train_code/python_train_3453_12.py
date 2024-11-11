@@ -1,0 +1,8 @@
+n=int(input())
+s=list(map(int,input().split()))
+M=max(s);m=min(s)
+q=s.copy()
+q.reverse()
+a=s.index(M)
+b=q.index(m)
+print(a+b-1 if n-b<a else a+b)

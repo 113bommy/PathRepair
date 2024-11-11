@@ -1,0 +1,13 @@
+b=int(input())
+g=int(input())
+d=int(input())
+if(b>=d<=g):
+    print(d+1)
+elif(b<d<=g):
+    print(b+1)
+elif(b>=d>g):
+    print(g+1)
+elif((b+g)<d):
+    print(min(b,g))
+else:
+    print("1")

@@ -1,0 +1,3 @@
+a,b,c,d=map(int,input().split()) 
+x = max(a*c,0,b*d)
+print(x)

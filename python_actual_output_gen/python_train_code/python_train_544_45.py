@@ -1,0 +1,1 @@
+print("Yes" if sum(list(map(int,input().split())))>=22 else "No")

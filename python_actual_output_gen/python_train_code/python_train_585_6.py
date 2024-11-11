@@ -1,0 +1,1 @@
+print("YNeos"["".join(sorted(input()))!="1479"::2])

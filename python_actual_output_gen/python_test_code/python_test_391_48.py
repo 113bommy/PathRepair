@@ -1,0 +1,1 @@
+print(1 if int(input().split()[2])==1 else 0)

@@ -1,0 +1,1 @@
+w=input();print("GBOAODD"[1^(w[0]!=w[1]!=w[2]!=w[3])::2])

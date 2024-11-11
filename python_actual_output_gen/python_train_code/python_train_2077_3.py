@@ -1,0 +1,1 @@
+"".join(list(map(lambda x: "9" if x=="1" else "1", input())))

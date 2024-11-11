@@ -1,0 +1,1 @@
+a,*_,e,k=eval('int(input()),'*6);print(':('*(e-a>k)|'Yay!')

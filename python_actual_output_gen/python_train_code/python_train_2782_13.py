@@ -1,0 +1,1 @@
+print(len([None for i in range(int(input())+1) if len(str(i)) % 2]))

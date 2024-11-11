@@ -1,0 +1,1 @@
+_,a=open(0);print('ADPEPNRIOEVDE D'[any(a%3*a%5&~a for a in map(int,a.split()))::2])

@@ -1,0 +1,1 @@
+print('YES' if (lambda i: set(i).issubset(set('ACHIMOTUVWXY')) and i==i[::-1])(input()) else 'NO')

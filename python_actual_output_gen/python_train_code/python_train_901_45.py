@@ -1,0 +1,5 @@
+h = int(input())
+w = int(input())
+n = int(input())
+h = max(h, w)
+print(n // h)

@@ -1,0 +1,9 @@
+n=input()
+if(len(n)<2):
+  n="0"+n
+s=n[-2]+n[-1]
+s=int(s)
+if(s%4==0 and s!=0):
+  print(4)
+else:
+  print(0)

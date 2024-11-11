@@ -1,0 +1,1 @@
+print("A"+input()[7]+"C")

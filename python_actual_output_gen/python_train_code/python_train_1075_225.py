@@ -1,0 +1,1 @@
+print(str(1000-int(input()))[-3:])

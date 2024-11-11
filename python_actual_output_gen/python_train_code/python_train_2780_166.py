@@ -1,0 +1,1 @@
+print('ABC' if input() == 'ARS' else 'ARS')

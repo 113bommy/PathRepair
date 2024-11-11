@@ -1,0 +1,1 @@
+print(["Yes","No"][int(input())<int(input())%500])

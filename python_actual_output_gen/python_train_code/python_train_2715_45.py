@@ -1,0 +1,5 @@
+n=int(input())
+arr1=list(map(int,input().split()))
+n=int(input())
+arr2=list(map(int,input().split()))
+print(max(arr1)+max(arr2))

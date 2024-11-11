@@ -1,0 +1,1 @@
+print("YNeos"[input()==("AAA"or"BBB")::2])

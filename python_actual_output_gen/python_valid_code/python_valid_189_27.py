@@ -1,0 +1,1 @@
+print('YES' if input().count('o')>=8 else 'NO')

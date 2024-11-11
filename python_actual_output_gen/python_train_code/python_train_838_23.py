@@ -1,0 +1,1 @@
+n=int(input());print(+(n//100*6>n%100))

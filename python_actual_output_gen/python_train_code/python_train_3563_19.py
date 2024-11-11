@@ -1,0 +1,5 @@
+a = "zero one two three four five six seven eight nine ten".split()
+b  = "ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+c = "a a twenty thirty fourty fifty sixty seventy eighty ninety".split()
+n = int(input())
+print(c[n//10]+('-'+a[n%10] if n%10 else '') if n > 19 else b[n%10] if n > 9 else a[n] )

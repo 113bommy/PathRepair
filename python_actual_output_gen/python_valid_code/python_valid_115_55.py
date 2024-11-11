@@ -1,0 +1,1 @@
+n,a,b=map(int,input().split());print("BAolriycse"[(b-a)%2::2])

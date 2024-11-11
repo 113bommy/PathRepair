@@ -1,0 +1,6 @@
+s=input()
+count_n=s.count('n')
+count_e=s.count('e')
+count_i=s.count('i')
+count_t=s.count('t')
+print(min(count_n-1//2,count_e//3,count_i,count_t))

@@ -1,0 +1,1 @@
+s=input();s.count('R')-(s=="RSR")

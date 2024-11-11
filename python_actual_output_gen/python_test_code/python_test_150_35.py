@@ -1,0 +1,1 @@
+print("AB"+["c","D"][len(input())>3])

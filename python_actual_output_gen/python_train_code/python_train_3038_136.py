@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print([i for i in range(10**6)if a==i//12.5and b==i//10]+[-1][0])

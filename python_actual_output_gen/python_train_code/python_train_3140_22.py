@@ -1,0 +1,1 @@
+k,t,*a=map(int,open(0).read().split());print(max(max(a)*2-sum(a),1)+1)

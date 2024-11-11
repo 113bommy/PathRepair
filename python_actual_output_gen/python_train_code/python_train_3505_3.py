@@ -1,0 +1,1 @@
+a,b,c,x=[int(input())+1for _ in[0]*4];print(sum(c>x/50-I//b*10>I%b*2for I in range(a*b)))

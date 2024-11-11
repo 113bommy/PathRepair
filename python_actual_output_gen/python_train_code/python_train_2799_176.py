@@ -1,0 +1,12 @@
+n,k,l,c,d,p,nl,np=map(int,input().split())
+a=0
+b=0
+e=0
+f=0
+a=k*l
+b=int(a/n)
+e=c*d
+f=int(p/np)
+g=0
+g=int(min(b,e,f)/n)
+print(g)

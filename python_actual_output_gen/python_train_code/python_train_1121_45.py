@@ -1,0 +1,1 @@
+a,b,k=map(int,input().split());r=range(a,b+1);print(*sorted({*(r[:k]+r[-k:])}))

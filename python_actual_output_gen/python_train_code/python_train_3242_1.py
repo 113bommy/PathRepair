@@ -1,0 +1,11 @@
+n,d=map(int,input().split())
+l=list(map(int,input().split()))
+sum1=sum(l)
+len=len(l)
+total=sum1+(10*(len-1))
+if(d>=total):
+    t=d-total
+    ans=(2*(len-2)+(t//5))
+    print(ans)
+else:
+    print("-1")

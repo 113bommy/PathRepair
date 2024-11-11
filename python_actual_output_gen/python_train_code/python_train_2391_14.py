@@ -1,0 +1,5 @@
+k,d=map(int,input().split())
+if d==0 :
+    print('No solution')
+else:
+    print(str(d)+'0'*(k-1))

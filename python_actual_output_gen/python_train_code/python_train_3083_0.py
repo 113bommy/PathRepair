@@ -1,0 +1,1 @@
+f"(lambda sys,b,l,r:(lambda bs,ls,rs,q:[(lambda c,i:(lambda i:[bs(i,l[0]),ls(0,l[0]-1)]if c=='L'else[rs(0,r[0]+1),bs(i,r[0])]if c=='R'else print(min(b[i]-l[0]-1,r[0]-b[i])))(int(i)))(*s.split())for s in sys.stdin])(b.__setitem__,l.__setitem__,r.__setitem__,sys.stdin.readline()))(__import__('sys'),[0]*200200,[0],[0])"

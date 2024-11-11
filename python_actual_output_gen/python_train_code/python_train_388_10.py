@@ -1,0 +1,15 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=l.index(1)
+y=l.index(n)
+if(abs(x-y)==n-1):
+    print(n-1)
+else:
+    if(x<y):
+        p=x
+        q=n-y-1
+    else:
+        p=n-x-1
+        q=y
+    z=min(p,q)+1
+    print(z+abs(y-x))

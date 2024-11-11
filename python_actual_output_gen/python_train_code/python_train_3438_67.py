@@ -1,0 +1,1 @@
+r=range(1,32);x=int(input());print(max(b**p*(b**p<=x)for p in r for b in r))

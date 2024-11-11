@@ -1,0 +1,1 @@
+print("Yes" if sorted(input())<sorted(input()) else "No")

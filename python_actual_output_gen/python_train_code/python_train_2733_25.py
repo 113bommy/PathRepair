@@ -1,0 +1,34 @@
+n=int(input())
+digit=int(input())
+l=[]
+s=str(digit)
+res=[]
+for i in s:
+    if(i=='2'):
+        res.append('2')
+    if(i=='3'):
+        res.append('3')
+    if(i=='4'):
+        res.append('2')
+        res.append('2')
+        res.append('3')
+    if(i=='5'):
+        res.append('5')
+    if(i=='6'):
+        res.append('3')
+        res.append('5')
+    if(i=='7'):
+        res.append('7')
+    if(i=='7'):
+        res.append('7')
+        res.append('2')
+        res.append('2')
+        res.append('2')
+    if(i=='8'):
+        res.append('7')
+        res.append('3')
+        res.append('3')
+        res.append('2')
+res.sort()
+res.reverse()
+print(''.join(res))

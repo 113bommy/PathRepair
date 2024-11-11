@@ -1,0 +1,1 @@
+print('White' if int(input())-2 <= sum(map(int,input().split()))<<1 else 'Black')

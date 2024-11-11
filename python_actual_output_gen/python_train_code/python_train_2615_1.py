@@ -1,0 +1,21 @@
+q=int(input())
+for i in range(q):
+    t=list(map(int,input().split()))
+    n=t[0]
+    k=t[1]
+    t=int(n%k)
+    kq=0
+    while(n!=0):
+        if(n<k):
+            kq=kq+n
+            n=0
+        else:
+            if(t==0):
+                kq=kq+1
+                n=int(n//k)
+            else:
+                kq=kq+t+1
+                n=int((n-t)//3)
+        t=int(n%k)
+        #print(n,kq)
+    print(kq)

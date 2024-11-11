@@ -1,0 +1,1 @@
+print('YES' if set(str(sum([1 if _ in {'4', '7'} else 0 for _ in list(input())]))) == {'4', '7'} else 'NO')

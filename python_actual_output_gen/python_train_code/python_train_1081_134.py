@@ -1,0 +1,1 @@
+n=sum(list(map(int,input().split())));print(n-24 if n>=4 else n)

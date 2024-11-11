@@ -1,0 +1,1 @@
+n,s=open(0);b=s.count("B");print("YNeos"[b>=n-b::2])

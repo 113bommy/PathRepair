@@ -1,0 +1,1 @@
+print(int(700+input().count('○')*100))

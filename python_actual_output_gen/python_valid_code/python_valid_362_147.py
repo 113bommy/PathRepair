@@ -1,0 +1,1 @@
+print("CHAT WITH HER!" if len(set(map(str, input())))%2==1 else "IGNORE HIM!")

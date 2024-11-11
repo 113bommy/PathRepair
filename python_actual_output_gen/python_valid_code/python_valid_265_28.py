@@ -1,0 +1,1 @@
+print("No" if set(input())==1 else "Yes")

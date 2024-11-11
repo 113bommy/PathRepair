@@ -1,0 +1,1 @@
+print("Yes" if "abc" == sorted(input()) else "No")

@@ -1,0 +1,10 @@
+t = '<3' + '<3'.join(input() for i in range(int(input()))) + '<3'
+p=input()
+s="yes"
+j=0
+for c in t:
+    j = p.find(c, j)
+    if j == -1:
+        s = 'no'
+        break
+print(s)

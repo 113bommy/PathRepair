@@ -1,0 +1,1 @@
+a,b,x=map(int,input().split()); print(['NO','YES'][x<=a+b])

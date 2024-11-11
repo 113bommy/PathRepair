@@ -1,0 +1,1 @@
+n,k,s=map(int,input().split()),list(map(int,input().split()));s.sort();print(sum(s[-k:]))

@@ -1,0 +1,14 @@
+n, k =[int(x) for x in input().split()]
+y = [int(x) for x in input().split()]
+m = 0
+for i in range(n):
+    y[i] = 5-y[i]
+y.sort()
+if y[0]>=k:
+    m = n
+else:
+    for i in range(n):
+        if y[i-1]<=k<=y[i]:
+            m = n-i-2
+            break
+print(m//3)

@@ -1,0 +1,3 @@
+a,b,r=map(int,input().split())
+(print("First")if (a>2*r and b>2*r) else print("Second"))
+

@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print("YNEOS"[b*2-a-c>0::2])

@@ -1,0 +1,18 @@
+t=int(input())
+while(t>0):
+    n,a,b=map(int,input().split())
+    j=a*2
+    if(n==1):
+        print(a)
+    else:
+        if(j>b):
+            f=n//b
+            print("f",f)
+            f1=n%2
+            print("f1",f1)
+            f2=a*f1
+            print("f2",f2)
+            print((b*f)+f2)
+        else:
+            print(a*n)
+    t=t-1

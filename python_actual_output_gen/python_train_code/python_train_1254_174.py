@@ -1,0 +1,1 @@
+print(['No','Yes'][input().count('2')>0])

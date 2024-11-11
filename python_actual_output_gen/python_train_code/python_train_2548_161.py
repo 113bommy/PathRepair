@@ -1,0 +1,1 @@
+N=int(input());print(sum(sorted([int(i) for i in input().split()])[N:2*N]))

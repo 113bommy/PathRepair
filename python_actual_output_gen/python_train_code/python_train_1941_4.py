@@ -1,0 +1,5 @@
+t = input()
+k = t.find('.')
+if k < 0: print(int(t))
+elif t[k - 1] == '9': print('GOTO Vasilisa.')
+else: print((t[:k - 1] + str(int(t[k - 1]) + 1)) if t[k + 1] > '4' else t[k])

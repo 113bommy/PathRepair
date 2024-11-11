@@ -1,0 +1,1 @@
+"+".join(sorted(list(map(str,input().split('+')))))

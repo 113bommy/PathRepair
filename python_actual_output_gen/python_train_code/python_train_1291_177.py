@@ -1,0 +1,1 @@
+print(700+list(input().split()).count('o')*100)

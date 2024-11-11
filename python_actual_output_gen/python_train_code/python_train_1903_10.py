@@ -1,0 +1,1 @@
+k,_,*a=map(int,open(0).read().split());a.append(k);b=[y-x for x,y in zip(a,a[1:])];print(sum(b)-max(b))

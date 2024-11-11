@@ -1,0 +1,5 @@
+i = int(input())
+l1=list(map(int,input().split(' ')))
+l2=list(map(int,input().split(' ')))
+if sum(l1)<=sum(l2):print('Yes')
+else:print('No')

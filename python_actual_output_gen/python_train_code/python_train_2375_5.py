@@ -1,0 +1,1 @@
+print('YNoes'[input()[:4]!='YAKI'::2])

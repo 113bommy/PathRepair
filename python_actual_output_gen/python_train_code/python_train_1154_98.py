@@ -1,0 +1,1 @@
+print('A%sC'%'RB'['200'>input()])

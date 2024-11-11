@@ -1,0 +1,1 @@
+print(["YES'","NO"][input().count("7")==2])

@@ -1,0 +1,1 @@
+k=eval(input().replace(" ","-"));print(min(0,k))

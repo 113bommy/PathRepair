@@ -1,0 +1,1 @@
+input();print("YES" if sum(map(int,input().split()))<= sum(sorted(map(int,input().split()))[:-1][:2]) else "NO")

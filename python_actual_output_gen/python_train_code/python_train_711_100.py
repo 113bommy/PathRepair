@@ -1,0 +1,5 @@
+I =lambda:int(input())
+M =lambda:map(int,input().split())
+LI=lambda:list(map(int,input().split()))
+n=I()
+print((n//2)-1)

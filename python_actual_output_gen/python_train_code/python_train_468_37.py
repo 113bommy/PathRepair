@@ -1,0 +1,1 @@
+print('phhbhhphph'[int(input()[-1])] + 'on')

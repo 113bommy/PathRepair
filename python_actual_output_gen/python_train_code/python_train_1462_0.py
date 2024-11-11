@@ -1,0 +1,1 @@
+a,b,c,d,e,f=map(int,input().split());print(b*(a+b+c)+2*a*c-e*e)

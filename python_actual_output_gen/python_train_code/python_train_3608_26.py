@@ -1,0 +1,1 @@
+a=input();print("DH"[a[0]==a[1]])

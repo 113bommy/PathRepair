@@ -1,0 +1,1 @@
+print(700+list(input()).count('○')*100)

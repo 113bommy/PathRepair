@@ -1,0 +1,1 @@
+k,a,b=map(int,input().split());print(1+2*((k-b-1)//(a-b)+1)if a-b>0 else(1 if k<=a else -1))

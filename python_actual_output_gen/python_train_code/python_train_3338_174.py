@@ -1,0 +1,5 @@
+X=input()
+A=input()
+B=input()
+k = int(X) - int(A)
+k % int(B)

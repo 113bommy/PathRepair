@@ -1,0 +1,5 @@
+a = int(input())
+b = int(input())
+n = int(input())
+t = max(a, b)
+print(n + t - 1 / t)

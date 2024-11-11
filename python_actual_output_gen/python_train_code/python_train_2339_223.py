@@ -1,0 +1,1 @@
+print('TBD'if int(input().split()[1])>4 else 'Heisei')

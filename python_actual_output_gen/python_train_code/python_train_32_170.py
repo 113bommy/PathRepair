@@ -1,0 +1,1 @@
+print("Odd" if (int(input()).replace(" ","*"))%2 else "Even")

@@ -1,0 +1,1 @@
+print(["Yay!", ":(", ":("][sum([x > 8 for x in input().split()])])

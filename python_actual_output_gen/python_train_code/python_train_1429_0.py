@@ -1,0 +1,1 @@
+print(sum(i-j<i^j<i for i in range(int(input())+1)for j in range((i+1)//2)))

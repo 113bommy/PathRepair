@@ -1,0 +1,1 @@
+input("A%sC"%input()[0])

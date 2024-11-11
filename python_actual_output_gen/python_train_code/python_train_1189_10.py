@@ -1,0 +1,8 @@
+n, k = map(int,input().split())
+s = list(input())
+for i in range(n):
+    if not k: break
+    c = str(int(not k and n > 1))
+    k -= c != s[i]
+    s[i] = c
+print(''.join(s))
