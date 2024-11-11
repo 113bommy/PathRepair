@@ -120,17 +120,17 @@ gdb test
 ## How to trace - Python
 ### Trace identifier values
 ```bash
-python ./python/python_test_multi_trace.py
-python ./python/python_valid_multi_trace.py
-python ./python/python_train_multi_trace.py
+python python_test_multi_trace.py
+python python_valid_multi_trace.py
+python python_train_multi_trace.py
 ```
 ### Delete Loop & Generate Trace Summary
 ```bash
-python ./python/generate_trace_added_data.py
+python generate_trace_added_data.py
 ```
 ### Select Single Test case per one code pair
 ```bash
-python ./python/python_data_filter.py
+python python_data_filter.py
 ```
 
 *Final Data will be saved in python_data folder*
