@@ -1,0 +1,1 @@
+import re;print("AC" if re.fullmatch("A[b-z]+C[b-z]+", input()) is not None else "WA")

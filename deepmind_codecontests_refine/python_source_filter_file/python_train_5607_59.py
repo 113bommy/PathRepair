@@ -1,0 +1,6 @@
+x,y=map(int,input().split())
+if x=0:print(abs(y)+(y<0))
+elif y=0:print(abs(x)+(x>0))
+elif 0<x<y or x<y<0:print(abs(y-x))
+elif 0<y<x or y<x<0:print(2+abs(x-y))
+else:print(abs(abs(x)-abs(y))+1)

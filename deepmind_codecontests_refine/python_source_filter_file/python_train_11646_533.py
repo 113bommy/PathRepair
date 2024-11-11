@@ -1,0 +1,1 @@
+print("A%sC",%input().split()[0])

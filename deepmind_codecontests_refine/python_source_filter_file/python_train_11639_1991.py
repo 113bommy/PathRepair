@@ -1,0 +1,1 @@
+print("".join(reverse(input("").split(" "))))

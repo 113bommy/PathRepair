@@ -1,0 +1,1 @@
+n,a=open(0);n=int(n);print("YNeos"[a[:n//2]!=a[n//2:]::2])

@@ -1,0 +1,1 @@
+from collections import*;i=lambda:list(Counter(input()).values());print('YNeos'[i()!=i()::2])

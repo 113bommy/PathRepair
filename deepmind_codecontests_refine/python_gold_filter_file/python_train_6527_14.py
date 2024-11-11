@@ -1,0 +1,5 @@
+n, reverse, change = map(int, input().split())
+a = input()
+g = list(filter(lambda x: x, a.split('1')))
+nGroups = len(g)
+print(0 if not nGroups else ((nGroups - 1) * reverse + change if reverse < change else nGroups * change))

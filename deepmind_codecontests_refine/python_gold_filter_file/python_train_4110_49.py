@@ -1,0 +1,6 @@
+a,b,c,d = map(int,input().split())
+n = max(3*a/10,a-(a/250*c))
+m = max(3*b/10, b-(b/250*d))
+if m < n:print('Misha')
+if n < m:print('Vasya')
+if m == n:print('Tie')

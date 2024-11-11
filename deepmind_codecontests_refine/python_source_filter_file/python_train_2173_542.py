@@ -1,0 +1,1 @@
+print("".join(sorted([input() for _ in range(input().split()[0]))))

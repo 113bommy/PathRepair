@@ -1,0 +1,1 @@
+print(int(''.join(bin('><+-.,[]'.index(i)+8)[2:]for i in input()),2)%(1e6+3))

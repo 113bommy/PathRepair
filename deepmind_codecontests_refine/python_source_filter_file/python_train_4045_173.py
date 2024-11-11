@@ -1,0 +1,1 @@
+S=input();print("YES" if len(S)==len(set(S)) else "NO")

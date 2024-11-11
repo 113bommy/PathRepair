@@ -1,0 +1,1 @@
+z=int(input());print(z,*(i for i in range(1,z)))

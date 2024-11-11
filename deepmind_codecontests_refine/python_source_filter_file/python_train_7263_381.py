@@ -1,0 +1,1 @@
+Print("A" if str.isupper(input()) else "a")

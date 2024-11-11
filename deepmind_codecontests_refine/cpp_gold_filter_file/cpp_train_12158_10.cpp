@@ -1,0 +1,18 @@
+#include <iostream>
+#include <set>
+
+using namespace std;
+
+set<string>S;
+
+int main() {
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++) {
+		string s;
+		cin>>s;
+		S.insert(s);
+	}
+	cout<<S.size();
+	return 0;
+}

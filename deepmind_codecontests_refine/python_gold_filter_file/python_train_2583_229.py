@@ -1,0 +1,1 @@
+print('YES' if int(input().strip()) in [3,5,7] else 'NO')

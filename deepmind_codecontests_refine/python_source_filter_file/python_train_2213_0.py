@@ -1,0 +1,72 @@
+la,z=map(int,input().split())
+cost1,range,cost2=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+b.append(0)
+maxi=0
+add,j,i=0,0,0
+rama=[]
+while True:
+    if(j==la):
+        break
+    if(a[j]==b[i]):
+        rama.append([add,maxi])
+        i+=1
+        j+=1
+        maxi,add=0,0
+    else:
+        add+=1
+        maxi=max(maxi,a[j])
+        j+=1
+rama.append([add,maxi])
+b=[0]+b
+cost,flag=0,0
+if(i!=z or j!=la):
+    print(-1)
+elif(i==z and j==la and len(rama)==0):
+    print(0)
+elif(cost1<=cost2*range):
+    i=1
+    while(i<z+2):
+        f=b[i]
+        e=b[i-1]
+        maxu=max(f,e)
+        maxi=max(maxu,rama[i-1][1])
+        c=rama[i-1][0]
+        if(range<=c):
+            cost+=(c//range)*cost1+(c%range)*cost2
+        else:
+            if(maxi==maxu):
+                cost+=(c%range)*cost2
+            else:
+                flag=-1
+                break
+        i+=1
+    if(flag==-1):
+        print(-1)
+    else:
+        print(cost)
+else:
+    i=1
+    while(i<z+2):
+        f=b[i]
+        e=b[i-1]
+        maxu=max(f,e)
+        maxi=max(maxu,rama[i-1][1])
+        c=rama[i-1][0]
+        if(range<=c):
+            if(maxi==maxu):
+                cost+=(c)*cost2
+            else:
+                cost+=(range)*cost1+(c-range)*cost2
+        else:
+            if(maxi==maxu):
+                cost+=(c)*cost2
+            else:
+                flag=-1
+                break
+        i+=1
+    if(flag==-1):
+        print(-1)
+    else:
+        print(cost)

@@ -1,0 +1,23 @@
+n = int(input())
+count = 0
+if(n >= 100):
+    temp = n//100
+    n -= temp*100
+    count+=temp
+if(n > 20):
+    temp = n//20
+    n -= temp*20
+    count+=temp
+if(n >= 10):
+    temp = n//10
+    n -= temp*10
+    count+=temp
+if(n >= 5):
+    temp = n//5
+    n -= temp*5
+    count += temp
+if(n >= 1):
+    temp = n//1
+    n -= temp*1
+    count+= temp
+print(count)

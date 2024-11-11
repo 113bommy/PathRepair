@@ -1,0 +1,1 @@
+print("Aa".swapcase())

@@ -1,0 +1,1 @@
+n = input(); s = print(*sorted(list(input())), sep='')

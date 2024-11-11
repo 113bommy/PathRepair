@@ -1,0 +1,8 @@
+I=lambda:map(int,input().split())
+I()
+ax,ay=I()
+bx,by=I()
+cx,cy=I()
+cx,cy,bx,by=max(cx,bx),max(cy,by),min(cx,bx),min(cy,by)
+if cx>ax>bx or cy>ay>by:print("NO")
+else:print("YES")

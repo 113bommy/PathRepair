@@ -1,0 +1,1 @@
+A,B,T=map(int,input().split());print(min(A*B,T))

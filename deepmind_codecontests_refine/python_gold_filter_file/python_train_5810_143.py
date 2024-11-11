@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print((a+b)//2 if (a+b-1)%2 else "IMPOSSIBLE")

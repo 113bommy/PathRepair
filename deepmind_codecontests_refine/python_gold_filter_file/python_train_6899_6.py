@@ -1,0 +1,5 @@
+n = len(input())
+print(3)
+print(f'R {n-1}')
+print(f'L {n}')
+print(f'L 2')

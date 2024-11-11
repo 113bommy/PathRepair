@@ -1,0 +1,1 @@
+_,p=open(0);*p,=map(int,p.split());print(sum(a<b<c or c<b<a for a,b,c in zip(p,p[1:],p[2:])))

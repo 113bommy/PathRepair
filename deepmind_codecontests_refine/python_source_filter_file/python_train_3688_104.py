@@ -1,0 +1,6 @@
+n = int(input())
+d = list(map(int, input().split()))
+d.append(0)
+a, b = map(int, input().split())
+print(sum(d[a-1:b-1]))
+print(d)

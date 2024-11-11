@@ -1,0 +1,1 @@
+x,r=int(input()),range(-99,99);[i**5-x-j**5or exit(print(i,j))for i in r for j in r]

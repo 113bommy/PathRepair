@@ -1,0 +1,1 @@
+print("ABC%s"%input())

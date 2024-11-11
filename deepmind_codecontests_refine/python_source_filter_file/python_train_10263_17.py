@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=a.count(max(a))
+mn=a.count(min(a))
+print(n-m-mn)

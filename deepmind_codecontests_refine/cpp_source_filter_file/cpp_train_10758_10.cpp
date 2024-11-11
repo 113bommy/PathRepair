@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int p1 = 427, mo = 77270151;
+long long f[610000], g[610000], P[610000];
+int m, n, i;
+char c[610000], ans[610000];
+bool check(int x, int l) {
+  if (x < l) return 0;
+  long long t1 = (f[x] - f[x - l] * P[l]) % mo * P[x - l] % mo,
+            t2 = g[x] - g[x - l];
+  t1 = (t1 + mo) % mo;
+  t2 = (t2 + mo) % mo;
+  return t1 == t2;
+}
+void dfs(int l, bool o) {
+  if (l == n + 1) {
+    if (!o) return;
+    printf("%s\n", ans + 1);
+    exit(0);
+  }
+  for (int i = o ? 'a' : c[l]; i <= 'z'; ++i) {
+    ans[l] = i;
+    f[l] = (f[l - 1] * p1 + i) % mo;
+    g[l] = (g[l - 1] + P[l - 1] * i) % mo;
+    if (check(l, m) || check(l, m + 1)) continue;
+    dfs(l + 1, o | (i > c[l]));
+  }
+}
+int main() {
+  scanf("%d%s", &m, c + 1);
+  n = strlen(c + 1);
+  P[0] = 1;
+  for (i = 1; i <= n; ++i) P[i] = P[i - 1] * p1 % mo;
+  dfs(1, 0);
+  puts("Impossible");
+}

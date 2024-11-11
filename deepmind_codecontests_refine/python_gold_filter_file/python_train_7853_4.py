@@ -1,0 +1,6 @@
+n = int(input())
+x = list(map(int, input().split()))
+a = min(x)
+b = max(x)
+ca, cb = x.count(a), x.count(b)
+print(b - a, n * (n - 1) // 2 if a == b else ca * cb)

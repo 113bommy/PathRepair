@@ -1,0 +1,24 @@
+d={}
+a=int(input())
+d['t']=a
+s=int(input())
+d['s']=s
+v=int(input())
+d['v']=v
+j=int(input())
+d['j']=j
+e=int(input())
+f=int(input())
+if e>=f:
+    x=min(d['t'],d['j'])
+    d['t']-=x
+    d['j']-=x
+    y=min(d['j'],d['s'],d['v'])
+    print(e*x+f*y)
+else:
+    y=min(d['v'],d['s'],d['j'])
+    d['v']-=y
+    d['s']-=y
+    d['j']-=y
+    x=min(d['t'],d['j'])
+    print(e*x+f*y)

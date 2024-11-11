@@ -1,0 +1,41 @@
+n=int(input())
+
+class dice(object):
+	def __init__(self, d):
+		self.d = d
+
+	def roll(self,com):
+		a1,a2,a3,a4,a5,a6=self.d
+		if com=="E":
+			self.d = [a4,a2,a1,a6,a5,a3]
+		elif com=="W":
+			self.d = [a3,a2,a6,a1,a5,a4]
+		elif com=="S":
+			self.d = [a5,a1,a3,a4,a6,a2]
+		elif com=="N":
+			self.d = [a2,a6,a3,a4,a1,a5]
+
+import random
+ds=[]
+for i in range(n):
+	ds.append(dice(list(map(int,input().split()))))
+flag="Yes"
+for i in range(n):
+	for j in range(i):
+		if sorted(ds[i].d)!=sorted(ds[j].d):
+			continue
+		else:
+			c=["E","W","S","N"]
+			n=0
+			while n<1000:
+				if ds[i].d==ds[j].d:
+					break 
+				else:
+					ds[i].roll(c[random.randint(1,2)])
+				n+=1
+			if n==1000:
+				pass
+			else:
+				flag="No"
+
+print(flag)

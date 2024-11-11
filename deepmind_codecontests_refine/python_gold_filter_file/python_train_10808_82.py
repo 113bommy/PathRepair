@@ -1,0 +1,1 @@
+a,b,c,d=map(int,input().split());print("NYoe s"[((abs(b-a)<=d and abs(c-b)<=d) or abs(c-a)<=d)::2])

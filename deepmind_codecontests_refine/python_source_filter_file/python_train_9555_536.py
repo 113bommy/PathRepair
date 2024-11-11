@@ -1,0 +1,1 @@
+print("NYOE S"['7' in input()::2])

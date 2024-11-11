@@ -1,0 +1,1 @@
+e,*a=sorted(eval('int(input()),'*5),key=lambda x:~x%10);print(e-sum(-i//10*10for i in a))

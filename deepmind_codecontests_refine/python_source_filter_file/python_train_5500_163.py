@@ -1,0 +1,1 @@
+a=int(input());b=int(input());print("Yneos"[a%500>b::2])

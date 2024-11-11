@@ -1,0 +1,1 @@
+print(['no','yes'][input().lstrip().count('0') >= 6])

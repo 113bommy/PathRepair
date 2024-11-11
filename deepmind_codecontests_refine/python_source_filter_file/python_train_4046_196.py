@@ -1,0 +1,1 @@
+for i in open(0).read().split()[1:]:print(i+"\n"+i)

@@ -1,0 +1,1 @@
+input();k=input();k=k.replace(" ","");print((k.rfind("1") if k.rfind("0")>=k.rfind("1") else k.rfind("0"))+1)

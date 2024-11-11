@@ -1,0 +1,10 @@
+temp = [int(x) for x in input().split()]
+n = temp[0]
+k = temp[1]
+l = temp[2]
+c = temp[3]
+d = temp[4]
+p = temp[5]
+nl = temp[6]
+np = temp[7]
+print(int(min(k*l/nl, c*d, p/np)//n))

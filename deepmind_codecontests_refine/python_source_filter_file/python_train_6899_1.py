@@ -1,0 +1,6 @@
+x=input()
+s=len(x)
+print(3)
+print("L 2")
+print("R 2")
+print("R",2*(s-1))

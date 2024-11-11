@@ -1,0 +1,1 @@
+print(-int(input())+sum(map(input().split(),int)))

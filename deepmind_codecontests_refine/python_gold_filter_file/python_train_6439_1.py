@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print(['Draw',['Bob','Alice'][(a-2)%13>(b-2)%13]][a!=b])

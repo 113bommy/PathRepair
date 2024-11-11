@@ -1,0 +1,1 @@
+print(''.join(list(map(lambda i: i.upper(),input()))))

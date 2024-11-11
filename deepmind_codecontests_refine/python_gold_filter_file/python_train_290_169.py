@@ -1,0 +1,1 @@
+print((lambda a,b:sum(b)-int(a))(input(),list(map(int,input().split()))))

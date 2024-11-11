@@ -1,0 +1,1 @@
+print(2*(22/7)*int(input()))

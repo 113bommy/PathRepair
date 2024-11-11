@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+string s = "dabc";
+int i, n;
+int main() {
+  cin >> n;
+  for (i = 0; i < n; i++) {
+    cout << s[i % 4];
+  }
+  cout << endl;
+}

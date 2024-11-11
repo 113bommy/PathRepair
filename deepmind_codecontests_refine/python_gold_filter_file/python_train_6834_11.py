@@ -1,0 +1,11 @@
+a=int(input())
+if(a>36):
+	print(-1)
+else:
+	if(a%2==0):
+		a=a//2
+		print("8"*a)
+	else:
+		a=a//2
+		c="8"*a
+		print(c+"6")				

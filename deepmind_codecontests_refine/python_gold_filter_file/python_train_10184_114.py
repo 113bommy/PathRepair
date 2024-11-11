@@ -1,0 +1,1 @@
+m,_,M=sorted(map(int,input().split()));print(M-m)

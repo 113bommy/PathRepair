@@ -1,0 +1,9 @@
+n,m=map(int,input().split())
+l=list(map(int,input().split()))
+x,y,i=0,0,0
+while(i<n):
+    x=x+l[i]
+    if(x>m):
+        y,x,i=y+1,0,i-1
+    i=i+1
+print(y+1)

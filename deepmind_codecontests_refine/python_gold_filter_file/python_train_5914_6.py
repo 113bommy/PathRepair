@@ -1,0 +1,1 @@
+_,p=open(0);p=p.split();print(sum(sorted(a,key=int)[1]==a[1]for a in zip(p,p[1:],p[2:])))

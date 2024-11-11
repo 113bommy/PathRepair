@@ -1,0 +1,1 @@
+print("YNeos"[max(int(input())//30,0):5:2])

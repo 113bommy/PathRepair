@@ -1,0 +1,5 @@
+a,b = map(int,input().split())
+t = min(b-1,a-b)
+if a == 1 :print(0)
+elif b != a and b != 1: print(3*a+t)
+else: print(3*a)

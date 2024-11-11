@@ -1,0 +1,2 @@
+input()
+print(sum(max(int(x)- int(y), 0) for x, y in zip(input().split(), input().split())))

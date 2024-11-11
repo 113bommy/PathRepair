@@ -1,0 +1,1 @@
+print("Hello World" if print() == "1" else (int(input()) + int(input())))

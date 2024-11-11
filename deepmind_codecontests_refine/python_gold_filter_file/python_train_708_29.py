@@ -1,0 +1,1 @@
+a,b,s=open(0).read().split();a=int(a);print("NYoe s"[s.count("-")==1and s[a]=="-"::2])

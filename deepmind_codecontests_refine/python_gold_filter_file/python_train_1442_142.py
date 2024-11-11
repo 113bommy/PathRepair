@@ -1,0 +1,1 @@
+print('YNEOS'[int(input()[::2])%4>0::2])

@@ -1,0 +1,1 @@
+a,b,c,d,lmh=map(int,input().split());print(min(a,b,c//2,d//7,lmh//4))

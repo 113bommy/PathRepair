@@ -1,0 +1,5 @@
+st = input()
+l = len(st)
+print('R', l - 1)
+print('L', l)
+print('L', 2)

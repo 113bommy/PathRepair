@@ -1,0 +1,1 @@
+print(3-sum(i!=j for i,j in zip(*open(0))))

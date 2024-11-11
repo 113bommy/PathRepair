@@ -1,0 +1,50 @@
+n=int(input())
+for i in range(n):
+    t1=input()
+    t2=input()
+    l1=len(t1)
+    l2=len(t2)
+    if(t1[0]==t2[0]):
+        s1=t1[0]
+        s2=t2[0]
+        n1=[1]
+        n2=[1]
+        r1=0
+        r2=0
+        for j in range(1,l1):
+            if(t1[j]!=t1[j-1]):
+                s1=s1+t1[j]
+                r1+=1
+                n1.append(0)
+            else:
+                n1[r1]+=1
+        for j in range(1,l2):
+            if(t2[j]!=t2[j-1]):
+                s2=s2+t2[j]
+                r2+=1
+                n2.append(0)
+            else:
+                n2[r2]+=1
+        l1=len(s1)
+        l2=len(s2)
+        if(l1!=l2):
+            print('NO')
+        else:
+            r1=1
+            r2=1
+            for j in range(1,l1):
+                if(s1[j]!=s2[j]):
+                    l2=0
+                    break
+                else:
+                    if(n1[r1]>n2[r2]):
+                        l2=0
+                        break
+                r1+=1
+                r2+=1
+            if(l2==0):
+                print('NO')
+            else:
+                print('YES')
+    else:
+        print('NO')

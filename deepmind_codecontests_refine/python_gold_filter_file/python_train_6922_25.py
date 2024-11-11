@@ -1,0 +1,6 @@
+r=lambda:map(int,input().split())
+a,b=r()
+k,m=r()
+A=list(r())
+B=list(r())
+print(('NO','YES')[A[k-1]<B[b-m]])

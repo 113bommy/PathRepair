@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int n, m, i, j, a[20], b[20], t[3], balance = 0, cost = 0;
+  priority_queue<int, vector<int>, greater<int> > pq;
+  scanf("%d%d", &n, &m);
+  for (i = 0; i < n; i++) scanf("%d", &a[i]);
+  for (i = 0; i < n; i++) scanf("%d", &b[i]);
+  for (i = 0, j = 0; i < 3 * n; i++, j = (j < n - 1) ? (j + 1) : 0) {
+    balance--;
+    pq.push(a[j] - b[j]);
+    cost += b[j];
+    if (balance < 0) {
+      int t = pq.top();
+      pq.pop();
+      cost += t;
+      balance += 2;
+    }
+    if ((i + 1) % n == 0) t[i / n] = cost;
+  }
+  printf("%d", t[1] + (t[2] - t[0]) * (m / 2 - 1));
+  return 0;
+}

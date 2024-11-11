@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+int main() {
+  int n;
+  scanf("%d", &n);
+  if (n % 2 == 0) {
+    printf("Mahmoud");
+  } else {
+    printf("Ehub");
+  }
+  return 0;
+}

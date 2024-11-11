@@ -1,0 +1,13 @@
+x=input()
+x=x.replace(",",", ")
+x=x.replace(".",". ")
+x=x.replace("!","! ")
+x=x.replace("?","? ")
+while (x.count("  ")!=0):
+  x=x.replace("  "," ")
+x=x.replace(" ,",",")
+x=x.replace(" .",".")
+x=x.replace(" !","!")
+x=x.replace(" ?","?")
+print(x)  
+print("galileo was born in pisa")

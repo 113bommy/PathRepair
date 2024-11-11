@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+struct mjj {
+  double x, y;
+} b[100010];
+int n, V, p[10010], i, m, t;
+double a[10010], x[10010], y[10010], xt, yt1, yt2;
+bool cmp(int x, int y) { return a[x] < a[y]; }
+bool cmp1(mjj x, mjj y) { return x.x < y.x; }
+int main() {
+  scanf("%d%d", &n, &V);
+  for (i = 1; i <= n; i++) scanf("%lf", &a[i]), p[i] = i;
+  scanf("%d\n", &m);
+  for (i = 1; i <= m; i++) scanf("%lf%lf", &b[i].x, &b[i].y);
+  sort(p + 1, p + n + 1, cmp);
+  sort(b + 1, b + m + 1, cmp1);
+  t = 1;
+  for (i = 1; i <= n; i++) {
+    xt = V * cos(a[p[i]]);
+    yt1 = V * sin(a[p[i]]);
+    yt2 = -4.9;
+    for (; (b[t].x * (yt1 + b[t].x * yt2 / xt) / xt) > 1e-5 &&
+           (b[t].x * (yt1 + b[t].x * yt2 / xt) / xt) - b[t].y > 1e-5;
+         t++)
+      ;
+    if ((b[t].x * (yt1 + b[t].x * yt2 / xt) / xt) > 1e-5)
+      x[p[i]] = b[t].x, y[p[i]] = (b[t].x * (yt1 + b[t].x * yt2 / xt) / xt);
+    else
+      y[p[i]] = 0, x[p[i]] = yt1 * xt / (-yt2);
+  }
+  for (i = 1; i <= n; i++) printf("%.8lf %.8lf\n", x[i], y[i]);
+}

@@ -1,0 +1,1 @@
+N,A,B=map(int,input().split());print(N/B*A+min(N%B,A))

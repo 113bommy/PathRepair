@@ -1,0 +1,5 @@
+n = int(input())
+a = list(map(int, input().split()))
+ai = max(a)
+aj = min(filter(lambda x: x!=ai, a), key=lambda x: abs(x-ai//2))
+print("{} {}".format(ai, aj))

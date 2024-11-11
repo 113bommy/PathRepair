@@ -1,0 +1,1 @@
+print("Yes" if 3 in [int(x) for x in input().split()] else "No")

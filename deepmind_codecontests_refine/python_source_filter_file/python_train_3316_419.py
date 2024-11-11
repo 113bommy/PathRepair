@@ -1,0 +1,1 @@
+print("A{}C".format("B" if int(input()<1200 else "R"))

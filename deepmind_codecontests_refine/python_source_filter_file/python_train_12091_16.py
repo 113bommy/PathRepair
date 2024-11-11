@@ -1,0 +1,19 @@
+n,m,k=map(int,input().split())
+l=list(map(int,input().split()))
+l.sort()
+a=l[-1]
+b=l[-2]
+#print(a,b)
+if(k>=n):
+    print(n*a)
+else:
+    if(m%(k+1)==0):
+        c=m//(k+1)
+        #print("c",c)
+        d=k*a+b
+        print(c*d)
+    else:
+        e=m%(k+1)
+        c=m//(k+1)
+        d=k*a+b
+        print(c*d+e*a)

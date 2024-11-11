@@ -1,0 +1,2 @@
+n=int(input().split()[0])
+print(''.join(sorted([input()for _ in[0]*n])))

@@ -1,0 +1,20 @@
+n,s1,e1,s2,e2=map(int,input().split())
+flag=0
+m=n
+while(m):
+    if(s1==s2):
+        flag=1
+        break
+    if(s1==e1 or s2==e2):
+        break
+    s1+=1
+    s2-=1
+    if(s1>n):
+        s1-=n
+    if(s2<n):
+        s2+=n
+    m=-1
+if(flag==1):
+    print("Yes")
+else:
+    print("No")

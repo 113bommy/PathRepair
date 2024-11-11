@@ -1,0 +1,1 @@
+ss = input();print(ss[0].upper()+ss[1:])

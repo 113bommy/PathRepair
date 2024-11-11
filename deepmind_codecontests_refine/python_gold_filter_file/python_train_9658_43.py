@@ -1,0 +1,1 @@
+_,*l=map(int,open(0).read().split());print(sum(i%2 for i in l[::2]))

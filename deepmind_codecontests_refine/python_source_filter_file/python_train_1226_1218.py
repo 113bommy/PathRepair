@@ -1,0 +1,1 @@
+print(sum(divmod(input(a),2)))

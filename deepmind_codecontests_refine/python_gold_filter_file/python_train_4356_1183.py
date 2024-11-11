@@ -1,0 +1,1 @@
+print("{}\n".format((48-int(input()))))

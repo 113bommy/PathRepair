@@ -1,0 +1,1 @@
+b=int(input());print(((-1)**b)*b//2)

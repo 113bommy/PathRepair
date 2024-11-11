@@ -1,0 +1,1 @@
+n,s=open(0);n,k=map(int,n.split());print(n-max(sum(i!=j for i,j in zip(s,s[1:]))-2*k,1))

@@ -1,0 +1,1 @@
+print("Yes" if len(input())==3 else "No")

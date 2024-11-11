@@ -1,0 +1,15 @@
+n = input()
+str(n)
+
+
+c = 0
+
+for i in n:
+  
+  if i=="4" or i =="7":
+    c= c+1
+
+if c==4 or c ==7:
+  print("yes")
+else:
+  print("no")

@@ -1,0 +1,1 @@
+print(''.join(list(map(lambda x:'+'*ord(x)+'>',str(eval(input())))))+'.')

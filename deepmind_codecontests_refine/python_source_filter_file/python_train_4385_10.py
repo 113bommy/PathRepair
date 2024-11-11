@@ -1,0 +1,14 @@
+x,y,z,t1,t2,t3=input().split()
+x=int(x)
+y=int(y)
+z=int(z)
+t1=int(t1)
+t2=int(t2)
+t3=int(t3)
+ts=te=0
+ts=abs(x-y)*t1
+te=(abs(z-x)*t2)+t3+(abs(x-y)*t2)
+if(ts>te):
+    print("YES")
+else:
+    print("NO")

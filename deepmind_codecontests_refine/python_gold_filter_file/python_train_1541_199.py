@@ -1,0 +1,1 @@
+print("bust" if 21<sum(list(map(int,input().split()))) else "win")

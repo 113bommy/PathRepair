@@ -1,0 +1,1 @@
+import re;print(re.search('.1',input())and'No'or'Yes')

@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int, input().split()))
+a=l.index(n)
+b=l.index(1)
+print(max(n-min(a,b),max(a,b)-1)-1)

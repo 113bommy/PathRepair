@@ -1,0 +1,1 @@
+a=int(input());b=input();c=len(set(b));print(a-c if a<=26 else -1 )

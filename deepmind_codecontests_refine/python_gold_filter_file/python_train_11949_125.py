@@ -1,0 +1,1 @@
+print(10 - int(float(input())/200))

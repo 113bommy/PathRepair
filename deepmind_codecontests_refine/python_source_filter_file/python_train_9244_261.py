@@ -1,0 +1,1 @@
+print(int(input())//min([int(input()) for _ in range(5)])+5)

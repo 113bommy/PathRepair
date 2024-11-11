@@ -1,0 +1,1 @@
+input();a=list(map(int,input().split()));print("NYOE S"[len(a)==len(set(a))::2])

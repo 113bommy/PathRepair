@@ -1,0 +1,5 @@
+r = lambda: map(int,input().split())
+input()
+v = sum(r())
+cans = sum(sorted(list(r()))[-2:])
+print (('NO','YES')[cans>=v])

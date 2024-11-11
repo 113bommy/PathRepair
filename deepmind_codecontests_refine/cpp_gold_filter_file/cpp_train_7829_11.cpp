@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  char a[10];
+  for (int i = 0; i < 9; i++) cin >> a[i];
+  if (a[0] == a[8] && a[1] == a[7] && a[2] == a[6] && a[3] == a[5])
+    cout << "YES" << endl;
+  else
+    cout << "NO" << endl;
+  return 0;
+}

@@ -1,0 +1,1 @@
+print("A" if input().isupper()==True else "a")

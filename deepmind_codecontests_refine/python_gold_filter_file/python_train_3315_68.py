@@ -1,0 +1,1 @@
+print(["P","Imp"][eval(input().replace(' ','*'))%3%2]+"ossible")

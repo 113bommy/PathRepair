@@ -1,0 +1,46 @@
+n=int(input())
+a=input()
+cnt0,cnt1,cnt2=a.count('0')-n//3,a.count('1')-n//3,a.count('2')-n//3
+occ=[0,0,0]
+for i in range(n):
+    if(a[i]=='0'):
+        if(cnt0>0 and occ[int(a[i])]>=n//3):
+            #print('if',cnt0,cnt1,cnt2)
+            if(cnt1<0):
+                print(1,end='')
+                cnt1+=1
+            else:
+                print(2,end='')
+                cnt2+=1
+            cnt0-=1
+        else:
+            occ[int(a[i])]+=1
+            print(a[i],end='')
+    elif(a[i]=='1'):
+        if(cnt1>0):
+            if(cnt0<0):
+                print(0,end='')
+                cnt0+=1
+            elif(occ[int(a[i])]>=n//3):
+                print(2,end='')
+                cnt2+=1
+            else:
+                print(a[i],end='')
+                occ[int(a[i])]+=1
+                cnt1+=1
+            cnt1-=1
+        else:
+            occ[int(a[i])]+=1
+            print(a[i],end='')
+    else:
+        if(cnt2>0):
+            if(cnt0<0):
+                print(0,end='')
+                cnt0+=1
+            else:
+                print(1,end='')
+                cnt1+=1
+            cnt2-=1
+        else:
+            print(a[i],end='')
+                

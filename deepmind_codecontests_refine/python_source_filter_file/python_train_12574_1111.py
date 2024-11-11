@@ -1,0 +1,2 @@
+g=str(input())
+print("x"*len(s))

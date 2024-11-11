@@ -1,0 +1,14 @@
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+i=0
+p=0
+while(i+3<=n):
+    if(l[i]+l[i+1]>l[i+2]):
+        p=1
+        break
+    i+=1
+if(p==1):
+    print("YES")
+else:
+    print("NO")

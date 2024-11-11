@@ -1,0 +1,1 @@
+print((lambda y: sum(map(lambda x: y.count(x), '13579aeiou')))(input()))

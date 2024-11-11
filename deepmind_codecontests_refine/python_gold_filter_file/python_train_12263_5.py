@@ -1,0 +1,1 @@
+n=int(input())+1;print(n%27%14and int(n/1.08)or':(')

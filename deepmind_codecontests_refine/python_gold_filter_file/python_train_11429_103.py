@@ -1,0 +1,1 @@
+a,b=open(0);print("YNeos"[a[:-1]!=b[:-2]::2])

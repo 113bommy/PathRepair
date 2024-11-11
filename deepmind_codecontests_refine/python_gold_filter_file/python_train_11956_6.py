@@ -1,0 +1,1 @@
+_,k,*x=map(int,open(0).read().split());print(sum(min(t,k-t)*2for t in x))

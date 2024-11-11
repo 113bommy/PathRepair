@@ -1,0 +1,3 @@
+x = int(input())
+print((-1)**x*x//2)
+#a

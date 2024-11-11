@@ -1,0 +1,1 @@
+x=int(input());print('YNeos'[not(x==3 or x==5 or x==7)::2]) 

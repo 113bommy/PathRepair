@@ -1,0 +1,5 @@
+ls = list(map(int,input().split()))
+ls.sort()
+print(int(ls[3]) - int(ls[0]))
+print(int(ls[3]) - int(ls[1]))
+print(int(ls[3]) - int(ls[2]))

@@ -1,0 +1,1 @@
+print(0 if eval(input().replace(' ','<')) else 10)

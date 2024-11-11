@@ -1,0 +1,7 @@
+N=int(input())
+A,B=map(int,input().split() )
+P=list(map(int,input().split() ))
+X1=sum( [p<=A for p in P])
+X2=sum( [ (p>A and p<=B)  for p in P] )
+X3=sum( [p>B  for p in P] )
+print(min([X1,X2,X3]))

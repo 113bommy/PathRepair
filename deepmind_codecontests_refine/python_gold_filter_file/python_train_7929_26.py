@@ -1,0 +1,5 @@
+n=int(input())
+o=list(map(int,input().split()))
+m=int(input())
+p=list(map(int,input().split()))
+print(max(o),max(p))

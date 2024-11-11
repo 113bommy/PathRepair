@@ -1,0 +1,1 @@
+print("Heisei" if input()<"2019/04/31" else "TBD")

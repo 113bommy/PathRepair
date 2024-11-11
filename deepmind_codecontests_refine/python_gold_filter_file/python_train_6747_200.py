@@ -1,0 +1,1 @@
+print("Heisei" if int(input().replace("/",""))<20190431 else "TBD")

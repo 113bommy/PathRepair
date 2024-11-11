@@ -1,0 +1,1 @@
+print( "Yes" if len(list(set(map(int, input().split())))) == 2 else "No" )

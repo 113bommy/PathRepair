@@ -1,0 +1,1 @@
+print("NYoe s"[input().count("9")::2])

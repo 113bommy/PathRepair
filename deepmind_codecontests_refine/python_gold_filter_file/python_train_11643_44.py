@@ -1,0 +1,1 @@
+s=list(input());print("YNeos"[len(set(s))<3::2])

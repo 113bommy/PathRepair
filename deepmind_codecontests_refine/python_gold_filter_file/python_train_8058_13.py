@@ -1,0 +1,10 @@
+#n = int(input()) 
+n, m = map(int, input().split()) 
+#s = input()
+#c = list(map(int, input().split()))
+a = input().split()
+p = set()
+for i in range(n - 1, -1, -1):
+    p.add(a[i])
+    a[i] = str(len(p))
+print("\n".join(a[int(input()) - 1] for i in range(m)))

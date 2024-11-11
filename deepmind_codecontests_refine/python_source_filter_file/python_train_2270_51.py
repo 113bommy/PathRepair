@@ -1,0 +1,5 @@
+n,k = map(int,input().splt())
+s = list(input())
+s[k-1] = s[k-1].lower()
+s ="".join(s)
+print(s)

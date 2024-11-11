@@ -1,0 +1,1 @@
+print('nyoe s'['9' in input()::2])

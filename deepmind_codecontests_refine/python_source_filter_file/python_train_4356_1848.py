@@ -1,0 +1,1 @@
+print(60-int(input()))

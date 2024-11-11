@@ -1,0 +1,1 @@
+print([NO,YES][input().strip()[::-1]==input().strip()])

@@ -1,0 +1,1 @@
+print("pink" if int(input())>=3200 else "red")

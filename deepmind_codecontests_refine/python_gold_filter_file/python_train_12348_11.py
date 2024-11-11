@@ -1,0 +1,5 @@
+n=int(input())
+t=list(map(int,input().split()))
+t=sorted(t)
+if t[n]==t[n-1]:print('NO')
+else:print('YES')

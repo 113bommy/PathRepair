@@ -1,0 +1,1 @@
+return (int(input()) ** 3)

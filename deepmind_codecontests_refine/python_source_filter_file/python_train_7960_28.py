@@ -1,0 +1,18 @@
+
+n = input()
+x = input().strip()
+ones = x.count('0') + x.count('1')
+twos = x.count('2')
+threes = x.count('3')
+fours = x.count('4')
+fives = x.count('5')
+sixes = x.count('6')
+sevens = x.count('7')
+eights = x.count('8')
+nines = x.count('9')
+s = ''
+s += '7' * (sevens + eights + nines)
+s += '5' * (fives + sixes)
+s += '3' * (fours + sixes + 2 * nines)
+s += '2' * (twos + 2 * fours + 3 * eights + nines)
+print(s)

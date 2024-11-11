@@ -1,0 +1,7 @@
+_ = int(input())
+string = input()
+num_o = string.count('o')
+alpha_one = (num_o, string.count('n'), string.count('e'))
+min_num_one = min(alpha_one)
+alpha_zero = (string.count('z'), string.count('e'), string.count('r'), num_o - min_num_one)
+print('1 ' * min_num_one + '0 ' * min(alpha_zero))

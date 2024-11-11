@@ -1,0 +1,13 @@
+a,b,c=map(int,input().split())
+l=[]
+l.append(a)
+l.append(b)
+l.append(c)
+p=max(l)
+l.remove(p)
+x=sum(l)
+if(p>=x):
+          q=p-x
+          print(q+1)
+else:
+          print("0")

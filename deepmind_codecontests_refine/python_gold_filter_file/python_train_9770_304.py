@@ -1,0 +1,1 @@
+v=sum(map(int,input().split()));print([v,'error'][v>9])

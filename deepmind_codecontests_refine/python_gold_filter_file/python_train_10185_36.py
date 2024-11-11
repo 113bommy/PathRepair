@@ -1,0 +1,1 @@
+a,b,c,x=[int(input())+1for _ in[0]*4];print(len([0for s in range(a)for t in range(b)for r in range(c)if x-1==(10*s+2*t+r)*50]))

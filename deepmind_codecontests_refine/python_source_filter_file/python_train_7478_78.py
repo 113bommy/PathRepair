@@ -1,0 +1,1 @@
+X,Y=input().split();print("=><"[X>Y | -(X<Y)])

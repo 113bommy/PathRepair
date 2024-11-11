@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+long long i,a,N,s,A=INT_MAX,l,r,S[100002];int main(){scanf("%ll%ll",&N,&s);for(;i<N;i++){scanf("%ll",&a);S[i+1]+=S[i]+a;}for(;;){if(S[r]-S[l]>=s){A=min(A,r-l);l++;}else r++;if(r>N){if(A==INT_MAX)A=0;printf("%ll\n",A);return 0;}}}

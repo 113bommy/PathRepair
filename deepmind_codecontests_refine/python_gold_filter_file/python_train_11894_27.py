@@ -1,0 +1,1 @@
+for _ in range(int(input())):n=int(input());print(*[list(range(n-n%2,4,-2))+[2,4]+list(range(1,n+1,2)),[-1]][n<4])

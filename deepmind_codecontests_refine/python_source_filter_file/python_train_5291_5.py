@@ -1,0 +1,1 @@
+print('Hello World' if int(input())==1 else int(input())*int(input()))

@@ -1,0 +1,1 @@
+print(len(set([int(i) in input().split()])))

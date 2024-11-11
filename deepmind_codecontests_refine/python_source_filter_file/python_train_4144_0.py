@@ -1,0 +1,1 @@
+i=input();print(-~-int(i[2:])//-~-int(i[:2]))

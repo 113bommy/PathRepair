@@ -1,0 +1,1 @@
+print('AABBCD'[int(input())>999::2])

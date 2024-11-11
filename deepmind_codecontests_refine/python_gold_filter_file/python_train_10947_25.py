@@ -1,0 +1,22 @@
+a=int(input())
+while(a>0):
+    count=0
+    flag=0
+    q=int(input())   
+    while(q!=1):
+        if(q%5==0):
+            count+=3
+            q=q//5
+        elif(q%3==0):
+            count+=2
+            q=q//3
+        elif(q%2==0):
+            count+=1
+            q=q//2
+        else:
+            print(-1)
+            flag=1
+            break
+    if(flag!=1):
+        print(count)
+    a-=1

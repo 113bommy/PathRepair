@@ -1,0 +1,1 @@
+a=int(input());x=n//2;print((n-x)*x)

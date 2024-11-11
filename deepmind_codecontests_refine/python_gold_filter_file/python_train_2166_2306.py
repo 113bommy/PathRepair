@@ -1,0 +1,1 @@
+print(3*(int(input().strip())**2))

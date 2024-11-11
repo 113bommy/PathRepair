@@ -1,0 +1,9 @@
+#incluse <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int W;
+    cin>>W;
+    cout<<32*W<<endl;
+    return 0;
+}

@@ -1,0 +1,7 @@
+n = int(input())
+#n, m = map(int, input().split())
+#s = input()
+c = list(map(int, input().split()))
+x = c.index(min(c))
+y = c.index(max(c))
+print(max(n - x, n - y, x, y))

@@ -1,0 +1,14 @@
+num=int(input())
+i=0
+while(i<num):
+    str1=input()
+    length=len(str1)
+    if(length>10):
+        fir=str1[0]
+        last=str1[length-1]
+        print(f'{fir}'+f'{length-2}'+f'{last}',end='\n')
+    else:
+        print(str1)
+    i+=1
+else:
+    SystemExit

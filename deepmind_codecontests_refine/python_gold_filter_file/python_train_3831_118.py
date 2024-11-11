@@ -1,0 +1,1 @@
+w=["Sunny","Cloudy","Rainy","Sunny"];print(w[w.index(input())+1])

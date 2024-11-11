@@ -1,0 +1,1 @@
+print(sum([1if c=='+'else-1for c in input()]))

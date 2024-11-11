@@ -1,0 +1,1 @@
+print('ABC' if int(input().strip()) < 1000 else 'ABD')

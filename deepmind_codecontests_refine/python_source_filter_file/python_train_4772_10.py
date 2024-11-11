@@ -1,0 +1,1 @@
+print('NYoe s'[list(input())<sorted(input())[::-1]::2])

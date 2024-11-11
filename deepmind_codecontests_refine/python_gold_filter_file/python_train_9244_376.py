@@ -1,0 +1,1 @@
+print((int(input())-1)//sorted([int(input()) for _ in range(5)])[0]+5)

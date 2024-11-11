@@ -1,0 +1,1 @@
+nums = '+'.join(sorted(input().split('+')))

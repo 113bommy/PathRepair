@@ -1,0 +1,1 @@
+A=input();print(A[0].upper() + A[1:])

@@ -1,0 +1,1 @@
+s=input();print(min(abs(int('0'+s[i:i+3])-753)for i in range(9)))

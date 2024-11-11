@@ -1,0 +1,1 @@
+for s in[*open(0)][1:]:*a,m=map(int,s.split());print('NYOE S'[2*max(a)-m-2<sum(a)>m+2::2])

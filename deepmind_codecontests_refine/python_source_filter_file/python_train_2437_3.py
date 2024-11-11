@@ -1,0 +1,6 @@
+n = int(input())
+t = list(map(int, input().split()))
+a, b = max(t), min(t)
+t.remove(a)
+t.remove(b)
+print(' '.join(str(i) for i in [a] + t + [b]))

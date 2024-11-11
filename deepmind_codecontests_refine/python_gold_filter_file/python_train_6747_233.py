@@ -1,0 +1,1 @@
+print(['TBD','Heisei'][input()[5:7]<'05'])

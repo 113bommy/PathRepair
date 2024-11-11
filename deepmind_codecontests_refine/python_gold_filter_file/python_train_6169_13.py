@@ -1,0 +1,1 @@
+for _ in range(int(input())):print(["YES","NO"][int(input())%4!=0])

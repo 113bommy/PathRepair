@@ -1,0 +1,1 @@
+print("Yes" if all(int(i) % 2 != 0 for i in input().split()) else "No")

@@ -1,0 +1,1 @@
+for s in[*open(0)][1:]:a,b,c=map(int,s.split());print((-1,1)[a<c],2*(a>=c)or(-1,b)[a*b>c])

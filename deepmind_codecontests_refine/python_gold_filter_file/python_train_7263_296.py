@@ -1,0 +1,1 @@
+print(chr(65+ord(input())//97*32))

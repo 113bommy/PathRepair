@@ -1,0 +1,1 @@
+print(100*input().count("o"))

@@ -1,0 +1,1 @@
+s=input();print('WAAC'[s[0]=='A'and s.count('A')==1 and 'C' in s[2:-1] and s.count('C')==1 and s.replace('A','').replace('C','').islower()::2])

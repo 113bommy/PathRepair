@@ -1,0 +1,5 @@
+R = lambda: tuple(map(int, input().split()))
+A, B, M = R()
+a, b = R(), R()
+d = (R() for _ in range(M))
+print(min(min(a) + min(b), *(a[x - 1] + b[y - 1] - c for x, y, c in d)))

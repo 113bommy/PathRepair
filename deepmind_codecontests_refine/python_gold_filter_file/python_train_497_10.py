@@ -1,0 +1,1 @@
+print('YNeos'[int(input())<=2*input().count('B')::2])

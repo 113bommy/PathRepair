@@ -1,0 +1,5 @@
+x = int(input())
+if x//100 < x%100:
+	print(0)
+else:
+	print(1)

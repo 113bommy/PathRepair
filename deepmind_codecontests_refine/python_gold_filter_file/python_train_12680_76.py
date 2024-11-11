@@ -1,0 +1,1 @@
+print("YES" if list(input()).count("x") <=7 else "NO")

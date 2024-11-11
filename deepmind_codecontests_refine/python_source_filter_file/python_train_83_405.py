@@ -1,0 +1,1 @@
+print('OEdvde n'[sum(s in'04'for s in input())::2])

@@ -1,0 +1,1 @@
+n,*t=map(int,open(0).read().split());t=sorted(zip(t[::2],t[1::2]),key=lambda v:v[0]+v[1]);print(sum(a for a,_ in t[::-2])-sum(b for _,b in t[-2::-2]))

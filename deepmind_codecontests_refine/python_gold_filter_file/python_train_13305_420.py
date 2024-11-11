@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print([b-a,a+b][b%a<1])

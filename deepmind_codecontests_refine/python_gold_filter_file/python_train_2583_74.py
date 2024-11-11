@@ -1,0 +1,1 @@
+print({True:"YES",False:"NO"}[(int(input()) in [7,5,3])])

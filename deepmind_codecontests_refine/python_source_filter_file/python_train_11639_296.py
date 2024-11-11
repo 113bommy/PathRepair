@@ -1,0 +1,1 @@
+print(''.join([input(),input()][::-1]))

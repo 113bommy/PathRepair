@@ -1,0 +1,1 @@
+n,k=map(int,input().split());print(sum(n>k**i for i in range(1000)))

@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print(sum(s==s[::-1]for s in map(str,range(a,b+1))))

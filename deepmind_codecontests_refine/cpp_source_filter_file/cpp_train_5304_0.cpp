@@ -1,0 +1,2 @@
+#include<iostream>
+main(){int p[30001],M=30001,T,a,i,j,k;for(i=1;i*i++<M;)for(j=i+i;!p[i]&j<M;j+=i)p[j]=1;for(;std::cin>>T,T;printf("%d\n",a))for(a=0,i=2;i<T;i++)for(j=i;!p[i]&j<=(k=T-i-j);j++){if(p[j]||p[k]||i+j<=k)continue;a++}}

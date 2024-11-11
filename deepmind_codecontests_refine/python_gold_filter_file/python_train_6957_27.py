@@ -1,0 +1,1 @@
+print("Yes" if int(input().replace(" ",""))**0.5%1==0 else "No")

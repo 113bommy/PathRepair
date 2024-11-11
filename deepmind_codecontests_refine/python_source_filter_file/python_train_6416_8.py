@@ -1,0 +1,11 @@
+n=input()
+m=int(n)
+n=list(n)
+k=int(n[len(n)-1])
+if(1<k<6):
+	print(m-k)
+if(5<k<10):
+	k=10-k
+	print(m+k)
+if(k==0):
+	print(m)

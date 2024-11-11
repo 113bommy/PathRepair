@@ -1,0 +1,1 @@
+print("YES" if set(map(int, input().split())) == set([1, 7, 9, 4]) else "NO")

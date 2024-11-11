@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int app[100];
+int main() {
+  int n, a, b, x;
+  cin >> n >> a >> b;
+  for (int i = 0; i < a; i++) {
+    cin >> x;
+    app[i] = 1;
+  }
+  for (int i = 0; i < b; i++) {
+    cin >> x;
+  }
+  for (int i = 0; i < n; i++) cout << 2 - app[i] << " ";
+  return 0;
+}

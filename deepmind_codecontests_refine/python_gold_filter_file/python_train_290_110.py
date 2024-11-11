@@ -1,0 +1,1 @@
+print(sum(i-1for i in list(map(int,open(0).read().split()))[1:]))

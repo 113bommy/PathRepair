@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+long long i, i1, j, k, k1, t, n, m, res, flag[10], a, b, er[20700000 + 10], x,
+    p;
+int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  cin >> a >> b >> k;
+  flag[0] = 0;
+  for (i = 2; i * i <= k; i++) {
+    if (k % i == 0) {
+      cout << 0;
+      return 0;
+    }
+  }
+  res = 0;
+  if (k >= 97) {
+    for (i = 0; i <= 20700000; i++) er[i] = 1;
+    for (i = 2; i <= 20700000; i++) {
+      if (er[i] == 1) {
+        for (j = 2 * i; j <= 20700000; j += i) {
+          if (er[j] == 1) er[j] = i;
+        }
+      }
+    }
+    for (i = (a + k - 1) / k; i <= b / k; i++) {
+      if (er[i] >= k || (er[i] == 1 && i >= k) || i == 1) res++;
+    }
+  } else {
+    long long pr[24] = {2,  3,  5,  7,  11, 13, 17, 19, 23, 29, 31, 37,
+                        41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89};
+    for (i = 0; i < 24; i++) {
+      if (k == pr[i]) m = i;
+    }
+    for (i = 0; i < 1 << m; i++) {
+      p = __builtin_popcountll(i);
+      if (p >= 6) continue;
+      x = k;
+      for (j = 0; j < m; j++) {
+        if ((i >> j) & 1 == 1) x *= pr[j];
+      }
+      if (p % 2 == 0)
+        res += b / x - (a - 1) / x;
+      else
+        res -= b / x - (a - 1) / x;
+    }
+  }
+  cout << res;
+  return 0;
+}

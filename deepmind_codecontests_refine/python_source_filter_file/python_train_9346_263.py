@@ -1,0 +1,1 @@
+s=input();print('YNeos'[s[2]!=s[3] and s[4]!=s[5]::2])

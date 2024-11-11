@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print(2*min(a+c,b+c,(a+b+c)//2))

@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print(abs(a-b)<2and'Brown'or'Alice')

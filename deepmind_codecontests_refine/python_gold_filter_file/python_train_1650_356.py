@@ -1,0 +1,1 @@
+print(max(eval(str(input()).replace(" ","-")),0))

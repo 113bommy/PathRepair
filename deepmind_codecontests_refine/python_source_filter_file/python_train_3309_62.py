@@ -1,0 +1,1 @@
+(s,t),(a,b),u=input().split(),map(int,input().split()),input();print(a-(s==u),b-(t--u))

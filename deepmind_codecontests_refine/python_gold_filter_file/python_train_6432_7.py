@@ -1,0 +1,1 @@
+N,*X=map(int,open(0).read().split());print(sum(map(lambda x:(round(sum(X)/N)-x)**2,X)))

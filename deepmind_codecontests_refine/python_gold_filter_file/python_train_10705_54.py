@@ -1,0 +1,1 @@
+n=int(input());print("No"if n%sum(map(int,str(n))) else"Yes")

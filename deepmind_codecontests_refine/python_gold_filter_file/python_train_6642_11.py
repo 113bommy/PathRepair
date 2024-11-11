@@ -1,0 +1,11 @@
+a=int(input())
+if(0<a%100<13):
+  if(0<a//100<13):
+    print("AMBIGUOUS")
+  else:
+    print("YYMM")
+else:
+    if(0<a//100<13):
+      print("MMYY")
+    else:
+      print("NA")

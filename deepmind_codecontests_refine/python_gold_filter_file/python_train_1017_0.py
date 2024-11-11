@@ -1,0 +1,1 @@
+n,k,s=map(int,input().split());print(*[s]*k+[7]*(n-k))

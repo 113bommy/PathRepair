@@ -1,0 +1,1 @@
+i=input();print('YNeos'[i=='AAA' or i=='BBB'::2])

@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+a.sort()
+ans=sum(a[n::2])
+print(ans)

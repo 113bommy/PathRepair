@@ -1,0 +1,3 @@
+#import<stdio.h>
+#import<queue>
+int main(){std::queue<int>q;int w,h,f[484],i,j,a,b,t,x,z;char p[15];for(;scanf("%d%d ",&h,&w),h;){for(j=0;j<w+2;j++)f[j]=f[j-~h*22]=-9;for(i=1;i<=h;i++){for(j=1;j<=w;j++)f[x=i*22+j]=-1,z=getchar(),z-35?z>65?b=x:z>64?a=x:1:--f[x];f[i*22]=f[i*22-~w]=-9;getchar();}f[a]=t=0;q.push(0);for(q.push(a);a=q.front(),q.size()>1;q.pop())if(!a)++t,q.push(0);else for(i=4;i--;)if(f[x=a+" 57L"[i]-54]==-1)f[x]=t,q.push(x);q.pop();scanf("%s",p);for(a=t=0;!a;){x=b;z=0;for(i=0;!a&&p[i];f[b]>=0&&++z){++t,f[j=b-54+"L65676 "[p[i++]-50]]>-3?b=j:0,f[b]>=0&t>=f[b]?a=b:0;!z&!a&!p[i]&b==x&f[b]<0&&--a;}printf(a<0?"impossible\n":"%d %d %d\n",t,a/22-1,a%22-1);}}

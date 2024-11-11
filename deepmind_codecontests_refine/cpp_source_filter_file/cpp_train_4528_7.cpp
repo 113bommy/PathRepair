@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+bool v[3010];
+int main() {
+  int n, r = 0;
+  scanf(" %d", &n);
+  for (int i = 1; i <= n; i++) v[i] = 0;
+  for (int i = 1; i <= n; i++) {
+    int a;
+    scanf(" %d", &a);
+    while (v[a]) {
+      a++;
+      r++;
+    }
+    v[a] = true;
+  }
+  printf(" %d", r);
+  return 0;
+}

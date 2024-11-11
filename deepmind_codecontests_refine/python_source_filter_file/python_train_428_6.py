@@ -1,0 +1,1 @@
+for _ in[0]*int(input()):n=int(input());s=input();print(min(s.find('>')%n,n-s.rfind('<')))

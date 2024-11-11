@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+n1=int(input())
+b=list(map(int,input().split()))
+print(max(a),max(b))

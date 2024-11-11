@@ -1,0 +1,70 @@
+from copy import deepcopy
+
+class SegTree():
+    def segfunc(self, x, y):
+        return x + y
+
+    def __init__(self, ide, n, init_val):
+        self.ide_ele = ide
+        self.num = 2**(n-1).bit_length()
+        self.seg = [self.ide_ele] * 2 * self.num
+        for i in range(n):
+            self.seg[i+self.num-1] = init_val[i]    
+        for i in range(self.num-2,-1,-1):
+            self.seg[i] = self.segfunc(self.seg[2*i+1],self.seg[2*i+2]) 
+    def update(self, k, x):
+        k += self.num-1
+        self.seg[k] = x
+        while k:
+            k = (k-1)//2
+            self.seg[k] = self.segfunc(self.seg[k*2+1], self.seg[k*2+2])
+    def query(self, p, q):#p <= x < q
+        if q<=p:
+            return self.ide_ele
+        p += self.num-1
+        q += self.num-2
+        res = self.ide_ele
+        while q-p>1:
+            if p&1 == 0:
+                res = self.segfunc(res, self.seg[p])
+            if q&1 == 1:
+                res = self.segfunc(res, self.seg[q])
+                q -= 1
+            p = p//2
+            q = (q-1)//2
+        if p == q:
+            res = self.segfunc(res, self.seg[p])
+        else:
+            res = self.segfunc(self.segfunc(res, self.seg[p]), self.seg[q])
+        return res
+
+def main():
+    n, k = map(int, input().split())
+    cum = [None]*(n+1)
+    cum[0] = 0
+    for i in range(1, n+1):
+        cum[i] = int(input())
+        cum[i] += cum[i-1]
+    for i in range(n+1):
+        cum[i] -= k*i
+    srt = deepcopy(cum)
+    srt.sort()
+    dic = {}
+    cnt = 0
+    for i in range(n+1):
+        if not srt[i] in dic:
+            dic[srt[i]] = cnt
+            cnt += 1
+    tmp = [0]*cnt
+    tmp[dic[cum[0]]] += 1
+    seg = SegTree(0, cnt, tmp)
+    ans = 0
+    for i in range(1, n+1):
+        p = dic[cum[i]]
+        ans += seg.query(0, p+1)
+        tmp[p] += 1
+        seg.update(p, tmp[p])
+    print(ans)
+
+if __name__ == "__main__":
+    main()

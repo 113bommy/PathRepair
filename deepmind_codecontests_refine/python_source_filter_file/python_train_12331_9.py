@@ -1,0 +1,1 @@
+i=input;r=round;a=sum(map(int,i().split()));b=sum(map(int,i().split()));n=int(i());print(["YES","NO"][r(a/5+0.5)+r(b/10+0.5)>n])

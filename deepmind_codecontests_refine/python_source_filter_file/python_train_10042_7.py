@@ -1,0 +1,13 @@
+T=input("")
+t=int(T)
+a=0
+i=0
+while(a<t):
+    a=i*(i+1)/2
+    i=i+1
+if(a==t):
+    print("yes")
+elif(a==0):
+    print("NO")
+else:
+    print("NO")

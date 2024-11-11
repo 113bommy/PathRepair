@@ -1,0 +1,1 @@
+S=input();print('WAAC'[all(['C'in S[2:-1],S[0]=='A',S[1:].replace('C','',1).islower()])::2])

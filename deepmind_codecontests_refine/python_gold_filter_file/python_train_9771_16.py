@@ -1,0 +1,1 @@
+print(['consonant','vowel'][input() in ['a','i','u','e','o']])

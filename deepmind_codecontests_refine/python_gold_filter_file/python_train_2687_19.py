@@ -1,0 +1,1 @@
+import re;print(max(map(len,re.findall('[ATGC]*',input()))))

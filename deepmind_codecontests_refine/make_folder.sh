@@ -1,0 +1,22 @@
+mkdir cpp_compile
+mkdir cpp_data
+mkdir cpp_gold_filter_file
+mkdir cpp_source_filter_file
+mkdir cpp_result
+mkdir cpp_test_gold_result
+mkdir cpp_test_source_result
+mkdir cpp_valid_gold_result
+mkdir cpp_valid_source_result
+mkdir cpp_train_gold_result
+mkdir cpp_train_source_result
+
+mkdir python_data
+mkdir python_gold_filter_file
+mkdir python_source_filter_file
+mkdir python_result
+mkdir python_test_gold_result
+mkdir python_test_source_result
+mkdir python_train_gold_result
+mkdir python_train_source_result
+mkdir python_valid_gold_result
+mkdir python_valid_source_resultgit 

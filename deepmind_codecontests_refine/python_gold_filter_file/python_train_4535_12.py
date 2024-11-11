@@ -1,0 +1,10 @@
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+if(n%2==0):
+    i=int(n/2)
+    i=i-1
+    print(l[i])
+else:
+    i=int((n+1)/2)
+    print(l[i-1])

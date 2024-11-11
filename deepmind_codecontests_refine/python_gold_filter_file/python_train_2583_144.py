@@ -1,0 +1,1 @@
+print("NYOE S"[input()in'357'::2])

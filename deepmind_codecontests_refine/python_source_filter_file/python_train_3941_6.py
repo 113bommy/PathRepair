@@ -1,0 +1,1 @@
+A,B,C=map(int,input().split());print('YNeos'[A>C|(C>B)::2])

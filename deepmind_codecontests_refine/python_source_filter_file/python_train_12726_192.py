@@ -1,0 +1,10 @@
+for _ in range (int(input())):
+    n,m=map(int,input().split())
+    if(n==1):
+        print(m)
+    elif(n==2):
+        print(m)
+    else:
+        k=(2*2)+((m-2)*2)
+        print(k)
+        

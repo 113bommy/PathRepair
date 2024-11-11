@@ -1,0 +1,1 @@
+print(sum(map(ord,input()+'\n'))**698%6329%8)

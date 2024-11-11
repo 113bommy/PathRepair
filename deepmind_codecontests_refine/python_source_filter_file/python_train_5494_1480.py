@@ -1,0 +1,1 @@
+print('YNeos'[input()<'3'::2])

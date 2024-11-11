@@ -1,0 +1,1 @@
+print (min(int(input())/11,str(input()).count('8')))

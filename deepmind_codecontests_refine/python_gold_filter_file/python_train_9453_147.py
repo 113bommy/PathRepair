@@ -1,0 +1,1 @@
+print("ACGT"["TGCA".find(input())])

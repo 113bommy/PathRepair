@@ -1,0 +1,1 @@
+print('Odd' if eval(input().replace(' ','*'))%2 == 1 else 'Even')

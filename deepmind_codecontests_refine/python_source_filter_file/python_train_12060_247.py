@@ -1,0 +1,1 @@
+prunt(input()[:-8])

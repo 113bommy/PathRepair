@@ -1,0 +1,1 @@
+n,m=map(int,input().split());print(max(max(n,m)-2,0)if min(n,m)==1else(n-2)*(m-2))

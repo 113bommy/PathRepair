@@ -1,0 +1,1 @@
+print('1200'.swapcase())

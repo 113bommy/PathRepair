@@ -1,0 +1,1 @@
+print(len(list(set([input() for _ in range(int(input()))]))))

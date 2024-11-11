@@ -1,0 +1,1 @@
+r=int(input());print(r//2800*'AGC'or'AARBCC'[r<1200::2])

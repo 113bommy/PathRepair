@@ -1,0 +1,13 @@
+rn=lambda:int(input())
+rl=lambda:list(map(int,input().split()))
+rns=lambda:map(int,input().split())
+rs=lambda:input()
+yn=lambda x:print('Yes') if x else print('No')
+YN=lambda x:print('YES') if x else print('NO')
+
+s=rs()
+n=len(s)
+print(3)
+print('R '+str(n-1))
+print('L '+str(n))
+print('L 2')

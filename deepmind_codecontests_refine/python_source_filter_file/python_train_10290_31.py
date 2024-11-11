@@ -1,0 +1,1 @@
+print(int(sqrt(int(input())))**2)

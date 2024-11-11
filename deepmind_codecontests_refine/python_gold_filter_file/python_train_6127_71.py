@@ -1,0 +1,1 @@
+n,m=map(int,input().split());print((min(2*n,m)+m)//4)

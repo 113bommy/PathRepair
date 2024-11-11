@@ -1,0 +1,1 @@
+n,k=map(int,input().split());print(sum(i*(n-i+1)+1for i in range(k,n+2))%(10**9+7))

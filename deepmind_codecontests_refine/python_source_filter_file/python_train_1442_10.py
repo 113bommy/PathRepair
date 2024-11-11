@@ -1,0 +1,1 @@
+print("YENOS"[int(input()[::2])%4>0::2])

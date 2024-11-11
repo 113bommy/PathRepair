@@ -1,0 +1,1 @@
+N,M,X,Y,*H=map(int,open(0).read().split());print('NWoa rW a r'[max(max(H[:N]),X)>=min(H[N:])::2])

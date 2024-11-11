@@ -1,0 +1,1 @@
+print(0 if open(0).read() == '1' else 1)

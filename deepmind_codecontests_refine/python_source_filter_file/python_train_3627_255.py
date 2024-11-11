@@ -1,0 +1,1 @@
+print("Yes" if input() in "9" else "No")

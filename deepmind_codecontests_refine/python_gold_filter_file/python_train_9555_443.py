@@ -1,0 +1,1 @@
+print(["No","Yes"]["7" in input()])

@@ -1,0 +1,1 @@
+print(input().replace('1','d').replace('9','1').replace('d','9'))

@@ -1,0 +1,1 @@
+print("AARBCC"[input()!="ABC"::2])

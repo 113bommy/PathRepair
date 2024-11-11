@@ -1,0 +1,3 @@
+#include<iostream>
+using namespace std;int main(){long long int a[200000],mini=100000000000,n,sum1=0,sum2=0;cin>>n;for(int i=0;i<n;i++){cin>>a[i];sum1+=a[i];
+	for(int i=n-1;0<i;i--){sum1-=a[i];sum2+=a[i];if(abs(sum1-sum2)<mini){mini=abs(sum1-sum2);}}cout<<mini<<endl;return 0;}

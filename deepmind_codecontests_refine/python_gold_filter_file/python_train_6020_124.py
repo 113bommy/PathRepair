@@ -1,0 +1,1 @@
+print(str(1110-int(input())))

@@ -1,0 +1,5 @@
+ins = lambda x:map(x,input().split())
+n,m = ins(int)
+x = list(ins(int))
+x = list(i//m for i in x)
+print(n - x[::-1].index(max(x)))

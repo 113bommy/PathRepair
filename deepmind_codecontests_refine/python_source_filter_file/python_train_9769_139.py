@@ -1,0 +1,1 @@
+a=int(input());print('YNeos'[a//10%111<1or a%1000%111<1::2])

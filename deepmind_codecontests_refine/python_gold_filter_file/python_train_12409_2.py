@@ -1,0 +1,16 @@
+n,m=map(int,input().split())
+s=0
+f=0
+n=str(n)
+while(int(n)<=m):
+    p=set(n)
+    if(len(p)==len(n)):
+        f=1
+        break
+    else:
+        s=int(n)+1
+        n=str(s)
+if(f==1):
+    print(n)
+else:
+    print("-1")

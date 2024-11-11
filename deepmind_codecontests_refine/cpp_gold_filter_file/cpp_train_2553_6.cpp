@@ -1,0 +1,112 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int MAXN = 200000, MAXQ = 1000000;
+const int Mod = 1000000000 + 7;
+int power(int x, int k) {
+  int ret = 1;
+  while (k) {
+    if (k & 1) ret = 1LL * ret * x % Mod;
+    x = 1LL * x * x % Mod;
+    k >>= 1;
+  }
+  return ret;
+}
+int prime[MAXQ + 10], pt;
+bool check[MAXQ + 10];
+int phi[MAXQ + 10];
+void eular() {
+  check[1] = true;
+  phi[1] = 1;
+  for (int i = 2; i <= MAXQ; i++) {
+    if (!check[i]) {
+      phi[i] = i - 1;
+      prime[++pt] = i;
+    }
+    for (int j = 1; j <= pt && 1LL * prime[j] * i <= MAXQ; j++) {
+      check[i * prime[j]] = true;
+      if (i % prime[j] == 0) {
+        phi[i * prime[j]] = phi[i] * prime[j];
+        break;
+      }
+      phi[i * prime[j]] = phi[i] * (prime[j] - 1);
+    }
+  }
+  return;
+}
+int jc[MAXN + 10], ny[MAXN + 10];
+int cnt[MAXQ + 10];
+int n, k, q;
+void init() {
+  eular();
+  cin >> n >> k >> q;
+  for (int i = 1; i <= n; i++) {
+    int x;
+    scanf("%d", &x);
+    for (int j = 1; j * j <= x; j++)
+      if (x % j == 0) {
+        cnt[j]++;
+        if (x / j != j) cnt[x / j]++;
+      }
+  }
+  jc[0] = ny[0] = 1;
+  for (int i = 1; i <= MAXN; i++) {
+    jc[i] = 1LL * jc[i - 1] * i % Mod;
+    ny[i] = power(jc[i], Mod - 2);
+  }
+  int ans = 0;
+  for (int i = 1; i <= MAXQ; i++)
+    (ans) =
+        ((1LL *
+          ((cnt[i]) < (k)
+               ? (0)
+               : (1LL * jc[cnt[i]] * ny[k] % Mod * ny[(cnt[i]) - (k)] % Mod)) *
+          phi[i]) +
+         (ans)) %
+        Mod;
+  for (int i = 1; i <= q; i++) {
+    int x;
+    scanf("%d", &x);
+    for (int j = 1; j * j <= x; j++)
+      if (x % j == 0) {
+        (ans) = ((Mod - (1LL *
+                         ((cnt[j]) < (k) ? (0)
+                                         : (1LL * jc[cnt[j]] * ny[k] % Mod *
+                                            ny[(cnt[j]) - (k)] % Mod)) *
+                         phi[j] % Mod)) +
+                 (ans)) %
+                Mod;
+        cnt[j]++;
+        (ans) = ((1LL *
+                  ((cnt[j]) < (k) ? (0)
+                                  : (1LL * jc[cnt[j]] * ny[k] % Mod *
+                                     ny[(cnt[j]) - (k)] % Mod)) *
+                  phi[j]) +
+                 (ans)) %
+                Mod;
+        if (x / j != j) {
+          (ans) = ((Mod -
+                    (1LL *
+                     ((cnt[x / j]) < (k) ? (0)
+                                         : (1LL * jc[cnt[x / j]] * ny[k] % Mod *
+                                            ny[(cnt[x / j]) - (k)] % Mod)) *
+                     phi[x / j] % Mod)) +
+                   (ans)) %
+                  Mod;
+          cnt[x / j]++;
+          (ans) = ((1LL *
+                    ((cnt[x / j]) < (k) ? (0)
+                                        : (1LL * jc[cnt[x / j]] * ny[k] % Mod *
+                                           ny[(cnt[x / j]) - (k)] % Mod)) *
+                    phi[x / j]) +
+                   (ans)) %
+                  Mod;
+        }
+      }
+    printf("%d\n", ans);
+  }
+  return;
+}
+int main() {
+  init();
+  return 0;
+}

@@ -1,0 +1,1 @@
+n,k,*h=map(int,open(0).read().split());print(sum(x>=k for x in h))

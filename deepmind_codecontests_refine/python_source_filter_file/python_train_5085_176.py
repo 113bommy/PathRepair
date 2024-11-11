@@ -1,0 +1,1 @@
+a=list(map(inti,input().split()));print(sum(a)-max(a))

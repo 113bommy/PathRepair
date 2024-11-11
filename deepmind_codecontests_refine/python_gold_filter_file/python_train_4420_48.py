@@ -1,0 +1,1 @@
+print(len(set(input()[1:-1].split(', ') + ['']))-1)

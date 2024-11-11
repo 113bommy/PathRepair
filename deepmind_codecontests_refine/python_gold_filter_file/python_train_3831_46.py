@@ -1,0 +1,1 @@
+print({"Sunny":"Cloudy","Cloudy":"Rainy","Rainy":"Sunny"}[input()])

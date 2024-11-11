@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+using namespace std;N,C,D[2][5001],i,j,*A,*B;main(){A=*D;B=D[1];cin>>N;fill_n(*D,1e4+2,1e9);A[1]=*B=0;for(;++i<N&&cin>>C;)for(j=N/2;~j;)A[j+1]=min(A[j],B[j]+C),B[j--]=min(A[j]+C,B[j]);cout<<min(A[N/2],B[N/2])<<endl;}

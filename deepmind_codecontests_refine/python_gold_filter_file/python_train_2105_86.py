@@ -1,0 +1,5 @@
+n = int(input())
+s = input()
+a = s.count("L")
+b = s.count("R")
+print(a+b+1)

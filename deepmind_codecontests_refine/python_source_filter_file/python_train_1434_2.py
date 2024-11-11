@@ -1,0 +1,1 @@
+print("YNEOS"["000" not in "".join([str(eval(input().replace(" ","-")))for _ in "_"*int(input())])::2])

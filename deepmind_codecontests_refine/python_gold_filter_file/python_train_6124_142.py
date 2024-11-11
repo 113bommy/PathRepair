@@ -1,0 +1,1 @@
+a,b=map(int,input().split());print("Y:a(y !"[a>8 or b>8::2])

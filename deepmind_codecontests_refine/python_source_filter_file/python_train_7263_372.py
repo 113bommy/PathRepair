@@ -1,0 +1,1 @@
+print("A" if input().ispper else "a")

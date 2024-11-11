@@ -1,0 +1,1 @@
+print("AABBCD"[len(input())>3::2])

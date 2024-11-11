@@ -1,0 +1,1 @@
+b=int(input());a=b//50+49;b%=50;c=50-b;print(50,*[a-b]*c+[a+c]*b)

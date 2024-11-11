@@ -1,0 +1,1 @@
+a,*n=map(int,open(0));print(sum(n)-max(n)//2)

@@ -1,0 +1,1 @@
+print("ATGC"["TACG".find(input())])

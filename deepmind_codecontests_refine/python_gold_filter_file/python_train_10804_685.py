@@ -1,0 +1,1 @@
+n,m=input().split();print('NYoe s'[n==m::2])

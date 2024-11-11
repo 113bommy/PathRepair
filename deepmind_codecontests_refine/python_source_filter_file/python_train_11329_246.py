@@ -1,0 +1,1 @@
+print("AB" + "C" if int(input()) <= 999 else "D")

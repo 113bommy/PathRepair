@@ -1,0 +1,1 @@
+print("YNeos"[not'9'in(input())::2])

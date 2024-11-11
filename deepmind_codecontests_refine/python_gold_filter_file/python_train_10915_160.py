@@ -1,0 +1,1 @@
+print(*[x[0].upper() for x in input().split()],sep='')

@@ -1,0 +1,5 @@
+n = int(input())
+c = input()
+d = c.count('R')
+e = c[:d].count('R')
+print(d-e)

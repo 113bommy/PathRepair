@@ -1,0 +1,5 @@
+n=input()
+l=list(map(int,input().split()))
+l.sort()
+x=l.pop(-1)
+print("YES" if sum(l)>x else "NO")

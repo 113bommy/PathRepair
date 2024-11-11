@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+t=sorted(a)
+print(t)
+print(t[(n-1)//2])

@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int SIZEN = 100010;
+int N, M;
+int xlis[SIZEN], ylis[SIZEN];
+int cx[SIZEN], cy[SIZEN];
+void work(void) {
+  sort(xlis, xlis + N);
+  sort(ylis, ylis + N);
+  int dx = xlis[M + 1] - xlis[M], dy = ylis[M + 1] - ylis[M];
+  if (N % 2 == 1) {
+    dx = min(dx, xlis[M] - xlis[M - 1]);
+    dy = min(dy, ylis[M] - ylis[M - 1]);
+  }
+  int vx = xlis[M], vy = ylis[M];
+  bool center = false;
+  long long ans = 0;
+  bool s[2][2];
+  for (int i = 0; i < N; i++) {
+    ans += abs(xlis[i] - vx) + abs(ylis[i] - vy);
+    s[cx[i] <= vx][cy[i] <= vy] = 1;
+    if (vx == cx[i] && vy == cy[i]) center = true;
+  }
+  if ((N % 2 == 0 || center) && (s[0][0] & s[0][1]))
+    ans = max(ans - dx, ans - dy);
+  cout << ans * 2 << endl;
+}
+void read(void) {
+  scanf("%d", &N);
+  M = (N - 1) / 2;
+  for (int i = 0; i < N; i++) {
+    scanf("%d%d", &cx[i], &cy[i]);
+    xlis[i] = cx[i];
+    ylis[i] = cy[i];
+  }
+}
+int main() {
+  read();
+  work();
+  return 0;
+}

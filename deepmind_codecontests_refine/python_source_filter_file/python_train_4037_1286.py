@@ -1,0 +1,1 @@
+princt(int(input()) ^ 1)

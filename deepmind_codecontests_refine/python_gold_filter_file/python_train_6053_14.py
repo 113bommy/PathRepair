@@ -1,0 +1,5 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print(int(a==d and(a>0 or c==0)))

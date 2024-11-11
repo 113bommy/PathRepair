@@ -1,0 +1,1 @@
+print(int(input())+int(input())if input()=="2"else"Hello World")

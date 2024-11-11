@@ -1,0 +1,1 @@
+print(1100-int(input())

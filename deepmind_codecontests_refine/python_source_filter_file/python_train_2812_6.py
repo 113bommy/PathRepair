@@ -1,0 +1,5 @@
+int(input())
+s = set(input().split())
+int(input())
+t = set(input().split())
+print(s)

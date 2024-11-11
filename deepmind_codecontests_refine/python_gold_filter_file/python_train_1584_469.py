@@ -1,0 +1,1 @@
+x=int(input()); print(9*x, 8*x)

@@ -1,0 +1,1 @@
+print("1" if eval(input().replace(" ","%")) else "0")

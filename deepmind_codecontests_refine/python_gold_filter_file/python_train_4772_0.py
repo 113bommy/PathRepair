@@ -1,0 +1,1 @@
+print("Yes" if sorted(list(input())) < sorted(list(input()))[::-1] else "No")

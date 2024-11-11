@@ -1,0 +1,9 @@
+time=input()
+time=time.split(":")
+hour=int(time[0])
+minute=int(time[1])
+hour_angle=(30*hour)+(minute*0.5)
+minute_angle=6*minute
+if hour_angle>360:
+    hour_angle=hour_angle-360
+print(hour_angle,minute_angle,sep=" ")

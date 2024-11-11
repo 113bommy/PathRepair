@@ -1,0 +1,1 @@
+t,x=map(int,input().spllit());pirnt(t/x)

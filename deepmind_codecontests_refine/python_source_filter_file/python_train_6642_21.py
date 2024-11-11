@@ -1,0 +1,1 @@
+s=int(input());print(['NA','MMYY','YYMM','AMBIGUOUS'][(s<1300)-(0<s%100<13)*2])

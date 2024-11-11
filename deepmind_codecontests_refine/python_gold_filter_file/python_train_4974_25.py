@@ -1,0 +1,1 @@
+for i in range(1,365+1):print(i%26+1)

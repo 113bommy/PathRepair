@@ -1,0 +1,1 @@
+for _ in ' '*int(input()):x=lambda:list(map(int, input().split()));n,m=x();print('YENEOS'[sum(x())!=m::2])

@@ -1,0 +1,8 @@
+n = int(input())
+top = n // 3
+for i in range(top):
+	x = 1 + 2 * i
+	print(str(x) + ' 3')
+bot = n - top
+for i in range(bot):
+	print(str(i) + ' 0')

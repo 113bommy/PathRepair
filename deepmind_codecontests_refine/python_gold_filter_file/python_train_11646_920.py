@@ -1,0 +1,1 @@
+print("A" + input().split()[1][:1] + "C")

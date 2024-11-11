@@ -1,0 +1,20 @@
+n,a,x,b,y=list(map(int,input().split()))
+f=False
+while(1):
+    if(a==b):
+        f=True
+        break
+    if(a==x or b==y):
+        break
+    if(a+1>n):
+        a=1
+    else:
+        a+=1
+    if(b==1):
+        b=n
+    else:
+        b-=1
+if(f==True):
+    print("YES")
+else:
+    print("NO")

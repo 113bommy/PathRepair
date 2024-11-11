@@ -1,0 +1,20 @@
+s=str(input())
+e=''
+for i in range(0,len(s)):
+    if(s[i]=='>'):
+        e=e+'1000'
+    elif(s[i]=='<'):
+        e=e+'1001'
+    elif(s[i]=='+'):
+        e=e+'1010'
+    elif(s[i]=='-'):
+        e=e+'1011'
+    elif(s[i]=='.'):
+        e=e+'1100'
+    elif(s[i]==','):
+        e=e+'1101'
+    elif(s[i]=='['):
+        e=e+'1110'
+    else:
+        e=e+'1111'
+print(int(e,2)%1000003)

@@ -1,0 +1,2 @@
+a,b,x=map(int,input().split())
+print('YNEOS'[a>x or a+b<x::2])

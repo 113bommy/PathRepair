@@ -1,0 +1,1 @@
+print(['vowel','consonant'][not input() in 'aeiou'])

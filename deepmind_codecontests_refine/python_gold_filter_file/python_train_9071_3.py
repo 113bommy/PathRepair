@@ -1,0 +1,52 @@
+(l,r)=input().split()
+l=int(l)
+r=int(r)
+a1=1
+a2=2;
+curr=1;
+mod=1000000007;
+i=0;
+l-=1;
+ans1=0
+ans2=0;
+while l>=curr:
+    if(i%2==1):
+        ans1=ans1+((curr)*(a2+(curr-1)));
+        a2=(a2+(curr)*2);
+    else:
+        ans1=ans1+((curr)*(a1+(curr-1)));
+        a1=(a1+(curr)*2);
+    ans1=int(ans1%mod);
+    i+=1;
+    l-=curr;
+    curr*=2;
+if(l!=0):
+    if(i%2==1):
+        ans1=ans1+((l)*(a2+(l-1)));
+    else:
+        ans1=ans1+((l)*(a1+(l-1)));
+    ans1=int(ans1%mod);
+i=0
+curr=1;
+a1=1
+a2=2;
+while(r>=curr):
+    if(i%2==1):
+        ans2=ans2+((curr)*(a2+(curr-1)));
+        a2=(a2+(curr)*2);
+    else:
+        ans2=ans2+((curr)*(a1+(curr-1)));
+        a1=(a1+(curr)*2);
+    ans2=int(ans2%mod);
+    i+=1;
+    r-=curr;
+    curr*=2;
+if(r!=0):
+    if(i%2==1):
+        ans2=ans2+((r)*(a2+(r-1)));
+    else:
+        ans2=ans2+((r)*(a1+(r-1)));
+    ans2=int(ans2%mod);
+# print(ans1)
+# print(ans2)
+print(int((ans2-ans1)%mod));

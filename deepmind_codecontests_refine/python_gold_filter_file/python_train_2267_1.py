@@ -1,0 +1,5 @@
+X, N = map(int, input().split())
+*P, = map(int, input().split())
+cand = set(range(-50, 151)) - set(P)
+cand = sorted([c for c in cand], key=lambda x: (abs(X - x), x))
+print(cand[0])

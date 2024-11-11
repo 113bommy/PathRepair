@@ -1,0 +1,1 @@
+print('win' if sum(list(map(int,input().split())))<22 else 'bust')

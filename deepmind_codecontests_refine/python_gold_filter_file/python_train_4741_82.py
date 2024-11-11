@@ -1,0 +1,5 @@
+n = int(input())
+if n == 1 or n == 2: print(1)
+elif n == 4 or n == 5: print(3)
+elif n % 3 == 0: print((n//3)*2)
+else: print(((n//3))*2+1)

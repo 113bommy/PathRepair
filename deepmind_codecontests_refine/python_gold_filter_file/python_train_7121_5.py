@@ -1,0 +1,5 @@
+n=int(input())
+l=sorted(input().split())
+if set(l)=={'5'}: print(-1)
+elif l.count('5')<9: print(0)
+else: print('5'*((l.count('5')//9)*9)+'0'*l.index('5'))

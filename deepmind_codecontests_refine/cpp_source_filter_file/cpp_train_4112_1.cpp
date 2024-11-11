@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  long long int n;
+  cin >> n;
+  long long d;
+  for (int i = 9; n > 0; i *= 10) {
+    d += n;
+    n -= i;
+  }
+  cout << d << endl;
+}

@@ -1,0 +1,1 @@
+s=sorted;print(["No","Yes"][s(input())<s(input())[::-1]])

@@ -1,0 +1,1 @@
+return "ACL" * int(input())

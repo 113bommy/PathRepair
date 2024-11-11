@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int maxn = 510;
+int n, m;
+int x[maxn], y[maxn], mark[maxn], ans[maxn];
+int len[maxn];
+int dis(int i, int j) {
+  int res = abs((x[i] - x[j]) + (y[i] - y[j]));
+  return res;
+}
+int main() {
+  cin >> n >> m;
+  for (int i = 0; i < n; i++) cin >> x[i] >> y[i];
+  for (int i = 0; i < m; i++) cin >> len[i];
+  bool ok = true;
+  for (int i = 1; i < n; i += 2) {
+    int d1 = dis(i, i - 1), d2 = dis(i, (i + 1) % 2);
+    for (int j = 0; j < m; j++)
+      if (!mark[j] && len[j] == d1 + d2) {
+        mark[j] = 1;
+        ans[i] = j;
+        goto there;
+      }
+    ok = false;
+    break;
+  there:;
+  }
+  if (ok) {
+    cout << "YES" << endl;
+    for (int i = 0; i < n; i++)
+      if (i % 2 == 0)
+        cout << -1 << " ";
+      else
+        cout << ans[i] + 1 << " ";
+    return 0;
+  }
+  memset(mark, 0, sizeof(mark));
+  ok = true;
+  for (int i = 0; i < n; i += 2) {
+    int d1 = dis(i, (i + n - 1) % n), d2 = dis(i, i + 1);
+    for (int j = 0; j < m; j++)
+      if (!mark[j] && len[j] == d1 + d2) {
+        mark[j] = 1;
+        ans[i] = j;
+        goto here;
+      }
+    ok = false;
+    break;
+  here:;
+  }
+  if (ok) {
+    cout << "YES" << endl;
+    for (int i = 0; i < n; i++)
+      if (i % 2 == 1)
+        cout << -1 << " ";
+      else
+        cout << ans[i] + 1 << " ";
+  } else
+    cout << "NO" << endl;
+}

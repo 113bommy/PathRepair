@@ -1,0 +1,11 @@
+n=int(input())
+A=[int(input()) for _ in range(n)]
+A=[0]+A
+cnt=1
+for i in range(1,n+1):
+  cnt=A[cnt]
+  if cnt==2:
+    print(i)
+    exit()
+  
+print(-1)

@@ -1,0 +1,5 @@
+n,d = map(int,input().split())
+lis = sorted(map(int,input().split()))
+m = int(input())
+ans = sum(lis[:min(n+1,m+1)]) - d*(max(0,m-n))
+print(ans)

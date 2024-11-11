@@ -1,0 +1,1 @@
+print('YNeos'[''.join(sorted(input()))!='abc'::2])

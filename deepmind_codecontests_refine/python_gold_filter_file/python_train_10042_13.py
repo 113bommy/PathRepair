@@ -1,0 +1,10 @@
+n=int(input())
+temp=0
+i=1
+while(temp<n):
+    temp+=i
+    i+=1
+    if(temp==n):
+        print("YES")
+if(temp>n):
+    print("NO")

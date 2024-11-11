@@ -1,0 +1,2 @@
+s=set(input())
+print("CHAT WITH HER!") if len(s)%2==0 else print("IGNORE HIM!")

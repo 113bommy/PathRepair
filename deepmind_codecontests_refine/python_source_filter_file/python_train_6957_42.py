@@ -1,0 +1,1 @@
+print(["NO","YES"][int(input().replace(" ",""))**0.5%1==0])

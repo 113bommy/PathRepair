@@ -1,0 +1,7 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=max(a)
+res=a.index(m)
+a.remove(m)
+r=max(a)
+print(res+1,r)

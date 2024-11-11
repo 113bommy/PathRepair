@@ -1,0 +1,9 @@
+n,k=map(int,input().split())
+a=list(map(int,input().split()))
+i=0
+while(k>0):
+    k-=i
+    i+=1
+    if(k-i<=0):
+        break
+print(a[abs(k)-1])

@@ -1,0 +1,1 @@
+print(1/(100*int(input())) * sum([int(i) for i in input().split()]))

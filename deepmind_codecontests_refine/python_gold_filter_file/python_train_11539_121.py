@@ -1,0 +1,1 @@
+a,b,c=open(0);print(a[0]+b[1]+c[2])

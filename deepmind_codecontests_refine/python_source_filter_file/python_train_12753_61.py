@@ -1,0 +1,5 @@
+l = int(input())
+p = int(input())
+q = int(input())
+x = l / (p + q)
+print(max(p,q) * x)

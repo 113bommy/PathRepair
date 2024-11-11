@@ -1,0 +1,1 @@
+n,a=open(0);*a,=map(int,a.split());print(min(sum((i-j-100)**2for j in a)for i in range(201)))

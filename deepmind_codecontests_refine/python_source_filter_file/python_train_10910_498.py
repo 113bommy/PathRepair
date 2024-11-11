@@ -1,0 +1,1 @@
+(a,b,c)=int(input().split());print(min(a*b,c))

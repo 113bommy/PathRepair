@@ -1,0 +1,1 @@
+print("No" if len(set(list(input())))==1 else"Yes")

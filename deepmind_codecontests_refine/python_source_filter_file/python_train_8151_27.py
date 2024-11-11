@@ -1,0 +1,8 @@
+s=str(input())
+e = s.split(" ")
+a = int(e[1]) *int(e[2])
+a/=int(e[0])
+b = int(e[3])*int(e[4])
+c = int(e[5])/int(e[7])
+answer =min(a,b,c)/int(e[6])
+print(int(answer))

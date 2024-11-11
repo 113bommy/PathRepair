@@ -1,0 +1,21 @@
+n=int(input())
+l=list(map(int,input().split()))
+le=0
+ri=1
+ans=0
+c=0
+if(len(l))==1:
+    print(1)
+else:
+    while(ri<n):
+        if(l[ri]>l[le]):
+            ans+=1
+            ri+=1
+            le+=1
+        else:
+            le=ri
+            c=max(ans,c)
+            ans=0
+            ri+=1
+    c=max(c,ans)
+print(c+1)

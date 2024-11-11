@@ -1,0 +1,1 @@
+print('Yes' if set(map(int, input().split()))==2 else 'No')

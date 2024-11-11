@@ -1,0 +1,1 @@
+return int(int(input())/2)

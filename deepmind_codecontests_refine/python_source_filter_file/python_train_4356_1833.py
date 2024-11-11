@@ -1,0 +1,1 @@
+prinm(48-int(input()))

@@ -1,0 +1,5 @@
+H=int(input())
+W=int(input())
+N=int(input())
+K=max(H,W)
+print(-(-N//K))

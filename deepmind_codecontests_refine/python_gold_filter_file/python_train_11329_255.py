@@ -1,0 +1,1 @@
+print("ABC" if len(input())<=3 else "ABD")

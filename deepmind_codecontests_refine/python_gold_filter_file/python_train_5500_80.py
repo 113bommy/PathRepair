@@ -1,0 +1,1 @@
+d=input;print('YNeos'[int(d())%500>int(d())::2])

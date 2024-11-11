@@ -1,0 +1,1 @@
+for i in[*open(0)][1:]:l=[i.count("S"),i.count("P"),i.count("R")];print(["R","S","P"][l.index(max(l))]*(len(i)-1))

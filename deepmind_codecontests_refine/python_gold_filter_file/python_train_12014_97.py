@@ -1,0 +1,1 @@
+print(*[10**5+i for i in range(int(input()))])

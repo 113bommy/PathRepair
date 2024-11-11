@@ -1,0 +1,1 @@
+for s in[*open(0)][1:]:n=int(s);print(*next((((n-j)//3,(j-i)//5,i//7)for i in range(0,n+1,7)for j in range(i,n+1,5)if(n-j)%3<1),[-1]))

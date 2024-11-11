@@ -1,0 +1,10 @@
+n,s=map(int,input().split())
+l=[1]*(n-1)
+l.append(s-sum(l))
+x=s//2
+if(x<=n-1):
+    print("NO")
+else:
+    print("YES")
+    print(*l)
+    print(x)

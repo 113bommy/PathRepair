@@ -1,0 +1,1 @@
+K=int(input());print('ABC'*(K<1200)or'ARC'*(K<2800)or'AGC')

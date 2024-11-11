@@ -1,0 +1,9 @@
+n=int(input())
+if(n==0):
+    print(4)
+else:
+    r=n%4
+    if(r==0):
+        print(4)
+    else:
+        print(0)

@@ -1,0 +1,1 @@
+a=111;print((int(input())+110)//a*a)

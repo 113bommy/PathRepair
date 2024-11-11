@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+#include
+using namespace std;
+
+int main(){
+	int q;
+	while(cin>>q,q!=-1){
+		double x=q/2.0;
+		while(fabs(x*x*x-q)>=0.00001*q)x-=(x*x*x-q)/(3*x*x);
+		printf("%.6f\n", x);
+	} 
+	return 0;
+}

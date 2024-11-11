@@ -1,0 +1,6 @@
+s = set(input())
+print(s)
+if len(s) == 3:
+    print("Yes")
+else:
+    print("No")

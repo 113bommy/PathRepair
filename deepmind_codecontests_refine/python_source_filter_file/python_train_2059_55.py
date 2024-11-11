@@ -1,0 +1,6 @@
+A,V = map(int,input().split())
+B,W = map(int,input().split())
+T = int(input())
+D = abs(A-B)
+S = abs(V-W)
+print("YNEOS"[D>T*S::2])

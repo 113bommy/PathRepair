@@ -1,0 +1,1 @@
+print("YES" if sorted(list(map(int, input().split()))) == [3, 3, 5] else "NO")

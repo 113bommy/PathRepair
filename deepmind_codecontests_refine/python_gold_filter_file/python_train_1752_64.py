@@ -1,0 +1,1 @@
+a,b,_,k=map(int,input().split());print((a-b,b-a)[k%2])

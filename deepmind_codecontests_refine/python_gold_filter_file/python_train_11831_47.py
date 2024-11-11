@@ -1,0 +1,1 @@
+print(len([1 for x in input() if x in 'aeiou13579']))

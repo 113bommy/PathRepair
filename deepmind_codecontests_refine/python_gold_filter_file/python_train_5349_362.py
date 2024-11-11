@@ -1,0 +1,5 @@
+word = input()
+wordlist = list(word)
+wordlist[0] = wordlist[0].upper()
+word = "".join(wordlist)
+print(word)

@@ -1,0 +1,1 @@
+print(' YNeos'[int(input())in[a//9*(a%11)for a in range(99)]::2])

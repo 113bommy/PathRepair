@@ -1,0 +1,1 @@
+print(max((int(input()) + 1) // 2 - 1, 0))

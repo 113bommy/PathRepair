@@ -1,0 +1,1 @@
+input();s=input();print(['NO','YES'][s[0]=='S' and s[-1]=='F'])

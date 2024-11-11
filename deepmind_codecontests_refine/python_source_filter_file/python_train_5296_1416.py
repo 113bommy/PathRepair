@@ -1,0 +1,1 @@
+print((int(input())+1)*n//2)

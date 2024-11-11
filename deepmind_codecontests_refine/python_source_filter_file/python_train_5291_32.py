@@ -1,0 +1,1 @@
+n,*p=map(int,open(0));print('Hello world'if n==1 else sum(p))

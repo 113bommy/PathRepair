@@ -1,0 +1,1 @@
+print(input().replace('1', '_').replace('9', '1').replace('_', '9'))

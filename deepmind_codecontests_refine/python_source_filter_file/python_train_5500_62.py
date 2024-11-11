@@ -1,0 +1,1 @@
+print('Yes' if int(input())>=int(input())%500 else 'No')

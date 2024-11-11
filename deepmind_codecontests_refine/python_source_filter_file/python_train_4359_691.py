@@ -1,0 +1,1 @@
+print(list(set(int(input().split()))))

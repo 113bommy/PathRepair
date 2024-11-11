@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  long long x, y, m, n, t;
+  cin >> x;
+  cin >> y;
+  m = x - y;
+  if (m % 2 == 1) {
+    cout << "-1" << endl;
+    return 0;
+  }
+  m /= 2;
+  cout << m << " " << x - m << endl;
+  return 0;
+}

@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int n;
+  cin >> n;
+  if (n >= 0)
+    cout << n << '\n';
+  else {
+    n = -n;
+    if (n / 10 > (n / 100) * 10 + n % 10)
+      n = (n / 100) * 10 + n % 10;
+    else
+      n = n / 10;
+    cout << '-' << n << '\n';
+  }
+  return 0;
+}

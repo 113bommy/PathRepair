@@ -1,0 +1,1 @@
+x, y = input().split();Sprint("=" if x==y else "<>"[x>y::2])

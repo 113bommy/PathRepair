@@ -1,0 +1,1 @@
+pritn(-int(input())%1000)

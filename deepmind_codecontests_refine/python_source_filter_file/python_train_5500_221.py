@@ -1,0 +1,1 @@
+print('YNeos'[int(input())%50>int(input())::2])

@@ -1,0 +1,1 @@
+print("NYoe s"[int(input()) in [7,5,3]::2])

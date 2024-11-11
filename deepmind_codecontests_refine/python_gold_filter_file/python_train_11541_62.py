@@ -1,0 +1,7 @@
+from fractions import gcd
+a,b,c = map(int, input().split())
+if c%gcd(a,b)==0:
+  print('YES')
+  exit()
+print('NO')
+

@@ -1,0 +1,5 @@
+a,b=input().split()
+a=int(a)
+b=b.replace(".","")
+b=int(b)
+print((a*b)//100)

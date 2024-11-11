@@ -1,0 +1,1 @@
+print(9 - int(input())//200)

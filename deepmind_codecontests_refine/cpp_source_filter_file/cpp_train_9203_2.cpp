@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int n, a, b, c, d;
+  cin >> n;
+  for (int i = 0; i < 4; ++i) {
+    cin >> a >> b >> c >> d;
+    if (min(a, b) + min(c, d) <= n) {
+      cout << i + 1 << " " << min(a, b) << " " << n - min(c, d);
+      return 0;
+    }
+  }
+  cout << -1;
+}

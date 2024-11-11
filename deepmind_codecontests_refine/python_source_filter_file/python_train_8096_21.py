@@ -1,0 +1,1 @@
+print("ABRCC"[input()[1]=="R"::2])

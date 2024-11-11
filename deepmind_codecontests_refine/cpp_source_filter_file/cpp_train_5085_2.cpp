@@ -1,0 +1,10 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+ina main(){
+  int a,b,c;
+  cin>>a>>b>>c;
+  
+  cout<<min({a+b,a+c,b+c});
+  return 0;
+}

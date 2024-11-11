@@ -1,0 +1,1 @@
+print(('NO', 'YES')[input().lower().strip('? ')[-1] in 'aeiouy'])

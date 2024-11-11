@@ -1,0 +1,6 @@
+n = int(input())
+a1,a2,a3 = map(int,input().split())
+b1,b2,b3 = map(int,input().split())
+ans1 = min(a1,b2) + min(a2,b3) + min(a3,b1)
+ans2 = n - (min(a1,n-b2) + min(a2,n-b3) + min(a3,n-b1))
+print(str(ans2) + " " + str(ans1))

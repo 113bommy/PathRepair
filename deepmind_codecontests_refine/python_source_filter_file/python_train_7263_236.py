@@ -1,0 +1,1 @@
+print("aA"[input().islower()])

@@ -1,0 +1,10 @@
+w=int(input())
+n=input()
+a=n.count("A")
+b=n.count("D")
+if(a>b):
+    print("Anton")
+elif(a<b):
+    print("Danik")
+else:
+    print("Friendship")

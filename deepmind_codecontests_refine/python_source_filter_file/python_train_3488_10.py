@@ -1,0 +1,5 @@
+k,a,b=map(int,input().split())
+start=(a if (a%k==0) else (a+(abs(a)%k) if(a<0) else k*((a//k)+1)))
+end=(b if (b%k==0) else (b-(b%k) if(b>0) else k*(b//k)))
+#print(start,end)
+print(0 if(start>end) else (int((end-start)/k)+1))       

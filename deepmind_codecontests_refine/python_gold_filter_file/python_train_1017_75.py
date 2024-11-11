@@ -1,0 +1,1 @@
+n,k,s=map(int,input().split());print(*[s]*k+[9**9]*(n-k))

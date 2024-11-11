@@ -1,0 +1,1 @@
+a,b,c,d=input();print('NYOE S'[a==b==c or b==c==d::2])

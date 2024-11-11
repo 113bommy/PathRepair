@@ -1,0 +1,1 @@
+print('a' if ord(input()) > 90 else 'A')

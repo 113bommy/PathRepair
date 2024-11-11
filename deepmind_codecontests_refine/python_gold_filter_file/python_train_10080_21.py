@@ -1,0 +1,1 @@
+s=input();print(sorted({s[i:i+j]for i in range(len(s))for j in range(6)})[int(input())])

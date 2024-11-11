@@ -1,0 +1,22 @@
+mod=10**9+7
+n,k=map(int,input().split())
+ans=1
+coef1=n
+coef2=n-1
+for i in range(1,min(k+1,n)):
+  tmp=1
+  tmp*=coef1
+  tmp%=mod
+  tmp*=coef2
+  tmp%=mod
+  ans+=tmp
+  ans%=mod  
+  coef1*=n-i
+  coef1%=mod
+  coef1*=pow(i+1,mod-2,mod)
+  coef1%=mod
+  coef2*=n-1-i
+  coef2%=mod
+  coef2*=pow(i+1,mod-2,mod)
+  coef2%=mod
+print(ans)

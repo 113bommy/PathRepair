@@ -1,0 +1,1 @@
+print(' YNeos'[int(input())in[a//10*(a%10)for a in range(100)]::2])

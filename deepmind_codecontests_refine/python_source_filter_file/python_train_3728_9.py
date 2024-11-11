@@ -1,0 +1,1 @@
+I=lambda:map(int,input().split());*_,k=I();s=lambda*a:sorted(i+j for i in I()for j in a)[:-k-1:-1];print(*s(*s(*I())))

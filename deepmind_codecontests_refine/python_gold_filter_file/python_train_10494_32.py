@@ -1,0 +1,12 @@
+N,A,B,C,D=map(int, input().split())
+S=input()
+if S.find("##", A, B)<0 and S.find("##", C, D)<0:
+    if C<D:
+        print("Yes")
+    else:
+        if S.find("...", B-2, D+1)>=0:
+            print("Yes")
+        else:
+            print("No")
+else:
+    print("No")

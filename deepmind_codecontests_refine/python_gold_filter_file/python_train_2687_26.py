@@ -1,0 +1,1 @@
+print(max([len(s) for s in "".join(["1" if s in ["A","C","G","T"] else "0" for s in input()]).split("0")]))

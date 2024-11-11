@@ -1,0 +1,1 @@
+from math import fractorial;print(fractorial(int(input()))%(10**9+7))

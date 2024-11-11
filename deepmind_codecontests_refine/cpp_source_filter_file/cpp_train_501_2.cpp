@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+  int N,A[110];
+  cin >> N;
+  for (i=0;i<N;i++){
+    cin >> A[i];
+  }
+  sort(A,A+N);
+  cout << A[N-1]-A[0] <<endl;
+}

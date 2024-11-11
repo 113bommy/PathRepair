@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+int n, len, q[2100], p[2100];
+unsigned long long a[2100][40], s[700], b[2100][40];
+char str[700];
+int get(int i, int j) { return (a[i][j / 60] >> (j % 60)) & 1; }
+int main() {
+  scanf("%d", &n);
+  for (int i = 1; i <= n; i++) {
+    scanf("%s", str);
+    len = strlen(str);
+    for (int j = 1; j <= len; j++) s[j] = str[len - j] - '0';
+    int t = 0;
+    while (len) {
+      for (int j = len; j; j--) {
+        s[j - 1] += 10 * (s[j] % ((unsigned long long)1 << 60));
+        s[j] /= (unsigned long long)1 << 60;
+      }
+      a[i][t++] = s[0] / 10;
+      s[0] = 0;
+      while (len && !s[len]) len--;
+    }
+    int pd = 0;
+    q[0] = 0;
+    for (int j = 3; j >= 0; j--)
+      if (get(i, j)) {
+        if (!p[j]) {
+          printf("0\n");
+          p[j] = i;
+          pd = 1;
+          break;
+        }
+        for (int k = 0; k <= 35; k++) a[i][k] ^= a[p[j]][k];
+        for (int k = 0; k <= 35; k++) b[i][k] |= b[p[j]][k];
+      }
+    if (!pd) {
+      for (int j = 1; j <= i; j++)
+        if ((b[i][j / 60] >> (j % 60)) & 1) q[++q[0]] = j - 1;
+      printf("%d", q[0]);
+      for (int j = 1; j <= q[0]; j++) printf(" %d", q[j]);
+      printf("\n");
+    }
+    b[i][i / 60] |= (unsigned long long)1 << (i % 60);
+  }
+  return 0;
+}

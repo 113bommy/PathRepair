@@ -1,0 +1,1 @@
+print(map(lambda x:x*((x%2*2),int(input()))

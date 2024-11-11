@@ -1,0 +1,1 @@
+a,b,x=map(int,input().split());print('NYOE S'[a<=x<=a+b::2])

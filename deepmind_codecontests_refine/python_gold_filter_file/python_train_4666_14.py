@@ -1,0 +1,1 @@
+print('YNEOS'[sum(map(int,open(0).read().split()))!=15::2])

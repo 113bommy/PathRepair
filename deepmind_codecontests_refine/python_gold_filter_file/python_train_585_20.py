@@ -1,0 +1,20 @@
+import math
+k,d,t=input().split();
+d=int(d);
+k=int(k);
+t=int(t);
+if(k%d==0):
+    print(t)
+else:
+    nom=math.ceil(k/d)
+    on=k;
+    off=((nom*d)-k)/2;
+    tot=on+off
+    totmovs=math.floor(t/tot)
+    full=(totmovs*tot)
+    if(full==t):
+        print(nom*d*totmovs)
+    elif(full+on>=t):
+        print(totmovs*d*nom+(t-full))
+    else:
+        print(totmovs*d*nom+on+2*(t-full-on))

@@ -1,0 +1,1 @@
+w,h,x,y=map(int,input().split());print(w*h/2,(x==w/2)*(y==h/2))

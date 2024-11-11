@@ -1,0 +1,8 @@
+n=int(input())
+for _ in range(n):
+	s=input()
+	if len(s)>=12:
+		print("{}{}{}".format(s[0],len(s)-2,s[-1]))
+	else:
+		print(s)
+

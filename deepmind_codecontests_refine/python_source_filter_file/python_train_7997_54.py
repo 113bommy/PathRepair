@@ -1,0 +1,9 @@
+x,y=map(int,input().split())
+if(x==y):print(-1)
+else:
+  i=1
+  while(1):
+    if((x*i)%y!=0):
+      print(x*i)
+      break
+    i+=1

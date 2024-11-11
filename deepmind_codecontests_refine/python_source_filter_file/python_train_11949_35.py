@@ -1,0 +1,1 @@
+print(8-int(int(input())-400)/200)

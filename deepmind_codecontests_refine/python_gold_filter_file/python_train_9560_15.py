@@ -1,0 +1,1 @@
+print(sum(s[0]==s[4]for s in map(str,range(*map(sum,enumerate(map(int,input().split())))))if s[1]==s[3]))

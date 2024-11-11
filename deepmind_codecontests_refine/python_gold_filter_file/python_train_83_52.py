@@ -1,0 +1,3 @@
+a,b = map(int,input().split())
+c = a * b
+print("Odd" if c % 2 == 1 else "Even")

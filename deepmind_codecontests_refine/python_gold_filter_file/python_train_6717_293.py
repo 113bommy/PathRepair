@@ -1,0 +1,1 @@
+print(2*(pow(2,int(input()))-1))

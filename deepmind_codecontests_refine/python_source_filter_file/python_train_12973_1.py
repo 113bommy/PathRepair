@@ -1,0 +1,1 @@
+print(2 * int(0.99 + 2 * int(input()) ** 0.5))

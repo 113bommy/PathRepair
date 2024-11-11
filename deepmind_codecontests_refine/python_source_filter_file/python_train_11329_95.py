@@ -1,0 +1,1 @@
+print("ABD" int(input())>999 else "ABC")

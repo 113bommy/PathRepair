@@ -1,0 +1,1 @@
+s=lambda a,b:a if a<b else s(a//b,b)+a%b;n=int(input());print(min(s(i,6)+s(n-i,9)for i in range(n+1)))

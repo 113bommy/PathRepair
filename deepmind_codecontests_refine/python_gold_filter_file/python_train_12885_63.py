@@ -1,0 +1,1 @@
+print(sum(c!=d for c,d in zip(input(),input())))

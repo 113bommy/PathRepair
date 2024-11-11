@@ -1,0 +1,12 @@
+t=int(input())
+count=0
+count+=t//100
+t=t%100
+count+=t//20
+t=t%20
+count+=t//20
+t=t%10
+count+=t//5
+t=t%5
+count+=t//1
+print(count)

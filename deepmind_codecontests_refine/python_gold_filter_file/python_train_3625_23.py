@@ -1,0 +1,1 @@
+import re;print(re.match("A[a-z]+C[a-z]+$",input())and"AC"or"WA")

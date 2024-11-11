@@ -1,0 +1,6 @@
+a,b,c=input().split()
+a=int(a)
+b=int(b)
+c=int(c)
+if(a%2!=b%2 and c==-1): print(0)
+else: print(pow(2,(a-1)*(b-1),1000000007))

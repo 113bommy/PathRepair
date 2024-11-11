@@ -1,0 +1,1 @@
+print("Yes" if "2" in input() else "No")

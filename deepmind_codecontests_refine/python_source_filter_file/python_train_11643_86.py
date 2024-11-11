@@ -1,0 +1,1 @@
+["Yes","No"][len(set(input())<3]

@@ -1,0 +1,7 @@
+#include <bits/stdc++.h>
+int main() {
+  int n, i;
+  scanf("%d", &n);
+  printf("%d\n", (n - 1) / 2);
+  return 0;
+}

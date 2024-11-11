@@ -1,0 +1,1 @@
+print("bust" if sum(map(int, input().strip().split())) >= 22 else "win")

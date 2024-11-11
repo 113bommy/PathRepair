@@ -1,0 +1,5 @@
+n = int(input())
+aa = list(map(int, input().split(' ')))
+l, h = max(aa), min(aa)
+li, hi = aa.index(l), aa[::-1].index(h)
+print(li + hi - (li + hi > n - 1))

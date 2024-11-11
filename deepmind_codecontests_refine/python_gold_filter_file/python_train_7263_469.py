@@ -1,0 +1,1 @@
+print(chr(65+(input()>'Z')*32))

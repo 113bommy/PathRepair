@@ -1,0 +1,1 @@
+A,B=map(in,input().split());print(A+B if A+B<10 else "error")

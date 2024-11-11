@@ -1,0 +1,1 @@
+print(int(6 - int(input()) - int(input()))

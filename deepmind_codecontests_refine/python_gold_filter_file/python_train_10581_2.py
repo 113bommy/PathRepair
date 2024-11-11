@@ -1,0 +1,10 @@
+a,b=map(int,input().split())
+m=100000000
+while(a):
+    q,w=map(int,input().split())
+    #print(q/w,m)
+    c=q/w
+    if(m>c):
+        m=c
+    a-=1
+print(format((b*m),'.8f'))

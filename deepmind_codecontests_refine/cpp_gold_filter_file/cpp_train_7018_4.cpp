@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int MAXN = 1000 * 100 + 10;
+int t[MAXN], a[MAXN];
+long long l[MAXN], c[MAXN];
+int main() {
+  int n, m;
+  cin >> n;
+  long long size = 0;
+  for (int i = 0; i < n; i++) {
+    cin >> t[i] >> l[i];
+    c[i] = 1;
+    if (t[i] == 2) {
+      cin >> c[i], c[i] *= l[i];
+      if (size < MAXN)
+        for (int j = size; j < min((long long)MAXN, size + c[i]); j++)
+          a[j] = a[(j - size) % l[i]];
+    }
+    if (t[i] == 1 && size < (long long)MAXN) a[size] = l[i];
+    size += c[i];
+  }
+  cin >> m;
+  int ind = 0;
+  size = 0;
+  for (int i = 0; i < m; i++) {
+    long long x;
+    cin >> x;
+    x--;
+    while (size + c[ind] <= x) size += c[ind++];
+    if (t[ind] == 1)
+      cout << l[ind] << " ";
+    else
+      cout << a[(long long)(x - size) % l[ind]] << " ";
+  }
+  cout << endl;
+  return 0;
+}

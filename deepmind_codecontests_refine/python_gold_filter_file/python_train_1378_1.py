@@ -1,0 +1,5 @@
+t = int(input())
+for testcase in range(t):
+    n = int(input())
+
+    print(1, n - 1)

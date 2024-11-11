@@ -1,0 +1,1 @@
+' '.join(input().split('WUB')).strip()

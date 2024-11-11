@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+int a[100005], b[100005];
+int main() {
+  int n, m, k;
+  cin >> n >> m >> k;
+  for (int i = 0; i < n; i++) cin >> a[i];
+  sort(a, a + n);
+  reverse(a, a + n);
+  for (int i = 0; i < m; i++) cin >> b[i];
+  sort(b, b + n);
+  reverse(b, b + n);
+  for (int i = 0, j = 0; i < n; i++, j++)
+    if (j == m || a[i] > b[j]) {
+      cout << "YES" << endl;
+      return 0;
+    }
+  cout << "NO" << endl;
+  return 0;
+}

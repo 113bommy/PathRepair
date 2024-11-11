@@ -1,0 +1,1 @@
+print(input().replace("8","7",1))

@@ -1,0 +1,12 @@
+a,b,c=map(int,input().split())
+k=int(input())
+ans=["Yes","no"]
+while b<=a:
+  b*=2
+  k-=1
+while c<=b:
+  c*=2
+  k-=1
+print(ans[0] if k>=0 else ans[1])  
+  
+  

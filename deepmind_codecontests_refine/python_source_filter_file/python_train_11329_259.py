@@ -1,0 +1,1 @@
+print("AABBDC"[int(input())<1000::2]

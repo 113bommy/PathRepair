@@ -1,0 +1,5 @@
+l1, r1, l2, r2, k = map(int, input().split())
+l = max(l1, l2)
+r = min(r1, r2)
+res = max(0, r - l + 1) - (1 if l <= k <= r else 0)
+print(res)

@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print('NYOE S'[b-a==c-b::2])

@@ -1,0 +1,19 @@
+l='ROYGBIV'
+n=int(input())
+x=n//7
+k=n%7
+s=l*x
+if(k==0):
+    print(s)
+elif(k==1):
+    print(s+l[3])
+elif(k==2):
+    print(s+l[3]+l[4])
+elif(k==3):
+    print(s+l[3]+l[4]+l[5])
+elif(k==4):
+    print(s+l[3]+l[4]+l[5]+l[6])
+elif(k==5):
+    print(s+l[3]+l[4]+l[5]+l[6]+l[0])
+elif(k==6):
+    print(s+l[3]+l[4]+l[5]+l[6]+l[0]+l[1])

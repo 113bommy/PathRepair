@@ -1,0 +1,1 @@
+s=input();print('NYoe s'['2'in s or'5'in s::2])

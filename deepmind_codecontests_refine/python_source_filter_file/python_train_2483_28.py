@@ -1,0 +1,1 @@
+n,_,*r=map(int,open(0).read().split());for i in range(n):print(r.count(-~i))

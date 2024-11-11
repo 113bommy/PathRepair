@@ -1,0 +1,1 @@
+print([str(input().strip('0').count('0')) + '\n' for i in range(int(input()))])

@@ -1,0 +1,1 @@
+n=int(input());print('8'*(n//2)+'9'*(n%2) if n<=34 else -1)

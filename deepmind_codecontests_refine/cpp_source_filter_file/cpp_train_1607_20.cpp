@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>
+int main() {
+  int ans, a, b, c, d, e, f;
+  scanf("%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f);
+  ans = (a == d) + (b == e) + (c == f);
+  puts(ans >= 2 ? "YES" : "NO");
+  return 0;
+}

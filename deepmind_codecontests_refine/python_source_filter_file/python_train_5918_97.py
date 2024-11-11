@@ -1,0 +1,1 @@
+print(input().scount("1"))

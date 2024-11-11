@@ -1,0 +1,1 @@
+print('YNeos'[['AC' not in input()]::2])

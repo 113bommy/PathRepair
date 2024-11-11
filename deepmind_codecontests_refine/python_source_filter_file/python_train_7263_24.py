@@ -1,0 +1,1 @@
+print('B') if input().islower() else print('A') 

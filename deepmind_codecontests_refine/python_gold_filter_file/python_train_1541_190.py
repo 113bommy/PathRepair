@@ -1,0 +1,1 @@
+print("bust" if sum([int(_) for _ in input().split()]) >= 22 else "win")

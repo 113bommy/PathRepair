@@ -1,0 +1,6 @@
+s=input()
+four=s.count("4")
+seven=s.count("7")
+if four==0 and seven==0: print(-1)
+elif four>=seven: print(4)
+else: print(7)

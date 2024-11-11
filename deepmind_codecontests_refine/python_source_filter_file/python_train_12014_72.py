@@ -1,0 +1,1 @@
+print(*[10**6 - i for i in range(int(input()))])

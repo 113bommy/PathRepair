@@ -1,0 +1,1 @@
+print("x"*int(len(input())))

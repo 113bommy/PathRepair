@@ -1,0 +1,1 @@
+a,s,d=map(int,input().split());print("A" if abs(s-a)<abs(d-a) else "B")

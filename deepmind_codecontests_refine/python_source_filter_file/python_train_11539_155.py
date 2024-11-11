@@ -1,0 +1,1 @@
+print(inpit()[0]+input()[1]+input()[2])

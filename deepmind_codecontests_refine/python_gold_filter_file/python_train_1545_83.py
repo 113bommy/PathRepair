@@ -1,0 +1,1 @@
+I=lambda:[input()for _ in[0]*int(input())];s=I();t=I();print(max(0,*[s.count(i)-t.count(i)for i in s]))

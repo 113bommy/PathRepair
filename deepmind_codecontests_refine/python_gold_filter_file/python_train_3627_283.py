@@ -1,0 +1,1 @@
+print(["No","Yes"][input().count("9")>=1])

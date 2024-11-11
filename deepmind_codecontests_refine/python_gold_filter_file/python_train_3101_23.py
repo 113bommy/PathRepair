@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print('YNeos'[c<=a+b or 4*a*b>=(c-a-b)**2::2])

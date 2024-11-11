@@ -1,0 +1,1 @@
+print(["ARC","ABC"][1200<int(input())])

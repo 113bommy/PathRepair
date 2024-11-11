@@ -1,0 +1,7 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  string S;
+  cin >> S;
+  cout << 'A' << S[0] << 'C' << endl;
+}

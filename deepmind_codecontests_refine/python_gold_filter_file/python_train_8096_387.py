@@ -1,0 +1,1 @@
+print('AABRCC'[input()[1]!='R'::2])

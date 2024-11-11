@@ -1,0 +1,1 @@
+print(input().replace('17/','18/'))

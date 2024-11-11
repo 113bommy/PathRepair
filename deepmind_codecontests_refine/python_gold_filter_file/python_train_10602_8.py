@@ -1,0 +1,1 @@
+n=int(input());print(2**(len(bin(n+(n>1>n&~-n)))-3))

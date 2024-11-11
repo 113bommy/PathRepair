@@ -1,0 +1,1 @@
+print('YNeos'[~('7'in input())%2::2])

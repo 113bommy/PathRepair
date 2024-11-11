@@ -1,0 +1,1 @@
+n,b,r=map(int,input().split());print((n//(b+r))*b+n%(b+r))

@@ -1,0 +1,1 @@
+print(max("1",input()[:int(input())].replace("1","")[:1]))

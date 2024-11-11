@@ -1,0 +1,10 @@
+t=int(input())
+while(t>0):
+    t=t-1
+    [l,r]=input().split()
+    l=int(l)
+    r=int(r)
+    if(r<2*l):
+        print(-1,-1)
+    else:
+        print(l,2*l)

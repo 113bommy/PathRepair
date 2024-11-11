@@ -1,0 +1,3 @@
+A,B = map(int, input().split())
+
+print(abs(A-B)//2) if (A+B)%2 == 0 else print('IMPOSSIBLE')

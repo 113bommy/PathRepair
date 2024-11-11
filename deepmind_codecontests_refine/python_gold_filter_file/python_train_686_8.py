@@ -1,0 +1,5 @@
+input()
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+x = list(set(a) & set(b))
+print(min(x) if len(x) != 0 else str(min(min(a), min(b)))+ str(max(min(a), min(b))))

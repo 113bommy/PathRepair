@@ -1,0 +1,1 @@
+s=set;print("NYoe s"[s(input())in map(s,["NS","EW","NSEW"])::2])

@@ -1,0 +1,1 @@
+x=int(input());print(["YES","NO"][all(x%j for j in[4,7,47,744,477])])

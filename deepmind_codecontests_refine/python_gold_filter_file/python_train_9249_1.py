@@ -1,0 +1,1 @@
+a,o,b=input().split();print(eval(a+o+b))

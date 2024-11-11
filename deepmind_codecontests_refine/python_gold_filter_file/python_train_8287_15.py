@@ -1,0 +1,29 @@
+n=int(input())
+a=int(input())
+b=int(input())
+c=int(input())
+s,dist='R',0
+while(n>1): 
+    if(s=='R'):
+        if(a<=b):
+            dist+=a
+            s='O'
+        else:
+            dist+=b
+            s='E'
+    elif(s=='E'):
+        if(b<=c):
+            dist+=b
+            s='R'
+        else:
+            dist+=c
+            s='O'
+    elif(s=='O'):
+        if(c<=a):
+            dist+=c
+            s='E'
+        else:
+            dist+=a
+            s='R'
+    n-=1
+print(dist)

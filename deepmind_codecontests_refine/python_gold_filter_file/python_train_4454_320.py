@@ -1,0 +1,1 @@
+print("YNeos"[(int(input()) % 3 != 0)::2])

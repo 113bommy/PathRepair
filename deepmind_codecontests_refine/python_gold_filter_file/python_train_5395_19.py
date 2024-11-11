@@ -1,0 +1,1 @@
+import bisect;print(bisect.bisect_right([105,135,165,189,195],int(input())))

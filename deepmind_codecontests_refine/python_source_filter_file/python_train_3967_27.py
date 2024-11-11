@@ -1,0 +1,6 @@
+a = 0
+for i in range(200):
+	a = a * 10 + 5
+b = 10 ** 500 - a
+print(a)
+print(b)

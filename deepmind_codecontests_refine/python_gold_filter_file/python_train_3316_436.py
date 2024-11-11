@@ -1,0 +1,1 @@
+print("ABC" if int(input())<=1199 else "ARC")

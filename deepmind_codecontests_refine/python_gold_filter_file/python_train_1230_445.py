@@ -1,0 +1,1 @@
+w=input();print(w.count("+")-w.count("-"))

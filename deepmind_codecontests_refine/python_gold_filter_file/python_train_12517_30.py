@@ -1,0 +1,1 @@
+print(set("HQ9")&set(input())and"YES"or"NO")

@@ -1,0 +1,1 @@
+input();c=input();print(sum(a==b for a,b in zip(c[1:],c)))

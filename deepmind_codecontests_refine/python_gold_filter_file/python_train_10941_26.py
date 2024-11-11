@@ -1,0 +1,27 @@
+n=int(input())
+p=[list(input().split()) for i in range(n)]
+word=[(''.join((sorted(list(j)))),int(i)) for i,j in p]
+word.sort()
+a=list();b=list();c=list();ab=list();ac=list();bc=list();abc=list()
+for i,j in word:
+    if 'A' == i:a.append((j,i))
+    elif 'B' == i:b.append((j,i))
+    elif 'C' == i:c.append((j,i))
+    elif 'AB' == i :ab.append((j,i))
+    elif 'BC' == i:bc.append((j,i))
+    elif 'AC' == i:ac.append((j,i))
+    elif 'ABC' == i:abc.append((j,i))
+a.sort();b.sort();c.sort();ab.sort();bc.sort();ac.sort();abc.sort()
+na=len(a);nb=len(b);nc=len(c)
+if((na is 0 or nb is 0 or nc is 0)and(len(bc) is 0 or len(a) is 0)and(len(ac) is  0 or len(b) is 0)and(len(ab) is  0 or len(c) is  0)and((len(ab) is 0 or len(bc) is 0) and (len(bc) is 0 or len(ac) is 0) and (len(ac) is 0 or len(ab) is 0))and(len(abc) is 0)):print('-1')
+else:
+    m=list()
+    if(na is not 0 and nb is not 0 and nc is not 0):m.append(a[0][0]+b[0][0]+c[0][0])
+    if(len(ab) is not 0 and len(bc) is not 0):m.append(ab[0][0]+bc[0][0])
+    if( len(ac) is not 0 and len(ab) is not 0):m.append(ac[0][0]+ab[0][0])
+    if(len(bc) is not 0 and len(ac) is not 0):m.append(bc[0][0]+ac[0][0])
+    if(len(bc) is not 0 and len(a) is not 0):m.append(bc[0][0]+a[0][0])
+    if(len(c) is not 0 and len(ab) is not 0):m.append(c[0][0]+ab[0][0])
+    if(len(ac) is not 0 and len(b) is not 0):m.append(ac[0][0]+b[0][0])
+    if(len(abc) is not 0):m.append(abc[0][0])
+    print(min(m))

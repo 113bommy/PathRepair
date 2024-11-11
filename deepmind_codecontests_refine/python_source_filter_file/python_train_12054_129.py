@@ -1,0 +1,1 @@
+sum([i for i in range(1, 1+int(input())) if i%3 * i%5]) 

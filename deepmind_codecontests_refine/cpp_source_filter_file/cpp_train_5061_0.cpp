@@ -1,0 +1,138 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 700;
+const int S = 200;
+const int M = N * S + 100;
+const int INF = 1000 * 1000 * 1000;
+int n1, n2, edges, last[N], previous[M], head[M];
+int matching[N], dist[N], Q[N];
+bool used[N], vis[N];
+inline void init(int _n1, int _n2) {
+  n1 = _n1;
+  n2 = _n2;
+  edges = 0;
+  fill(last, last + n1, -1);
+}
+inline void addEdge(int u, int v) {
+  head[edges] = v;
+  previous[edges] = last[u];
+  last[u] = edges++;
+}
+inline void bfs() {
+  fill(dist, dist + n1, -1);
+  int sizeQ = 0;
+  for (int u = 0; u < n1; ++u) {
+    if (!used[u]) {
+      Q[sizeQ++] = u;
+      dist[u] = 0;
+    }
+  }
+  for (int i = 0; i < sizeQ; i++) {
+    int u1 = Q[i];
+    for (int e = last[u1]; e >= 0; e = previous[e]) {
+      int u2 = matching[head[e]];
+      if (u2 >= 0 && dist[u2] < 0) {
+        dist[u2] = dist[u1] + 1;
+        Q[sizeQ++] = u2;
+      }
+    }
+  }
+}
+inline bool dfs(int u1) {
+  vis[u1] = true;
+  for (int e = last[u1]; e >= 0; e = previous[e]) {
+    int v = head[e];
+    int u2 = matching[v];
+    if (u2 < 0 || !vis[u2] && dist[u2] == dist[u1] + 1 && dfs(u2)) {
+      matching[v] = u1;
+      used[u1] = true;
+      return true;
+    }
+  }
+  return false;
+}
+inline int maxMatching() {
+  fill(used, used + n1, false);
+  fill(matching, matching + n2, -1);
+  for (int res = 0;;) {
+    bfs();
+    fill(vis, vis + n1, false);
+    int f = 0;
+    for (int u = 0; u < n1; ++u)
+      if (!used[u] && dfs(u)) ++f;
+    if (!f) return res;
+    res += f;
+  }
+}
+int V, E, n, k;
+int sp[N][N];
+int par[N][N];
+int home[N];
+vector<pair<int, int> > adj[N];
+inline void dijkstra(int s) {
+  for (int i = 0; i <= V; i++) {
+    sp[s][i] = INF;
+    par[s][i] = -1;
+  }
+  sp[s][s] = 0;
+  par[s][s] = -1;
+  priority_queue<pair<int, int>, vector<pair<int, int> >,
+                 greater<pair<int, int> > >
+      pq;
+  pq.push(pair<int, int>(0, s));
+  while (!pq.empty()) {
+    int u = pq.top().second;
+    int d = pq.top().first;
+    pq.pop();
+    for (int i = 0; i < adj[u].size(); i++) {
+      int v = adj[u][i].first;
+      int w = adj[u][i].second;
+      if (d + w < sp[s][v]) {
+        sp[s][v] = d + w;
+        par[s][v] = u;
+        pq.push(pair<int, int>(sp[s][v], v));
+      }
+    }
+  }
+}
+inline bool solve(int x) {
+  init(V + 1, V + 1);
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= V; j++) {
+      if (sp[home[i]][j] <= x) {
+        addEdge(i, j);
+      }
+    }
+  }
+  int result = maxMatching();
+  return (result >= k);
+}
+int main() {
+  scanf("%d %d %d %d", &V, &E, &n, &k);
+  set<int> roots;
+  for (int i = 1; i <= n; i++) {
+    scanf("%d", &home[i]);
+    roots.insert(home[i]);
+  }
+  for (int i = 1; i <= E; i++) {
+    int u, v, w;
+    scanf("%d %d %d", &u, &v, &w);
+    adj[u].push_back(pair<int, int>(v, w));
+    adj[v].push_back(pair<int, int>(u, w));
+  }
+  for (int root : roots) {
+    dijkstra(root);
+  }
+  int l = 1, r = 1731312;
+  int ans = -1;
+  while (l <= r) {
+    int mid = (l + r) >> 1;
+    if (solve(mid)) {
+      ans = mid;
+      r = mid - 1;
+    } else {
+      l = mid + 1;
+    }
+  }
+  printf("%d\n", ans);
+}

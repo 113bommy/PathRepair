@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int a, b, c, e, f, g;
+int main() {
+  scanf("%d%d%d%d%d%d", &a, &b, &c, &e, &f, &g);
+  if (a == 0 && b == 0 && c != 0 || e == 0 && f == 0 && g != 0) {
+    puts("0");
+    return 0;
+  }
+  if (a * f == b * e) {
+    (a * g == f * c && b * g == e * c) ? puts("-1") : puts("0");
+    return 0;
+  }
+  puts("1");
+  return 0;
+}

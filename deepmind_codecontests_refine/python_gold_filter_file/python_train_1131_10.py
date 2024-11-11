@@ -1,0 +1,1 @@
+[print(input().replace('Hoshino', 'Hoshina')) for _ in range(int(input()))]

@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+for(;;){
+string num;
+cin>>num;
+if(num=="0"){break;}
+int al=0;
+
+for(int i=0;i<(int)num.size();i++){
+al+=num[i]-'0';
+}
+
+cout<<al<<endl;
+}
+
+return 0;
+}

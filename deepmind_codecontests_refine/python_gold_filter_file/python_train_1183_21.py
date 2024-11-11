@@ -1,0 +1,5 @@
+read = lambda: map(int, input().split())
+n, k = read()
+a = sorted(read())
+if k > n: print(-1)
+else: print(a[-k], a[-k])

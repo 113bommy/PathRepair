@@ -1,0 +1,58 @@
+n=list(map(int,input().split()))
+s=[1,3,5,7,8,10,12]
+v=[4,6,9,11]
+d=0
+if(n[0] in s):
+    if(n[1]!=1):
+        w=7-n[1]
+        m=31-(w+1)
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d+1)
+                break
+    else:
+        m=31
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d)
+                break
+elif(n[0] in v):
+    if(n[1]!=1):
+        w=7-n[1]
+        m=30-(w+1)
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d+1)
+                break
+    else:
+        m=30
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d)
+                break
+else:
+    if(n[1]!=1):
+        w=7-n[1]
+        m=29-(w+1)
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d+1)
+                break
+    else:
+        m=29
+        while(True):
+            m=m-7
+            d=d+1
+            if(m<=0):
+                print(d)
+                break

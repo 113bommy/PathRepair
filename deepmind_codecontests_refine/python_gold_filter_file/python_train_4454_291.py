@@ -1,0 +1,1 @@
+print('No'if int(input())%9 else'Yes')

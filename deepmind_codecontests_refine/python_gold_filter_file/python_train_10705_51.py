@@ -1,0 +1,1 @@
+s=input();print("YNeos"[int(s)%sum(map(int,s))!=0::2])

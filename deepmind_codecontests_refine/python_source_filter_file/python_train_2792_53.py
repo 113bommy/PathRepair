@@ -1,0 +1,1 @@
+print((lambda n,m,d:(m-1)/(n*n)*([n,2*(n-d))][d>0]))(*map(int,input().split())))

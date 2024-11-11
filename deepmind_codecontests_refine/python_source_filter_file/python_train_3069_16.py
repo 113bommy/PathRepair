@@ -1,0 +1,30 @@
+c,d=0,0
+for i in range(8):
+    a=input()
+    for i in a:
+        if(i=='q'):
+            c+=9
+        elif(i=='r'):
+            c+=5
+        elif(i=='b'):
+            c+=3
+        elif(i=='k'):
+            c+=3
+        elif(i=='p'):
+            c+=1
+        elif(i=='Q'):
+            d+=9
+        elif(i=='R'):
+            d+=5
+        elif(i=='B'):
+            d+=3
+        elif(i=='K'):
+            d+=3
+        elif(i=='P'):
+            d+=1
+if(c>d):
+    print("Black")
+elif(c<d):
+    print("White")
+else:
+    print("Draw")

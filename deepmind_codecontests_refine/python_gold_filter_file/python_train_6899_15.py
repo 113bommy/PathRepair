@@ -1,0 +1,6 @@
+x=input()
+n=len(x)
+print(3)
+print('R',n-1)
+print('L',n)
+print('L',2)

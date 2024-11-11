@@ -1,0 +1,1 @@
+print('AARBCC'[input()>'AC'::2])

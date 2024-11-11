@@ -1,0 +1,1 @@
+a,b,c=sorted(map(int,input().split()));print("YNEOS"[a+b!=c::2])

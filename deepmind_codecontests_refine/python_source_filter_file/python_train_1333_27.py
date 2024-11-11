@@ -1,0 +1,1 @@
+from math import ceil as c;a=[int(input())for i in range(5)];sum([c(i/10)for i in a])*10-max([c(i/10)*10-i for i in a])

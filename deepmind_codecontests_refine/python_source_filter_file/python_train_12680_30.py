@@ -1,0 +1,1 @@
+print("YES" if input().count("o") >= 7 else "NO")

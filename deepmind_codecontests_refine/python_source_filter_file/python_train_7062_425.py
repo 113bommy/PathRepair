@@ -1,0 +1,1 @@
+print("YNeos"[if not int(input())%101 in range(0,100,10)::2])

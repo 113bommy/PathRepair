@@ -1,0 +1,10 @@
+s=input()
+l=s.count("L")
+r=s.count("R")
+u=s.count("U")
+d=s.count("D")
+num=max(l,r)-min(l,r)+max(u,d)-min(u,d)
+if(num%2==0):
+    print(num//2)
+else:
+    print(-1)

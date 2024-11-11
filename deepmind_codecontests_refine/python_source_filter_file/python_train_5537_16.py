@@ -1,0 +1,29 @@
+a1=int(input())
+a2=int(input())
+k1=int(input())
+k2=int(input())
+n=int(input())
+mn=n
+t1=a1*(k1-1)+a2*(k2-1)
+if(t1>=n):
+    mn=0
+else:
+    t=n-t1
+    mn=min(t,a1+a2)
+mx=0
+if(k1<k2):
+    t1=n//k1
+    if(t1<=a1):
+        mx=t1
+    else:
+        mx=t1+(n-t1*k1)//k2
+elif(k1>k2):
+    t1=n//k2
+    if(t1<=a2):
+        mx=t1
+    else:
+        mx=a2+(n-a2*k2)//k1
+else:
+    t1=n//k1
+    mx=min(a1+a2,t1)
+print(mn,mx)

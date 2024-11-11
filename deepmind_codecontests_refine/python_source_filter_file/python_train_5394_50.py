@@ -1,0 +1,1 @@
+input();s=map(int,input().split());print('YNeos'[sum(s)-max(s)*2<1::2])

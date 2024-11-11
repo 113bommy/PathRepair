@@ -1,0 +1,1 @@
+print("vowel" if input() in list("aeiou") else "consonant")

@@ -1,0 +1,1 @@
+print(min( int(input())//8 , input().count('8')))

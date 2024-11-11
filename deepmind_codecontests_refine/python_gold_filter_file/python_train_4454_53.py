@@ -1,0 +1,1 @@
+print('YNeos'[sum(map(int,list(input())))%9>0::2])

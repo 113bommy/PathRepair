@@ -1,0 +1,1 @@
+a,b,c=map(str,input().split());print((a[0]+b[0]+v[0]).upper())

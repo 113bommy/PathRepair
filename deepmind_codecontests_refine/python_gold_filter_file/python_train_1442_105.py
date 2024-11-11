@@ -1,0 +1,1 @@
+print("YES" if int(input()[::2])%4==0 else "NO")

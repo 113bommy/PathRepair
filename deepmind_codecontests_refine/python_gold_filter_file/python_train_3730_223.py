@@ -1,0 +1,1 @@
+print(700+300-100*(input().count('x')))

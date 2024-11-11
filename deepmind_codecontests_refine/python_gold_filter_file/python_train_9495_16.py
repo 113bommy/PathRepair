@@ -1,0 +1,3 @@
+val = 3337867500
+n,a,d = map(int, input().split())
+print(val * a, val * d)

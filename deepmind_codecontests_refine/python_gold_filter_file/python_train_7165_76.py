@@ -1,0 +1,1 @@
+N,*A=map(int,open(0).read().split());print("YNeos"[sum((b-a+1)//2for a,b in zip(A[:N],A[N:])if b>a)>sum(A[N:])-sum(A[:N])::2])

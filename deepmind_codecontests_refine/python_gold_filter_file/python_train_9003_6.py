@@ -1,0 +1,1 @@
+print(len([char for char in bin(int(input())) if char == '1']))

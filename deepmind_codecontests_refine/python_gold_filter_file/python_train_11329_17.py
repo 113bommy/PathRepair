@@ -1,0 +1,1 @@
+print(['ABD','ABC'][len(input())<4])

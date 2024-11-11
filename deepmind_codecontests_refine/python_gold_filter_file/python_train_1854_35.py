@@ -1,0 +1,1 @@
+a,b,c,d=input();print(' GBoaodd'[a!=b!=c!=d::2])

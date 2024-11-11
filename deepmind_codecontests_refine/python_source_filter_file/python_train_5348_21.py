@@ -1,0 +1,1 @@
+s=input();k=s.find('0');print(s[:k]+s[k+1:] if k!=-1 else s)

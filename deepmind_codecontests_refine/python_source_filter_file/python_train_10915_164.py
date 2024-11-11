@@ -1,0 +1,1 @@
+a,b,c=input().upper().split();print(''.join(a[0],b[0],c[0]))

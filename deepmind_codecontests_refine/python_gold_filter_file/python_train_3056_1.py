@@ -1,0 +1,1 @@
+print('/' + '/'.join([i for i in input().replace(r'/', ' ').split(' ') if i != '']))

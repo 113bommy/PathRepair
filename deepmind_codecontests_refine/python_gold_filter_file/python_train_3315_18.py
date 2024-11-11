@@ -1,0 +1,1 @@
+A,B=map(int,input().split());print(("Possible","Impossible")[min([A%3,B%3,(A+B)%3])])

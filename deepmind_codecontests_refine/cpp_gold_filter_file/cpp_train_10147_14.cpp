@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int a;
+  cin >> a;
+  if (a % 2 == 0) {
+    cout << "white" << endl;
+    cout << 1 << " " << 2 << endl;
+  } else
+    cout << "black" << endl;
+  return 0;
+}

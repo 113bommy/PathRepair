@@ -1,0 +1,2 @@
+a=input().split("WUB")
+print(' '.join(a))

@@ -1,0 +1,1 @@
+A,B,C=map(int,input().split());print('YNeos'[C<A or B<C::2])

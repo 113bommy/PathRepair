@@ -1,0 +1,1 @@
+S=input();print('WAAC'['C'in S[2:-1]*S[1:].replace('C','','A'in S).islower()::2])

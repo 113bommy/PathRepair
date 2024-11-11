@@ -1,0 +1,1 @@
+import math;a,b=input().split();a+=b;a=int(a);print("Yes"if math.sqrt(a)%1==0else"No")

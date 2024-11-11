@@ -1,0 +1,2 @@
+#include <bits/stdc++.h>
+int main(){int n,d,x,r;int a[d];std::cin>>n>>d>>x;for(int i=0;i<n;i++)std::cin>>a[i];for(int i=0;i<n;i++){int t=0,l=1;while(t<=d){t=a[i]*(l)+1;l++;r++;}}std::cout << r + x << std::endl;}

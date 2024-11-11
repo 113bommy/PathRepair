@@ -1,0 +1,1 @@
+print("".join(sum(zip(input(), input()), tuple())))

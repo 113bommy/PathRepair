@@ -1,0 +1,1 @@
+print(len(set([input() for q in range(int(input()))])))

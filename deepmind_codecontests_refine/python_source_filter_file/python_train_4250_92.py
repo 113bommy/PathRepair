@@ -1,0 +1,1 @@
+A,B,K=map(int,input().split());print[i for i in range(A,0,-1)if 1>A%i+B%i][K-1]

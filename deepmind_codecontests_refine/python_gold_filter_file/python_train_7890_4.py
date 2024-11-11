@@ -1,0 +1,1 @@
+_,s,k=open(0);print(''.join(t*(t==s[int(k)-1])or'*'for t in s[:-1]))

@@ -1,0 +1,1 @@
+print "bust" if sum([int(x) for x in input().split()]) > 21 else "win"

@@ -1,0 +1,12 @@
+n=int(input())
+m=int(input())
+h=n%6
+a=[2,1,1,2,3,3]
+b=[1,2,3,3,2,1]
+c=[3,3,2,1,1,2]
+if(a[h]==(m+1)):
+    print("1")
+elif(b[h]==(m+1)):
+    print("0")
+else:
+    print("2")

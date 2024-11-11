@@ -1,0 +1,1 @@
+print(3**int(input())-2**sum(int(i)%2<1 for i in input().split()))

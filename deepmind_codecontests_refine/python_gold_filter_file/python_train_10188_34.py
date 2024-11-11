@@ -1,0 +1,7 @@
+n=int(input())
+p=list(map(int,input().split()))
+d={x-1:i+1 for i,x in enumerate(p)}
+a=[30000*i for i in range(1,n+1)]
+b=[30000*(n-i)+d[i] for i in range(n)]
+print(' '.join(map(str,a)))
+print(' '.join(map(str,b)))

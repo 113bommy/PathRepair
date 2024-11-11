@@ -1,0 +1,12 @@
+n,k,l,c,d,p,nl,np=input().split()
+var=[n,k,l,c,d,p,nl,np]
+n=int(n)
+k=int(k)
+l=int(l)
+c=int(c)
+d=int(d)
+p=int(p)
+nl=int(nl)
+np=int(np)
+e=min((k*l/(n*nl)),c*d/n,p/(n*np))
+print(int(e))

@@ -1,0 +1,2 @@
+#import<cstdio>
+int main(){for(int n,a,c,r,t;c=r=scanf("%d",&n),n;printf("%d\n",r))for(char d[]="123546",s[9];n--;r+=*d-48)scanf("%s",s),*s%6-4a=*s%5+*s%2*2+c&3,t=*d,*d=d[++a],d[++a-1]=d[5],d[5]=d[a%4+1],d[a%4+1]=t:c+=*s+3;}

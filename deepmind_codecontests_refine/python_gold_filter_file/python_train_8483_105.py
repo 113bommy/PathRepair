@@ -1,0 +1,7 @@
+a,b=input().split(' ')
+a=int(a)
+b=int(b)
+c=min(a,b)
+d=int((abs(a-b))//2)
+print(c,end=' ')
+print(d)

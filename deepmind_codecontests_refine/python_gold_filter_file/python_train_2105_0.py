@@ -1,0 +1,5 @@
+t=int(input())
+s=input()
+f=s.count('L')
+r=s.count('R')
+print(f+r+1)

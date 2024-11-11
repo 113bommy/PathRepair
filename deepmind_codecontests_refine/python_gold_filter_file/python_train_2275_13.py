@@ -1,0 +1,2 @@
+input()
+print("YNEOS"[sum(map(int,input().split()))%2::2])

@@ -1,0 +1,1 @@
+print(format(0xABC000 + int(input(), 16), 'x').upper()[:3])

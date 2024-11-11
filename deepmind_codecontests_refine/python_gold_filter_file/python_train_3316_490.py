@@ -1,0 +1,1 @@
+print(["ARC","ABC"][input()<"1200"])

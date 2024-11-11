@@ -1,0 +1,1 @@
+print(1*(input()[:2]!=input()[:2]))

@@ -1,0 +1,1 @@
+print("ACL"*K=int(input()))

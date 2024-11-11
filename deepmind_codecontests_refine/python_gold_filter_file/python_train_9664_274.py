@@ -1,0 +1,1 @@
+i=lambda a:a+int(input());print((i(0)-i(0))%i(0))

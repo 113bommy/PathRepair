@@ -1,0 +1,1 @@
+print(oct(int(input(), 15)).count('1'))

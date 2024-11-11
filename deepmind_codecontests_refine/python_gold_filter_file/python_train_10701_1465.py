@@ -1,0 +1,1 @@
+print(int(pow(int(input()),3)))

@@ -1,0 +1,1 @@
+print((float(input().replace(' ', '')) ** 0.5).is_integer() and 'Yes' or 'No')

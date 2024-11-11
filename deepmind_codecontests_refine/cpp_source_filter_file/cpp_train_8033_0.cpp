@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+int main() {
+  int x, i, sum;
+  scanf("%d", &x);
+  if (x < 0) x = -x;
+  for (i = 0; sum < x || (sum % 2) != (x % 2); sum += i) i++;
+  printf("%d", i);
+  return 0;
+}

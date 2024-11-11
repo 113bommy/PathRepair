@@ -1,0 +1,5 @@
+x=int(input())
+p=sorted(list(map(int,input().split())))
+mx,mn=max(p),min(p)
+n1,n2=p.count(mx),p.count(mn)
+print(0 if n1==n2 else x-n1-n2)

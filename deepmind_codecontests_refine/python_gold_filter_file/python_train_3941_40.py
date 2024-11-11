@@ -1,0 +1,2 @@
+a,b,c=map(int,input().split())
+print(" YNeos"[a<=c<=b::2])

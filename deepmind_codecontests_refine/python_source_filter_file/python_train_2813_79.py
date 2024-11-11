@@ -1,0 +1,2 @@
+str = " ";
+print(str.swapcase())

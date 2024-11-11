@@ -1,0 +1,1 @@
+print('Christmas'+' Eve'*abs(int(input())-25))

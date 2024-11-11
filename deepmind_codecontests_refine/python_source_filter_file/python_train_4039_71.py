@@ -1,0 +1,1 @@
+k,n=map(int,input().split());print("Yes") if n//k<=500 else print("No")

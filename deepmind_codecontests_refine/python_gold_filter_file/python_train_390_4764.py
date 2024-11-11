@@ -1,0 +1,1 @@
+print(6.283*int(input()))

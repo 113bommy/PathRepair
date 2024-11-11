@@ -1,0 +1,1 @@
+input();s=input();print(max(i-2*s[:i].count('D')for i in range(len(s)+1)))

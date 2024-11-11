@@ -1,0 +1,1 @@
+n,m,r=map(int,input().split());a=min(list(map(int,input().split())));b=max(list(map(int,input().split())));print(r%a+(b*(r//a)))

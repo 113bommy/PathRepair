@@ -1,0 +1,1 @@
+print("A%sC"%"RB"[1200>int(input())])

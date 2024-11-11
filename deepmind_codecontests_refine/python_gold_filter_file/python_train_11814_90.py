@@ -1,0 +1,5 @@
+a=input().split()
+M=int(max(a))
+N=int(min(a))
+num=int(M/2)*N+int(N/2)*(M%2)
+print(num)

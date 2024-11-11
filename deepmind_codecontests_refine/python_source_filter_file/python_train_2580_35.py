@@ -1,0 +1,5 @@
+H=int(input())
+W=int(input())
+N=int(input())
+T=max(H,W)
+print(N//T+1)

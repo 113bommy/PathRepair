@@ -1,0 +1,5 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print((a&(not c)&(not d)) | (a&b&c) | ((not b)&d))

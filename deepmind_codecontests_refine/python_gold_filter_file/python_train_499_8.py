@@ -1,0 +1,1 @@
+A,B,c,a,b=map(int,input().split());print(min(c*max(a,b)*2,A*a+B*b,[A,B][a<b]*abs(a-b)+c*min(a,b)*2))

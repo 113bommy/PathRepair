@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int comp(int a, int b) { return min(a, b); }
+int main() {
+  vector<int> b;
+  int n, ans, r, l;
+  scanf("%d", &n);
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &ans);
+    b.push_back(ans);
+  }
+  sort(b.begin(), b.end());
+  ans = -1;
+  for (int i = 0; i < n / 2; i++) {
+    ans = max(b[i + n / 2] - b[i], ans);
+  }
+  printf("%d", ans);
+  return 0;
+}

@@ -1,0 +1,20 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+f=int(input())
+g=int(input())
+#g=int(input())
+e=0
+if g>f:
+    e+=min(d,c,b)
+    d-=e
+    e*=g
+    #print(e,a,d)
+    e+=f*min(a,d)
+else:
+    e+=min(d,a)
+    d-=e
+    e*=f
+    e+=g*min(d,b,c)
+print(e)

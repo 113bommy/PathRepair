@@ -1,0 +1,1 @@
+print(str(48-int(input())))

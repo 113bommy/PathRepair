@@ -1,0 +1,6 @@
+#n = int(input())
+n, m = map(int, input().split())
+#s = input()
+c = list(map(int, input().split()))
+s = sum(c)
+print((s - 1) // m + 1)

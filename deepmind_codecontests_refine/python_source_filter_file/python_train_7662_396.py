@@ -1,0 +1,1 @@
+print(3*float(input())/2)

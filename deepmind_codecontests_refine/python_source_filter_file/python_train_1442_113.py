@@ -1,0 +1,1 @@
+print(['No','Yes'][int(''.join(list(input().split())))%4==0])

@@ -1,0 +1,1 @@
+l,r=map(int,input().split());s=range(l,r+1);print(+(r-l<2019)and min(i*j%2019for i in s for j in s if i<j))

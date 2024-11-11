@@ -1,0 +1,1 @@
+s=input(); print(s.replace('017','018'))

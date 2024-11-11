@@ -1,0 +1,16 @@
+x,y,z=list(map(int,input().strip().split()))
+a,b,c=list(map(int,input().strip().split()))
+f=0
+if(x>a):
+    f=1
+else:
+    a=a-x
+    if(y>a+b):
+        f=1
+    else:
+        if(sum([a,b,c])<sum([y,z])):
+            f=1
+if(f):
+    print("NO")
+else:
+    print("YES")

@@ -1,0 +1,1 @@
+print(str.swapcase(input()))

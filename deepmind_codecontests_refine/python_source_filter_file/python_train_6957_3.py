@@ -1,0 +1,1 @@
+a=int(input().replace(" ",""));print("YNeos"[all(a!=i**2for i in range(99))::2])

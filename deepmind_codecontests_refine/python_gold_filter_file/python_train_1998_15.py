@@ -1,0 +1,19 @@
+
+n, k = [int(x) for x in input().split()]
+
+l = [int(y) for y in input().split()]
+
+scr = []
+s = set()
+i = 0
+
+for msg in l:
+    if msg not in s:
+        s.add(msg)
+        scr.append(msg)
+        if len(s) > k:
+            s -= {scr[i]}
+            i += 1
+
+print(len(scr) - i)
+print(*reversed(scr[i:]))

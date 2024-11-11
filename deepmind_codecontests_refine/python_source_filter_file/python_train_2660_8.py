@@ -1,0 +1,6 @@
+q,w,e,r = sorted(map(int, input().split()))
+print(q,w,e,r)
+x = max(q+w-e, w+e-r)
+if x > 0: print("TRIANGLE")
+elif x == 0: print("SEGMENT")
+else: print("IMPOSSIBLE")

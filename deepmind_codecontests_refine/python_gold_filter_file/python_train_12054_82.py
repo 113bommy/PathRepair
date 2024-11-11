@@ -1,0 +1,1 @@
+print(sum([i*(i%3!=0)*(i%5!=0) for i in range(int(input())+1)]))

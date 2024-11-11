@@ -1,0 +1,6 @@
+n,m,r=map(int,input().split())
+a1=list(map(int,input().split()))
+a2=list(map(int,input().split()))
+b1=min(a1)
+b2=max(a2)
+print(r%b1+r//b1*b2)

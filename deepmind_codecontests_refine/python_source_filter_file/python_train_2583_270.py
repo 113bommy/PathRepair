@@ -1,0 +1,1 @@
+print("YNEOS"[~input()in"357"%2::2]

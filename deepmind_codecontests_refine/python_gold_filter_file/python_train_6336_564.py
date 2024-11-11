@@ -1,0 +1,1 @@
+a,b,h=map(int,open(0));print(h*(a+b)//2)

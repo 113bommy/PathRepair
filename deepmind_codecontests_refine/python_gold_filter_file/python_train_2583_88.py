@@ -1,0 +1,1 @@
+s=int(input());print('YES'*(2<s%2*s<8)or'NO')

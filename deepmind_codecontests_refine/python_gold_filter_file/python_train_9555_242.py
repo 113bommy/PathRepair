@@ -1,0 +1,1 @@
+print(str("YNeos")["7" not in input()::2])

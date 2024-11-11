@@ -1,0 +1,1 @@
+N=input();print('DENIED'if any([x%2==0 and(x%3andx%5)for x in map(int,input().split())])else'APPROVED')

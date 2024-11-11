@@ -1,0 +1,1 @@
+s=input();print('YNeos'[2-s.count(s[:len(s)//2])::2])

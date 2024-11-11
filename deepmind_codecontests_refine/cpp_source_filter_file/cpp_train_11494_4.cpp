@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+bool v[1000020];
+int n;
+void F(int x) {
+  v[x] = 1;
+  if (x == 1) {
+    printf("0 1");
+    return;
+  }
+  if (v[n + x >> 1])
+    F(x - 1 >> 1);
+  else
+    F(n + x >> 1);
+  printf(" %d", x);
+}
+int main() {
+  scanf("%d", &n);
+  if (n & 1)
+    puts("-1");
+  else
+    F(0);
+}

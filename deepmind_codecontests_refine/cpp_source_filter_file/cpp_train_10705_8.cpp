@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+  int N;
+  
+  int sum =0;
+  
+  for(int i=N; i!=0 ;i/=10){
+    sum+= n%10 ;
+  }
+  if(N%sum==0)cout<< "Yes";
+  else cout<< "No";
+}

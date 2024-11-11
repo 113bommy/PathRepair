@@ -1,0 +1,6 @@
+n=int(input())
+a=input()
+b=a.count('n')
+c=a.count('z')
+print('1 '*b,end='')
+print('0 '*c)

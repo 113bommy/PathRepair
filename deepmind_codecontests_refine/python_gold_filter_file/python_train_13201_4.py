@@ -1,0 +1,1 @@
+N,A,B,*P=map(int,open(0).read().split());b=len([p for p in P if p>A]);c=len([p for p in P if p>B]);print(min(N-b,b-c,c))

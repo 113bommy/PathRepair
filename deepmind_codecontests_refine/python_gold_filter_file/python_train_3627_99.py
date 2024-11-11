@@ -1,0 +1,1 @@
+print("NYoe s"[input().find("9")!=-1::2])

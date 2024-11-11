@@ -1,0 +1,1 @@
+n=int(input());print(min(i+n//i-2for i in range(1,int(n**.5)+1)if n%i<1))

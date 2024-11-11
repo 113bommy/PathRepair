@@ -1,0 +1,1 @@
+n=[int(input()) for _ in range(6)];print([':(','Yay!'][max(n[:5])-min(n[:5])<=n[5]])

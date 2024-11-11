@@ -1,0 +1,1 @@
+print(['bust', 'win'][sum(map(int, input().split()))<=21])

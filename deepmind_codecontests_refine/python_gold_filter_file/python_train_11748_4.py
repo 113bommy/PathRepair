@@ -1,0 +1,1 @@
+x,a,b=map(int,input().split());print(["delicious","safe","dangerous"][(a<b)+(x+a<b)])

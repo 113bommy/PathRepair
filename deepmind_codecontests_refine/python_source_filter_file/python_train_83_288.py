@@ -1,0 +1,1 @@
+print(['Even','Odd'][max(0,sum(map(lambda x:int(x)%2,input()))-1)])

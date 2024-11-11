@@ -1,0 +1,1 @@
+print("YES" if sorted(input().split()) == list("1479") else "NO")

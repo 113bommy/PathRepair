@@ -1,0 +1,1 @@
+a=int(input())-int(input());print('GREATER'if a>0else'LESS'if a else'EQUAL')

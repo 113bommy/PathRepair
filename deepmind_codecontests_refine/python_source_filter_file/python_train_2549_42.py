@@ -1,0 +1,1 @@
+l=list(input());print(26*len(l)-len(l))

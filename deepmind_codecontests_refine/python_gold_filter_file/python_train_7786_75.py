@@ -1,0 +1,8 @@
+S = int(input())
+
+v = 10**9
+
+x = (v-S%v)%v
+y = int((S+x)/v)
+
+print(*[0, 0, v, 1, x, y])

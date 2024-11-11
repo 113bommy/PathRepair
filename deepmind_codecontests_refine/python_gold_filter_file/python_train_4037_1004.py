@@ -1,0 +1,1 @@
+print(0 if int(open(0).read()) == 1 else 1)

@@ -1,0 +1,1 @@
+print(''.join([o+e for o,e in zip(input(), input()+'\n')]))

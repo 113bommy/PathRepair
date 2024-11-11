@@ -1,0 +1,1 @@
+print([":(", "Yay!"][sum(list(map(int, input().split()))) <= 8])

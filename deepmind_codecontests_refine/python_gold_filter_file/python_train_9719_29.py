@@ -1,0 +1,6 @@
+a,b,c=map(int,input().split())
+x=(((a*b)//c)**0.5)
+y=(((a*c)//b)**0.5)
+z=(((c*b)//a)**0.5)
+d=int(4*(x+y+z))
+print(d)

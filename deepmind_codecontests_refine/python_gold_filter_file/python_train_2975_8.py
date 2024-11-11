@@ -1,0 +1,7 @@
+a,d=map(int,input().split())
+b,e=map(int,input().split())
+c,f=map(int,input().split())
+print(3)
+print(a+b-c,d+e-f)
+print(b+c-a,e+f-d)
+print(a+c-b,d+f-e)

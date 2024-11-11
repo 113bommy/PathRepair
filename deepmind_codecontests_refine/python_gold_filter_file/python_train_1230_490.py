@@ -1,0 +1,1 @@
+print(sum([1 if i=="+" else -1 for i in input()]))

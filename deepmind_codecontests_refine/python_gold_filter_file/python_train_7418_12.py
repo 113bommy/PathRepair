@@ -1,0 +1,1 @@
+for _ in range(int(input())):n=int(input());f=n in(36,40,44);print(*["YES","NO","6 10 {} {}".format(14+f,n-30-f)][n<=30::2],sep="\n")

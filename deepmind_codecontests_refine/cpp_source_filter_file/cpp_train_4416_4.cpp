@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int N, M, f[2][3005][3005];
+char a[3005][3005];
+void init() {
+  scanf("%d%d", &N, &M);
+  for (int i = 1; i <= N; i++) scanf("%s", a[i] + 1);
+}
+void work(int k, int x, int y) {
+  if (a[x][y] == '.') f[k][x][y] = 1;
+  for (int i = x; i <= N; i++)
+    for (int j = y; j <= M; j++)
+      if (a[i][j] == '.' && (i != x || j != y))
+        f[k][i][j] = (f[k][i - 1][j] + f[k][i][j - 1]) % 1000000007;
+}
+void doit() {
+  work(0, 2, 1), work(1, 1, 2);
+  printf("%d\n",
+         (1ll * f[0][N - 1][M] * f[1][N][M - 1] % 1000000007 -
+          1ll * f[0][N][M - 1] * f[1][N - 1][M] % 1000000007 + 1000000007) %
+             1000000007);
+}
+int main() {
+  init();
+  doit();
+  return 0;
+}

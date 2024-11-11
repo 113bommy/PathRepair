@@ -1,0 +1,108 @@
+from math import factorial
+from collections import Counter, defaultdict
+from heapq import heapify, heappop, heappush
+import os
+import sys
+from io import BytesIO, IOBase
+# region fastio
+
+BUFSIZE = 8192
+
+class FastIO(IOBase):
+    newlines = 0
+
+    def __init__(self, file):
+        self._fd = file.fileno()
+        self.buffer = BytesIO()
+        self.writable = "x" in file.mode or "r" not in file.mode
+        self.write = self.buffer.write if self.writable else None
+
+    def read(self):
+        while True:
+            b = os.read(self._fd, max(os.fstat(self._fd).st_size, BUFSIZE))
+            if not b:
+                break
+            ptr = self.buffer.tell()
+            self.buffer.seek(0, 2), self.buffer.write(b), self.buffer.seek(ptr)
+        self.newlines = 0
+        return self.buffer.read()
+
+    def readline(self):
+        while self.newlines == 0:
+            b = os.read(self._fd, max(os.fstat(self._fd).st_size, BUFSIZE))
+            self.newlines = b.count(b"\n") + (not b)
+            ptr = self.buffer.tell()
+            self.buffer.seek(0, 2), self.buffer.write(b), self.buffer.seek(ptr)
+        self.newlines -= 1
+        return self.buffer.readline()
+
+    def flush(self):
+        if self.writable:
+            os.write(self._fd, self.buffer.getvalue())
+            self.buffer.truncate(0), self.buffer.seek(0)
+
+
+class IOWrapper(IOBase):
+    def __init__(self, file):
+        self.buffer = FastIO(file)
+        self.flush = self.buffer.flush
+        self.writable = self.buffer.writable
+        self.write = lambda s: self.buffer.write(s.encode("ascii"))
+        self.read = lambda: self.buffer.read().decode("ascii")
+        self.readline = lambda: self.buffer.readline().decode("ascii")
+
+
+sys.stdin, sys.stdout = IOWrapper(sys.stdin), IOWrapper(sys.stdout)
+input = lambda: sys.stdin.readline().rstrip("\r\n")
+
+# ------------------------------
+
+def RL(): return map(int, sys.stdin.readline().rstrip().split())
+def N(): return int(input())
+def comb(n, m): return factorial(n) / (factorial(m) * factorial(n - m)) if n >= m else 0
+def perm(n, m): return factorial(n) // (factorial(n - m)) if n >= m else 0
+def mdis(x1, y1, x2, y2): return abs(x1 - x2) + abs(y1 - y2)
+mod = 1000000007
+INF = float('inf')
+
+# ------------------------------
+
+
+def main():
+    n, m = RL()
+    # gp = [[0]*(n+1) for _ in range(n+1)]
+
+    gp = [0]*(n+1)
+
+    for _ in range(m):
+        u, v, d = RL()
+        gp[v]-=d
+        gp[u]+=d
+
+    pos = [[i+1, v] for i, v in enumerate(gp[1:]) if v>0]
+    neg = [[i+1, -v] for i, v in enumerate(gp[1:]) if v<0]
+
+    pn = len(pos)
+    nn = len(neg)
+
+    pt = nt = 0
+    res = []
+
+    while pt<pn and nt<nn:
+        if pos[pt][1]==neg[nt][1]:
+            res.append([pos[pt][0], neg[nt][0], pos[pt][1]])
+            pt+=1
+            nt+=1
+        elif pos[pt][1]<neg[nt][1]:
+            neg[nt][1]-=pos[pt][1]
+            res.append([pos[pt][0], neg[nt][0], pos[pt][1]])
+            pt+=1
+        else:
+            pos[pt][1]-=neg[nt][1]
+            res.append([pos[pt][0], neg[nt][0], neg[nt][1]])
+            nt+=1
+    print(len(res))
+    for a, b, c in res:
+        print(a, b, c)
+if __name__ == "__main__":
+    main()

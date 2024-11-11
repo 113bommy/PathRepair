@@ -1,0 +1,1 @@
+k,s=map(int,input().split());r=k+1;print(sum(k>=s-I//r-I%r>=0for I in range(r*r)))

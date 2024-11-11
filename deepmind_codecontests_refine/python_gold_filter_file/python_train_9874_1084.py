@@ -1,0 +1,1 @@
+print("ABC{:03}".format(int(input())))

@@ -1,0 +1,1 @@
+from math import *;print(floor(log2(int(input()))))

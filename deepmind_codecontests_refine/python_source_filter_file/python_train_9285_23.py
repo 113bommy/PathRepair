@@ -1,0 +1,10 @@
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+l1=l[0:n//2+1]
+l2=l[n//2+1:]
+s1=sum(l1)
+s2=sum(l2)
+s1=s1**2
+s2=s2**2
+print(s1+s2)

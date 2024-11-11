@@ -1,0 +1,75 @@
+#include <bits/stdc++.h>
+using namespace std;
+int f[2][200][200][2][2], sum[200][200][2][2];
+int getsum(int x1, int y1, int x2, int y2, int a, int b) {
+  return ((long long)sum[x2][y2][a][b] - sum[x1 - 1][y2][a][b] -
+          sum[x2][y1 - 1][a][b] + sum[x1 - 1][y1 - 1][a][b] + 1000000007 +
+          1000000007) %
+         1000000007;
+}
+int main() {
+  int n, m, i, j, k, l, r, ans;
+  scanf("%d%d", &n, &m);
+  if (n < m) swap(n, m);
+  ans = 0;
+  for (i = 1; i <= n; i++) {
+    memset(f[i & 1], 0, sizeof(f) / 2);
+    memset(sum, 0, sizeof(sum));
+    for (l = 1; l <= m; l++) {
+      for (r = l; r <= m; r++) {
+        for (j = 0; j < 2; j++) {
+          for (k = 0; k < 2; k++) {
+            sum[l][r][j][k] = f[!(i & 1)][l][r][j][k];
+          }
+        }
+      }
+    }
+    for (l = 1; l <= m; l++) {
+      for (r = 1; r <= m; r++) {
+        for (j = 0; j < 2; j++) {
+          for (k = 0; k < 2; k++) {
+            sum[l][r][j][k] =
+                ((long long)sum[l][r][j][k] + sum[l - 1][r][j][k] +
+                 sum[l][r - 1][j][k] - sum[l - 1][r - 1][j][k]) %
+                1000000007;
+          }
+        }
+      }
+    }
+    for (l = 1; l <= m; l++) {
+      for (r = l; r <= m; r++) {
+        f[i & 1][l][r][0][0] = getsum(l, l, r, r, 0, 0) % 1000000007;
+        f[i & 1][l][r][0][1] = ((long long)getsum(l, r, r, m, 0, 1) +
+                                getsum(l, r + 1, r, m, 0, 0)) %
+                               1000000007;
+        f[i & 1][l][r][1][0] = ((long long)getsum(1, l, l, r, 1, 0) +
+                                getsum(1, l, l - 1, r, 0, 0)) %
+                               1000000007;
+        f[i & 1][l][r][1][1] =
+            ((long long)getsum(l, r, l, r, 1, 1) +
+             getsum(l, r + 1, l, m, 1, 0) + getsum(1, r, l - 1, r, 0, 1) +
+             getsum(1, r + 1, l - 1, m, 0, 0)) %
+            1000000007;
+      }
+    }
+    for (l = 1; l <= m; l++) {
+      for (r = m; r >= l; r--) {
+        f[i & 1][l][r][0][0]++;
+        if (f[i & 1][l][r][0][0] >= 1000000007)
+          f[i & 1][l][r][0][0] -= 1000000007;
+      }
+    }
+    for (l = 1; l <= m; l++) {
+      for (r = m; r >= l; r--) {
+        for (j = 0; j < 2; j++) {
+          for (k = 0; k < 2; k++) {
+            ans += f[i & 1][l][r][j][k];
+            if (ans >= 1000000007) ans -= 1000000007;
+          }
+        }
+      }
+    }
+  }
+  printf("%d\n", ans);
+  return 0;
+}

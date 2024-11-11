@@ -1,0 +1,1 @@
+print('AB%s'%chr(67+len(input())%3))

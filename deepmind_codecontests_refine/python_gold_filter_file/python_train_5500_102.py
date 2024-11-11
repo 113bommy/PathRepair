@@ -1,0 +1,1 @@
+print('NYoe s'[int(input())%500<=int(input())::2])

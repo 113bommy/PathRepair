@@ -1,0 +1,20 @@
+t=int(input())
+s=int(input())
+v=int(input())
+j=int(input())
+e=int(input())
+f=int(input())
+if e<f:
+    x=min(s,v,j)
+    p1=x*f
+    p=j-x
+    z=min(t,p)
+    p2=z*e
+    print(p1+p2)
+else:
+    x=min(t,j)
+    p1=x*e
+    p=j-x
+    z=min(s,v,p)
+    p2=z*f
+    print(p1+p2)

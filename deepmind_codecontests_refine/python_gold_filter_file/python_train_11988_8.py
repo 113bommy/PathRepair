@@ -1,0 +1,1 @@
+print("YES"if 0xbe880002fabeafabe800be800>>99-int(input())&1else"NO")

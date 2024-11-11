@@ -1,0 +1,1 @@
+print(sum(int(i==j) for i,j in zip(*open(0))))

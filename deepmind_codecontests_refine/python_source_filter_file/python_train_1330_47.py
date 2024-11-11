@@ -1,0 +1,1 @@
+print('pphbhhphph'.index(int(input())%10)+'on')

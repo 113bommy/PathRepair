@@ -1,0 +1,1 @@
+print(str(700+input().count('o')*100))

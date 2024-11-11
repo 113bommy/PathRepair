@@ -1,0 +1,10 @@
+a,b,c=list(map(int,input().split()))
+if(c<=a):
+	if(c<b):
+		print(c)
+	else:
+		print(b)
+elif(c>=a+b):
+	print(0)
+else:
+	print(a+b-c)

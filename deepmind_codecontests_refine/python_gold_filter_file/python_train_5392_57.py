@@ -1,0 +1,1 @@
+n,s=open(0);print("YNeos"[s[:-1]!=s[:int(n)//2]*2::2])

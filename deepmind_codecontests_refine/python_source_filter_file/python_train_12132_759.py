@@ -1,0 +1,1 @@
+print(30 - int(input()))

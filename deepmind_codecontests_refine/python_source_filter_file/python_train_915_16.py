@@ -1,0 +1,1 @@
+n,*a=map(int,open(0).read().split());print(asorted((abs(a[i]-sum(a)/n),i)for i in range(n))[0][1])

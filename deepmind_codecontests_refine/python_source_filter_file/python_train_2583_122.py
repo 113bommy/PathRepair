@@ -1,0 +1,1 @@
+print("YES" input() in "753" else "NO")

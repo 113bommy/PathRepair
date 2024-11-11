@@ -1,0 +1,1 @@
+print(exec(input().replace(" ","+")+"//2"))

@@ -1,0 +1,1 @@
+n=int(input());print(max(n-75,0)//30+int(n>188))

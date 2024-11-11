@@ -1,0 +1,1 @@
+print('Yes' if 30 <= int(input()) else 'No')

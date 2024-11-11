@@ -1,0 +1,14 @@
+def solve():
+    n = int(input())
+    nums = map(int, input().split())
+    require = n // 2
+    if len(list(filter(lambda x: x > 0, nums))) >= require:
+        print(1)
+    elif len(list(filter(lambda x: x < 0, nums))) >= require:
+        print(-1)
+    else:
+        print(0)
+
+
+if __name__ == '__main__':
+    solve()

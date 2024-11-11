@@ -1,0 +1,1 @@
+s=sorted;print('YNeos'[s(input())>=s(input())[::-1]::2])

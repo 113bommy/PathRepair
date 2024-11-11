@@ -1,0 +1,63 @@
+#include <bits/stdc++.h>
+using namespace std;
+const int inf = 1000000000;
+int n;
+int dp[1 << 8][1 << 8];
+long long a[10];
+vector<long long> prime[10];
+inline void setMin(int &A, int B) { A = min(A, B); }
+int main() {
+  cin >> n;
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+    long long temp = a[i];
+    for (long long j = 2; j * j <= temp; j++) {
+      while (temp % j == 0) {
+        temp /= j;
+        if (prime[i].empty() || prime[i].back() != j) prime[i].push_back(j);
+      }
+    }
+    if (temp > 1) prime[i].push_back(temp);
+  }
+  for (int i = 0; i < (1 << n); i++)
+    for (int j = 0; j <= i; j++)
+      if ((j & i) == j) dp[i][j] = inf;
+  dp[0][0] = 0;
+  for (int mask = 0; mask < (1 << n); mask++) {
+    for (int i = mask; (i > 0) || (mask == 0); i = ((i - 1) & mask))
+      if (dp[mask][i] != inf) {
+        for (int j = 0; j < n; j++)
+          if ((mask & (1 << j)) == 0) {
+            for (int sub = i; sub >= 0; sub = (sub - 1) & i) {
+              long long cur = 1;
+              for (int k = 0; k < n; k++)
+                if (sub & (1 << k)) {
+                  if (a[j] / cur < a[k])
+                    cur = a[j] + 1;
+                  else
+                    cur = cur * a[k];
+                }
+              if (a[j] % cur == 0) {
+                cur = a[j] / cur;
+                int temp = dp[mask][i];
+                for (int iter = 0; iter < (int)prime[j].size(); iter++) {
+                  while (cur % prime[j][iter] == 0) {
+                    cur /= prime[j][iter];
+                    temp++;
+                  }
+                }
+                setMin(dp[mask ^ (1 << j)][i ^ sub ^ (1 << j)],
+                       (prime[j].back() == a[j] ? 1 : temp + 1));
+              }
+              if (sub == 0) break;
+            }
+          }
+        if (mask == 0) break;
+      }
+  }
+  int ans = (1 << 30);
+  for (int mask = 0; mask < (1 << n); mask++)
+    ans = min(ans, dp[(1 << n) - 1][mask] + (__builtin_popcount(mask) > 1));
+  cout << ans << endl;
+  return 0;
+}
