@@ -1,0 +1,11 @@
+10
+S....S..SS
+..G....G.S
+.GSS..SSG.
+.GS.GG.SG.
+S..G.SG..S
+...GSS....
+.GS..G.SG.
+.GS...S.G.
+S..G..G..S
+SS......SS

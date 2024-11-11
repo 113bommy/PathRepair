@@ -1,0 +1,5 @@
+10
+1
+2 blue
+2 rdb
+4 oreng`

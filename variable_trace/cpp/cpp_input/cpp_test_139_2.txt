@@ -1,0 +1,11 @@
+10
+b
+aa
+aaa
+abaa
+abab
+abcabc
+abacaba
+yxxy
+xyxx
+xyxz

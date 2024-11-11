@@ -1,0 +1,9 @@
+4
+7
+ab bb ba aa aa
+7
+aa ba aa ab ba
+3
+aa
+5
+bb ab bc

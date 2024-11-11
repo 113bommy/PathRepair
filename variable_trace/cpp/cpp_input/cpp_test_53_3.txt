@@ -1,0 +1,7 @@
+3
+4 b
+aaaa
+4 a
+aaab
+4 c
+bzyx

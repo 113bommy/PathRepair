@@ -1,0 +1,5 @@
+2
+55 2375 3025
+a*a*aa*aa*a*aa*aa*aaaaaaaaa*a*aa*aaaaa**aaaa*aa*a*a*a*a
+63 6 8244
+*aaaaa*aa*a*a*aa*aaaa*a*aa*a*a*aaaa*aaaaa*a*a*aaa*aa*aaa*a*a*aa

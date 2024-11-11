@@ -1,0 +1,6 @@
+2 2
+AA
+BC
+BD
+AB
+ZA

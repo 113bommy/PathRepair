@@ -1,0 +1,5 @@
+2
+55 1119 13690
+a*a*a*a*aa*aaaaa*aaaaa*aa*a*aaaaa*aaa*aa*aa*a*aa*aa*a*a
+63 9 10946
+*aaaaa*aa*a*a*aa*aaaa*a*aa*a*a*aaaa*aaaaa*a*a*aaa*aa*aaa*a*a*aa

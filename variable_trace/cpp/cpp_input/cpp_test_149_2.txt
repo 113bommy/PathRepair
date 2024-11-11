@@ -1,0 +1,5 @@
+2
+55 982 31372
+a*a*aa*aa*a*aa*aa*aaa*aaaaa*a*aa*aaaaa*aaaaa*aa*a*a*a*a
+63 9 9911
+*aaaaa*aa*a*a*aa*aaaa*a*aa*a*a*aaaa*aaaaa*a*a*aaa*aa*aaa*a*a*aa

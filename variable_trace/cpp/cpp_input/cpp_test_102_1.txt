@@ -1,0 +1,9 @@
+4
+1 2
+L
+7 2
+L
+2 3
+RRDLUU
+4 3
+LUUDRRDLLLUU
