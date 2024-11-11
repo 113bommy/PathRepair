@@ -24,48 +24,48 @@ These steps will be applied to the dataset located in the `deepmind_codecontests
 ```bash
 bash make_folder.sh
 
-python -O dataset_curation.py --language python --data_split valid
-python -O dataset_curation.py --language python --data_split test
-python -O dataset_curation.py --language python --data_split train
+python dataset_curation.py --language python --data_split valid
+python dataset_curation.py --language python --data_split test
+python dataset_curation.py --language python --data_split train
 
-python -O dataset_curation.py --language cpp --data_split valid
-python -O dataset_curation.py --language cpp --data_split test
-python -O dataset_curation.py --language cpp --data_split train
+python dataset_curation.py --language cpp --data_split valid
+python dataset_curation.py --language cpp --data_split test
+python dataset_curation.py --language cpp --data_split train
 ```
 ### Cpp correct solution execution
 ```bash
-python -O cpp_test_gold_filter.py
-python -O cpp_valid_gold_filter.py
-python -O cpp_train_gold_filter.py
+python cpp_test_gold_filter.py
+python cpp_valid_gold_filter.py
+python cpp_train_gold_filter.py
 ```
 ### Python3 correct solution execution
 ```bash
-python -O python_test_gold_filter.py
-python -O python_valid_gold_filter.py
-python -O python_train_gold_filter.py
+python python_test_gold_filter.py
+python python_valid_gold_filter.py
+python python_train_gold_filter.py
 ```
 ### Generating filtered Test case data w.r.t. Correct solution
 ```bash
-python -O cpp_gold_filter.py
-python -O python_gold_filter.py
+python cpp_gold_filter.py
+python python_gold_filter.py
 ```
 
 ### Cpp incorrect solution execution
 ```bash
-python -O cpp_test_source_filter.py
-python -O cpp_valid_source_filter.py
-python -O cpp_train_source_filter.py
+python cpp_test_source_filter.py
+python cpp_valid_source_filter.py
+python cpp_train_source_filter.py
 ```
 ### Python3 incorrect solution execution
 ```bash
-python -O python_test_source_filter.py
-python -O python_valid_source_filter.py
-python -O python_train_source_filter.py
+python python_test_source_filter.py
+python python_valid_source_filter.py
+python python_train_source_filter.py
 ```
 ### Generating filtered Test case data w.r.t. Incorrect solution
 ```bash
-python -O cpp_source_filter.py
-python -O python_source_filter.py
+python cpp_source_filter.py
+python python_source_filter.py
 ```
 
 Final data will be saved in *cpp_data* and *python_data* folder
