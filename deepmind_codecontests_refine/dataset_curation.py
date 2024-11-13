@@ -137,7 +137,7 @@ def find_matching_pairs(data_dict, code_type):
 
     for cor_code in correct_codes:
         for incor_code in incorrect_codes:
-            if incor_code == None or cor_code == None:
+            if (incor_code == None) or (cor_code == None):
                 print('None')
                 continue
             distance = Levenshtein.distance(

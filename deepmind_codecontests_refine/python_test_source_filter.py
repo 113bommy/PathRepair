@@ -1,14 +1,15 @@
 import json
 import subprocess
-from math import isclose
+import multiprocessing
+import glob
 import os
 import chardet
 import pandas as pd
 import numpy as np
+from math import isclose
 from tqdm import tqdm
 from multiprocessing import Pool
 from typing import Union
-import multiprocessing
 
 def concat_test_case(dic):
     for key in dic.keys():
@@ -92,11 +93,12 @@ def run_test_cases(file, input_data_list, expected_output_list):
                 except Exception as decode_error:
                     actual_output = "<decoding error>"
                     print(f"Decoding error for timeout process output: {decode_error}")
+                num_partial += 1
+                process = e
+                partial = True
             else:
                 actual_output = ""
-            num_partial += 1
-            process = e
-            partial = True
+                partial = False
 
         expected = expected_output_list[index]
         actual = actual_output
@@ -170,13 +172,21 @@ def save_results(pid, results):
         with open(f'./python_test_source_result/python_test_check_{pid}.json', 'w') as f:
             json.dump({'results': results}, f, indent=None)
 
-
+def delete_all_files_in_folder(folder_path):
+    for file_path in glob.glob(os.path.join(folder_path, "*")):
+        try:
+            os.remove(file_path) 
+            print(f"Deleted: {file_path}")
+        except Exception as e:
+            print(f"Error deleting {file_path}: {e}")
+            
 def process_result(result):
     pid, index, success_check = result
     if success_check is not False: 
         save_results(pid, [(index, success_check)])
 
 if __name__ == "__main__":
+        delete_all_files_in_folder('./python_test_source_result')
     with open('./python_data/python_test_gold_filtered.json', 'r') as f:
         python_test = json.load(f)
     # python_test = concat_test_case(python_test)
