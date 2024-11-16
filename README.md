@@ -49,7 +49,37 @@ python python_train_gold_filter.py
 python cpp_gold_filter.py
 python python_gold_filter.py
 ```
+### Filtered by correct code (cpp)
+```bash
+# Original test case of test_check_result 33634
+# Original test case of valid_check_result 23924
+# Original test case of train_check_result 1276989
+# Original Code pair of test_check_result 1664
+# Original Code pair of valid_check_result 1407
+# Original Code pair of train_check_result 199441
+# Gold filtered test case of test_check_result 30746
+# Gold filtered test case of valid_check_result 22277
+# Gold filtered test case of train_check_result 811105
+# Gold filtered Code pair of test_check_result 1389
+# Gold filtered Code pair of valid_check_result 1115
+# Gold filtered Code pair of train_check_result 174125
+```
 
+### Filtered by correct code (python)
+```bash
+# Original test case of test_check_result 33634
+# Original test case of valid_check_result 23924
+# Original test case of train_check_result 1276989
+# Original Code pair of test_check_result 1134
+# Original Code pair of valid_check_result 1048
+# Original Code pair of train_check_result 520124
+# Gold filtered test case of test_check_result 35446
+# Gold filtered test case of valid_check_result 12737
+# Gold filtered test case of train_check_result 526205
+# Gold filtered Code pair of test_check_result 1932
+# Gold filtered Code pair of valid_check_result 769
+# Gold filtered Code pair of train_check_result 477993
+```
 ### Cpp incorrect solution execution
 ```bash
 python cpp_test_source_filter.py
