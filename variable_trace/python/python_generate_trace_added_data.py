@@ -209,8 +209,8 @@ def process_code(args):
     trace_added_list = []
 
     split_index = os.path.basename(incorrect_data).split('_')
-    code_index = split_index[3]
-    case_index = split_index[4].split('.json')[0]
+    code_index = split_index[4]
+    case_index = split_index[5].split('.json')[0]
 
     # Load data from original incorrect data
     stored_data = pid_split_dict[pid_index][int(code_index)]
@@ -251,50 +251,40 @@ def main():
     base_path = os.getcwd()
     trace_path = os.path.join(base_path, 'python_trace')
     tokenizer = RobertaTokenizer.from_pretrained("Salesforce/codet5-base")
+        
+    pid_split_dict = {}
+    all_trace_added_list = []
     
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--data_split', type = str, help = 'valid. test, train')
-    parser.parse_args()
-    args = parser.parse_args()
-    data_type = args.data_split
+    trace_type_path = os.path.join(trace_path, 'total', 'python_incorrect')
+    data_list = os.listdir(trace_type_path)
+    json_file_path = os.path.join(base_path, 'python_data', f'python_final_token_400.json')
+    raw_json = read_json(json_file_path)
     
-    split_type = [data_type]
+    # Split the data based on problem id
+    for single_storage in raw_json:
+        pid_index = single_storage['pid']
+        if pid_index in pid_split_dict.keys():
+            pid_split_dict[pid_index].append((len(pid_split_dict[pid_index]), single_storage))
+        else:
+            pid_split_dict[pid_index] = [(0, single_storage)]
+            
+    # Prepare arguments for multiprocessing
+    args_list = []
+    for pid_index in data_list:
+        pid_path = os.path.join(trace_type_path, pid_index)
+        incorrect_list = os.listdir(pid_path)
 
-    for s_t in tqdm(split_type, desc='Valid, Test, Train'):
-        pid_split_dict = {}
-        all_trace_added_list = []
+        for single_incorrect in incorrect_list:
+            incorrect_data = os.path.join(pid_path, single_incorrect)
+            args_list.append((pid_index, incorrect_data, pid_split_dict, tokenizer))
 
-        trace_type_path = os.path.join(trace_path, s_t, 'python_incorrect')
-        data_list = os.listdir(trace_type_path)
-        json_file_path = os.path.join(base_path, 'python_data', f'python_{s_t}_baseline_400.json')
-        raw_json = read_json(json_file_path)
+    # Use multiprocessing Pool
+    with Pool(120) as pool:  # Use one less CPU than available
+        for result in tqdm(pool.imap_unordered(process_code, args_list, chunksize=500), total=len(args_list), desc="Processing Codes"):
+            all_trace_added_list.extend(result)
 
-        # Split the data based on problem id
-        for single_storage in raw_json:
-            pid_index = single_storage['pid']
-            if pid_index in pid_split_dict:
-                pid_split_dict[pid_index].append((len(pid_split_dict[pid_index]), single_storage))
-            else:
-                pid_split_dict[pid_index] = [(0, single_storage)]
-
-        # Prepare arguments for multiprocessing
-        args_list = []
-        for pid_index in data_list:
-            pid_path = os.path.join(trace_type_path, pid_index)
-            incorrect_list = os.listdir(pid_path)
-
-            for single_incorrect in incorrect_list:
-                incorrect_data = os.path.join(pid_path, single_incorrect)
-                args_list.append((pid_index, incorrect_data, pid_split_dict, tokenizer))
-
-        # Use multiprocessing Pool
-        with Pool(120) as pool:  # Use one less CPU than available
-            for result in tqdm(pool.imap_unordered(process_code, args_list, chunksize=250), total=len(args_list), desc="Processing Codes"):
-                all_trace_added_list.extend(result)
-
-        # Save the results
-        save_json(all_trace_added_list, os.path.join(base_path, 'python_data', f'python_{s_t}_final_adjustment.json'))
-
+    # Save the results
+    save_json(all_trace_added_list, os.path.join(base_path, 'python_data', f'python_final_trace_added.json'))
 
 if __name__ == '__main__':
     main()

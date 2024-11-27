@@ -206,24 +206,29 @@ def trace_variable(inputs, function_curated, file_path, read_line, user_def_func
         try:
             with Tracer(path=file_path, user_def_function=user_def_function, timeout=50):
                 function_curated()
+                
         except MaxTraceOrderExceededException as e:
+            
             file_name = file_path.split('/')[3]
             split_list = file_path.split('.json')[0].split('_')
+            
             try:
-                os.makedirs(f'./python_error/train/{file_name}', exist_ok=True)
+                os.makedirs(f'./python_error/total/{file_name}', exist_ok=True)
             except FileExistsError:
                 pass
-            with open(f"./python_error/train/{file_name}/train_error_{split_list[-3]}_{split_list[-2]}_{split_list[-1]}.txt", 'a') as train_txt:
-                train_txt.write(f'{file_path} : MaxTraceOrderExceededException\n')
+            with open(f"./python_error/total/{file_name}/{split_list[-4]}_error_{split_list[-3]}_{split_list[-2]}_{split_list[-1]}.txt", 'a') as total_txt:
+                total_txt.write(f'{file_path} : MaxTraceOrderExceededException\n')
+                
         except Exception as e:
+            
             file_name = file_path.split('/')[3]
             split_list = file_path.split('.json')[0].split('_')
             try:
-                os.makedirs(f'./python_error/train/{file_name}', exist_ok=True)
+                os.makedirs(f'./python_error/total/{file_name}', exist_ok=True)
             except FileExistsError:
                 pass
-            with open(f"./python_error/train/{file_name}/train_error_{split_list[-3]}_{split_list[-2]}_{split_list[-1]}.txt", 'a') as train_txt:
-                train_txt.write(f'{file_path} : {e}\n')
+            with open(f"./python_error/total/{file_name}/{split_list[-4]}_error_{split_list[-3]}_{split_list[-2]}_{split_list[-1]}.txt", 'a') as total_txt:
+                total_txt.write(f'{file_path} : {e}\n')
 
         finally:
             # Restore stdout, stderr, and input
@@ -261,9 +266,9 @@ def setup_tracing(data, is_correct):
 
         try:
             if is_correct:
-                os.makedirs(f'./python_trace/train/python_correct/{pid}', exist_ok=True)
+                os.makedirs(f'./python_trace/total/python_correct/{pid}', exist_ok=True)
             else:
-                os.makedirs(f'./python_trace/train/python_incorrect/{pid}', exist_ok=True)
+                os.makedirs(f'./python_trace/total/python_incorrect/{pid}', exist_ok=True)
         except FileExistsError:
             pass
 
@@ -278,10 +283,10 @@ def setup_tracing(data, is_correct):
             pid_save[pid] = pid_save[pid] + 1
 
         if is_correct:
-            filename = f'./python_trace/train/python_correct/{pid}/python_correct_{pid}_{pid_save[pid]}'
+            filename = f'./python_trace/total/python_correct/{pid}/python_correct_{pid}_{pid_save[pid]}'
             tasks.append((correct_code, test_case_input, filename, is_correct))
         else:
-            filename = f'./python_trace/train/python_incorrect/{pid}/python_incorrect_{pid}_{pid_save[pid]}'
+            filename = f'./python_trace/total/python_incorrect/{pid}/python_incorrect_{pid}_{pid_save[pid]}'
             tasks.append((incorrect_code, test_case_input, filename, is_correct))
             
         yield tasks
@@ -293,17 +298,17 @@ def make_folders():
         pass
 
     try:
-        os.makedirs(f'./python_error/train', exist_ok=True)
+        os.makedirs(f'./python_error/total', exist_ok=True)
     except FileExistsError:
         pass
 
     try:
-        os.makedirs(f'./python_error/train/python_correct', exist_ok=True)
+        os.makedirs(f'./python_error/total/python_correct', exist_ok=True)
     except FileExistsError:
         pass
 
     try:
-        os.makedirs(f'./python_error/train/python_incorrect', exist_ok=True)
+        os.makedirs(f'./python_error/total/python_incorrect', exist_ok=True)
     except FileExistsError:
         pass
 
@@ -313,25 +318,26 @@ def make_folders():
         pass
 
     try:
-        os.makedirs(f'./python_trace/train', exist_ok=True)
+        os.makedirs(f'./python_trace/total', exist_ok=True)
     except FileExistsError:
         pass
 
     try:
-        os.makedirs(f'./python_trace/train/python_correct', exist_ok=True)
+        os.makedirs(f'./python_trace/total/python_correct', exist_ok=True)
     except FileExistsError:
         pass
 
     try:
-        os.makedirs(f'./python_trace/train/python_incorrect', exist_ok=True)
+        os.makedirs(f'./python_trace/total/python_incorrect', exist_ok=True)
     except FileExistsError:
         pass
 
 
 def main():
-    data_path = './python_data/python_train_baseline_400.json'
+    data_path = './python_data/python_final_token_400.json'
     input_data = read_json(data_path)
 
+    print(len(input_data))
     make_folders()
 
     with Pool(100) as pool:
