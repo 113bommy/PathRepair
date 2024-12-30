@@ -13,7 +13,11 @@ def convert_json_to_jsonl(input_file, output_file):
 
 cur_path = os.getcwd()
 storage_path = os.path.join(cur_path, 'data')
-data_path = [os.path.join(storage_path, single_data) for single_data in os.listdir(storage_path)] 
+data_path = [
+    os.path.join(storage_path, single_data) 
+    for single_data in os.listdir(storage_path)
+    if single_data.endswith('.json')
+] 
 
 for single_data_path in data_path:
     convert_json_to_jsonl(single_data_path, f'{single_data_path}l')

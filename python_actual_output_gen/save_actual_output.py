@@ -85,7 +85,7 @@ def save_dict_list_to_jsonl(data_list, filename):
 
 def check_actual_output(args):
     single_data, input_data, input_output_data, variable_trace_data, statement = args
-    script_file_path = f"./python_valid_code/python_valid_{single_data['pid']}_{single_data['code_index']}.py"
+    script_file_path = f"./python_code/python_{single_data['pid']}_{single_data['code_index']}.py"
     make_python_file(script_file_path, single_data['raw_incorrect'])
 
     try:
@@ -96,7 +96,7 @@ def check_actual_output(args):
     except subprocess.TimeoutExpired:
         pass
     except Exception:
-        with open(f'./python_error/error_valid.txt', "w", encoding='utf-8') as err_log_file:
+        with open(f"./python_error/{single_data['pid']}.txt", "a", encoding='utf-8') as err_log_file:
             err_log_file.write(f"{script_file_path}\n")
 
     actual_output = run_test_cases(script_file_path, input_data)[1:-1]
@@ -134,12 +134,20 @@ def check_actual_output(args):
     return copy.deepcopy(single_data)
 
 if __name__ == "__main__":
-    data_path = './data/python_valid_final_adjustment.jsonl'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--single_multiple', type = str, default = 'single')
+    args = parser.parse_args()
+    depth = args.single_multiple
+    
+    if depth == 'single':
+        data_path = './data/python_final_trace_added_choose_1.jsonl'
+    elif depth == 'multiple':
+        data_path = './data/python_final_trace_added.jsonl'
+        
     input_data = read_jsonl_to_list(data_path)
-
     tasks = []
     
-    for single_data in input_data:
+    for index, single_data in enumerate(input_data):
         trace_data = single_data['trace_code']
         input_data = trace_data.split('||| # @Input = [')[-1].split('] @Expected = [')[0]
         input_output_data = trace_data.split('] @Trace = ')[0]
@@ -149,10 +157,17 @@ if __name__ == "__main__":
     final_result = []
 
     with multiprocessing.Pool(120) as pool:
-        for result in tqdm(pool.imap_unordered(check_actual_output, tasks), total=len(tasks), ncols=60):
+        for result in tqdm(pool.imap_unordered(check_actual_output, 
+                                               tasks,chunksize = 4), 
+                           total=len(tasks), 
+                           ncols=60):
             if result is not None:
                 final_result.append(result)
 
-    save_dict_list_to_jsonl(final_result, './data/python_output_added_valid.jsonl')
+    if depth == 'single':
+        save_dict_list_to_jsonl(final_result, './data/python_final_single_cases.jsonl')
+    elif depth == 'multiple':
+        save_dict_list_to_jsonl(final_result, './data/python_final_all_cases.jsonl')
+
     print(f'Original Data : {len(tasks)}')
     print(f'Filtered Data : {len(final_result)}')

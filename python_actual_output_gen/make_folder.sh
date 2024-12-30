@@ -1,5 +1,0 @@
-mkdir data
-mkdir python_error
-mkdir python_test_code
-mkdir python_valid_code
-mkdir python_train_code
