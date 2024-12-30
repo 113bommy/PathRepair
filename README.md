@@ -49,10 +49,6 @@ python python_train_gold_filter.py
 python cpp_gold_filter.py
 python python_gold_filter.py
 ```
-### Filtered by correct code (cpp)
-```python
-
-```
 
 ### Cpp incorrect solution execution
 ```bash
@@ -187,20 +183,30 @@ python python_data_filter.py
 
 *Final Data will be saved in python_data folder*
 
-# Adding Actual Output for Automated Program Repair
+# Generating Actual Output for Automated Program Repair
 
-To support automated program repair, actual output data is added. This data is generated using `final_adjustment.json` information created through variable tracing.
+To facilitate automated program repair, actual output data is incorporated. Additionally, trace data without meaningful information for training LLM is filtered. This data is derived from `python_final_trace_added_choose_1.json` and `python_final_trace_added.json`, which are generated through variable tracing.
 
-- Each code pair retains trace information for one test case.
-- The final output is saved in the `./python_actual_output_gen` directory as `final_data_test.jsonl`.
+- The final outputs are stored in the `./python_actual_output_gen` directory as `python_final_filtered_all.jsonl` and `python_final_filtered_single.jsonl`.
 
 ```bash
-bash make_folder.sh
+bash initialize.sh
 python translate.py
 
-python save_actual_output_test.py
-python save_actual_output_valid.py
-python save_actual_output_train.py
+python save_actual_output.py --single_multiple single
+python save_actual_output.py --single_multiple multiple
 
 python python_data_filter.py
+```
+
+### Final data length (Single test case per each code pair)
+```
+single data length = 263764                                                                                                        
+filtered single data length = 173723    
+```
+
+### Final data length (multiple test case per each code pair)
+```
+multiple data length = 2596591                                                                                                          
+filtered multiple data length = 1714111 
 ```
