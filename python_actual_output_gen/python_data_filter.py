@@ -80,22 +80,39 @@ def main():
             expected_data = target_data.split('@Expected = [')[-1].split('] @Actual = [')[0].strip()
             actual_data = target_data.split('] @Actual = [')[-1].split(']')[0].strip()
             trace_data = target_data.split('] @Trace = ')[-1].strip()
-            
+    
             # Check whether each trace data has useful information
             if parse_trace_string(trace_data):
                 # Check actual result and expected result is different
                 if expected_data == actual_data:
                     continue
                 else:
+                    # Find trace part and preprocess data
+                    whole_trace_part = trace_data
+                    whole_trace_parsed = whole_trace_part[1:-1].split(' | ')
+
+                    temp_list = []
+                    
+                    for parsed_data in whole_trace_parsed:
+                        line_number = parsed_data.split(':', 1)[0].strip()
+                        variable_data = parsed_data.split(':', 1)[1].strip()
+                        if variable_data == '':
+                            continue
+                        temp_list.append(parsed_data)
+                    
+                    updated_trace_part = '[' + ' | '.join(temp_list) + ']'
+                    
                     # Choose data only if actual result and expected result are different
                     if d_t == 'single':  
                         save_key = f"{single_data['pid']}_{single_data['code_index']}"
-                        if save_key in save_list:
+                        if save_key in save_list:   
                             continue
                         else:
+                            single_data['input_expected_actual_trace'] = single_data['input_expected_actual_trace'].replace(whole_trace_part, updated_trace_part)
                             final_data_list.append(single_data)
                             save_list.append(save_key)
                     else:
+                        single_data['input_expected_actual_trace'] = single_data['input_expected_actual_trace'].replace(whole_trace_part, updated_trace_part)
                         final_data_list.append(single_data)
             else:
                 # Exclude if trace data is not useful
